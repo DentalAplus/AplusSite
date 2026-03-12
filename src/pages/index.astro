@@ -1,0 +1,32 @@
+---
+/* Ana Yönlendirici (Language Router) */
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dental Implant Clinic A Plus</title>
+    <script is:inline>
+        // Kullanıcının tarayıcı dilini al (tr-TR, en-US, de-DE vb.)
+        const userLang = navigator.language || navigator.userLanguage; 
+        const langCode = userLang.split('-')[0].toLowerCase();
+
+        // Desteklediğimiz diller
+        const supportedLangs = ['tr', 'en', 'de', 'bg'];
+
+        // Eğer kullanıcının dili desteklediklerimiz arasındaysa oraya gönder, 
+        // değilse varsayılan olarak Türkçe (/tr/) sayfasına gönder.
+        if (supportedLangs.includes(langCode)) {
+            window.location.href = '/' + langCode + '/';
+        } else {
+            window.location.href = '/tr/';
+        }
+    </script>
+    <meta http-equiv="refresh" content="2;url=/tr/" />
+    <meta name="robots" content="noindex, follow">
+</head>
+<body style="background: #f8fafc; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: sans-serif; color: #64748b;">
+    <div style="text-align: center;">
+        <p>Yönlendiriliyorsunuz... / Redirecting...</p>
+    </div>
+</body>
+</html>
