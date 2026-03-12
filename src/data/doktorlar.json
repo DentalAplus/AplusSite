@@ -1,0 +1,613 @@
+[
+  {
+    "id": "ugur-alpar",
+    "isim": "Uzm. Dt. Uğur Alpar",
+    "resim": "/images/ugur-alpar.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["periodontoloji", "dis-eti-tedavisi"],
+    "unvan": {
+      "tr": "Periodontoloji Uzmanı",
+      "en": "Periodontology Specialist",
+      "de": "Facharzt für Parodontologie",
+      "bg": "Специалист по пародонтология"
+    },
+    "alt_unvan": {
+      "tr": "Diş Eti Hastalıkları Cerrahisi",
+      "en": "Gum Disease Surgery",
+      "de": "Zahnfleischchirurgie",
+      "bg": "Хирургия на венците"
+    },
+    "ozgecmis": {
+      "tr": "1992 İstanbul doğumludur. 2016 yılında Marmara Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuş, uzmanlığını 2020'de Bolu Abant İzzet Baysal Üniversitesi Periodontoloji A.B.D'de tamamlamıştır. Periodontal ve dental implant cerrahilerinde uzmandır.",
+      "en": "Born in Istanbul in 1992. Graduated from Marmara University Faculty of Dentistry in 2016, completed his specialization at Bolu Abant Izzet Baysal University Department of Periodontology in 2020. He is an expert in periodontal and dental implant surgeries.",
+      "de": "Geboren 1992 in Istanbul. Abschluss an der Fakultät für Zahnmedizin der Marmara-Universität im Jahr 2016, Spezialisierung 2020 in der Abteilung für Parodontologie der Bolu Abant Izzet Baysal Universität. Er ist Experte für parodontale und dentale Implantatchirurgie.",
+      "bg": "Роден в Истанбул през 1992 г. Завършва Факултета по дентална медицина към Университета Мармара през 2016 г., завършва специализацията си в катедрата по пародонтология на университета Болу Абант Иззет Байсал през 2020 г. Експерт е по пародонтална и дентална имплантологична хирургия."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği"],
+      "en": ["Turkish Dental Association"],
+      "de": ["Türkischer Zahnärzteverband"],
+      "bg": ["Турска дентална асоциация"]
+    }
+  },
+  {
+    "id": "mehmet-aksan",
+    "isim": "Uzm. Dt. Mehmet Aksan",
+    "resim": "/images/mehmet-aksan.webp",
+    "klinikler": ["silivri", "catalca"],
+    "uzmanlik_alanlari": ["endodonti", "kanal-tedavisi"],
+    "unvan": {
+      "tr": "Endodonti Uzmanı",
+      "en": "Endodontics Specialist",
+      "de": "Facharzt für Endodontie",
+      "bg": "Специалист по ендодонтия"
+    },
+    "alt_unvan": {
+      "tr": "Kanal Tedavisi Uzmanı",
+      "en": "Root Canal Specialist",
+      "de": "Wurzelkanalspezialist",
+      "bg": "Специалист по коренови канали"
+    },
+    "ozgecmis": {
+      "tr": "1992 Mardin doğumludur. 2016 İnönü Üniversitesi mezunu olup, uzmanlığını 2022 yılında Van YYÜ Endodonti A.B.D'de tamamlamıştır. Kanal tedavisi, retreatment, apeksifikasyon ve travma tedavilerinde uzmandır.",
+      "en": "Born in Mardin in 1992. Graduated from Inonu University in 2016, completed his specialization at Van YYU Department of Endodontics in 2022. Expert in root canal treatment, retreatment, apexification, and trauma treatments.",
+      "de": "Geboren 1992 in Mardin. Abschluss an der Inonu-Universität im Jahr 2016, Spezialisierung 2022 in der Abteilung für Endodontie der Van YYU. Experte für Wurzelkanalbehandlung, Revision, Apexifikation und Traumabehandlungen.",
+      "bg": "Роден в Мардин през 1992 г. Завършва университета Иньоню през 2016 г., специализира в катедрата по ендодонтия към Van YYU през 2022 г. Експерт в лечението на коренови канали, повторно лечение, апексификация и лечение на травми."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği"],
+      "en": ["Turkish Dental Association"],
+      "de": ["Türkischer Zahnärzteverband"],
+      "bg": ["Турска дентална асоциация"]
+    }
+  },
+  {
+    "id": "furkan-akagunduz",
+    "isim": "Dt. Furkan Akagündüz",
+    "resim": "/images/furkan-akagunduz.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["estetik-dis-hekimligi", "zirkonyum", "lamine", "dolgu", "gulus-tasarimi"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnarzt",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Estetik Diş Hekimliği",
+      "en": "Aesthetic Dentistry",
+      "de": "Ästhetische Zahnheilkunde",
+      "bg": "Естетична дентална медицина"
+    },
+    "ozgecmis": {
+      "tr": "1997 Düzce doğumludur. 2020 yılında Karadeniz Teknik Üniversitesi Diş Hekimliği Fakültesi'nden başarıyla mezun olmuştur. Konservatif, estetik ve restoratif diş tedavileri alanında hizmet vermektedir.",
+      "en": "Born in Duzce in 1997. Successfully graduated from Karadeniz Technical University Faculty of Dentistry in 2020. Provides services in the fields of conservative, aesthetic, and restorative dental treatments.",
+      "de": "Geboren 1997 in Duzce. Erfolgreicher Abschluss an der Fakultät für Zahnmedizin der Karadeniz Technical University im Jahr 2020. Bietet Dienstleistungen in den Bereichen konservative, ästhetische und restaurative Zahnheilkunde.",
+      "bg": "Роден в Дюздже през 1997 г. Успешно завършва Факултета по дентална медицина на Черноморския технически университет през 2020 г. Предоставя услуги в областта на консервативните, естетичните и възстановителните дентални лечения."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği", "İstanbul Diş Hekimleri Odası"],
+      "en": ["Turkish Dental Association", "Istanbul Chamber of Dentists"],
+      "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
+      "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
+    }
+  },
+{
+    "id": "ahmet-emin-kirtas",
+    "isim": "Dt. Ahmet Emin Kırtaş",
+    "resim": "/images/ahmet-emin-kirtas.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "all-on-four", "all-on-six", "gomulu-dis"],
+    "unvan": {
+      "tr": "Ağız ve Çene Cerrahisi",
+      "en": "Oral and Maxillofacial Surgery",
+      "de": "Mund-, Kiefer- und Gesichtschirurgie",
+      "bg": "Орална и лицево-челюстна хирургия"
+    },
+    "alt_unvan": {
+      "tr": "İmplantoloji",
+      "en": "Implantology",
+      "de": "Implantologie",
+      "bg": "Имплантология"
+    },
+    "ozgecmis": {
+      "tr": "1995 yılında Sivas’ta doğmuştur. 2020 yılında İstanbul Medipol Üniversitesi Diş Hekimliği Fakültesi'nden onur derecesiyle mezun olmuştur. 2021 yılında Sağlık Bilimleri Üniversitesi Ağız, Diş ve Çene Cerrahisi Doktora Programı'na kabul almıştır. Meslek hayatında ağırlıklı olarak implant cerrahisi, oral cerrahi, ağız hastalıkları ile çene kist ve tümörleri alanlarında çalışmaktadır.",
+      "en": "Born in Sivas in 1995. Graduated with honors from Istanbul Medipol University Faculty of Dentistry in 2020. In 2021, he was accepted into the Oral and Maxillofacial Surgery PhD Program at Health Sciences University. In his professional life, he mainly works in the fields of implant surgery, oral surgery, oral diseases, and jaw cysts and tumors.",
+      "de": "Geboren 1995 in Sivas. Er schloss sein Studium an der zahnmedizinischen Fakultät der Istanbul Medipol Universität im Jahr 2020 mit Auszeichnung ab. 2021 wurde er in das PhD-Programm für Mund-, Kiefer- und Gesichtschirurgie an der Universität für Gesundheitswissenschaften aufgenommen. In seinem Berufsleben ist er hauptsächlich in den Bereichen Implantatchirurgie, Oralchirurgie, Mundkrankheiten sowie Kieferzysten und -tumoren tätig.",
+      "bg": "Роден в Сивас през 1995 г. Завършва с отличие Факултета по дентална медицина на Истанбулския университет Медипол през 2020 г. През 2021 г. е приет в докторантската програма по орална и лицево-челюстна хирургия към Университета по здравни науки. В професионалния си път работи главно в областите на имплантологичната хирургия, оралната хирургия, заболяванията на устната кухина, както и челюстните кисти и тумори."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği", "İstanbul Diş Hekimleri Odası"],
+      "en": ["Turkish Dental Association", "Istanbul Chamber of Dentists"],
+      "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
+      "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
+    }
+  },
+  {
+    "id": "bedirhan-dokulmez",
+    "isim": "Dt. Bedirhan Dökülmez",
+    "resim": "/images/bedirhan-dokulmez.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": [
+      "protez",
+      "zirkonyum",
+      "lamine",
+      "e-max",
+      "empress-porselen",
+      "all-on-four",
+      "gulus-tasarimi",
+      "inley-onley"
+    ],
+    "unvan": {
+      "tr": "Diş Hekimi (Protetik Diş Tedavisi Ph.D.)",
+      "en": "Dentist (Prosthodontics Ph.D. Candidate)",
+      "de": "Zahnarzt (Prothetik Ph.D. Kandidat)",
+      "bg": "Зъболекар (Докторант по протетична дентална медицина)"
+    },
+    "alt_unvan": {
+      "tr": "İleri Protetik ve Estetik Tedaviler",
+      "en": "Advanced Prosthetic and Aesthetic Treatments",
+      "de": "Fortgeschrittene prothetische und ästhetische Behandlungen",
+      "bg": "Разширени протетични и естетични лечения"
+    },
+    "ozgecmis": {
+      "tr": "1994 yılında Ankara'da doğmuştur. 2013 yılında Ankara Lisesi'nden mezun olmuş, 2019 yılında İstanbul Okan Üniversitesi Diş Hekimliği Fakültesi'ni 3'üncülük derecesiyle bitirmiştir. 2020 yılında Sağlık Bilimleri Üniversitesi Protetik Diş Tedavisi Anabilim Dalı'nda doktora (PhD) programına başlamış olup eğitimine devam etmektedir. Tek üyeden tam dişsizliğe dijital iş akışı ile protezler ve monolitik zirkonya konularında kitap bölümleri ile ulusal/uluslararası kongrelerde birçok yayını bulunmaktadır. Ayrıca mezuniyet sonrası diş hekimlerine yönelik 'İleri Protetik Tedaviler' alanında eğitimler vermektedir. Zirkonyum, E-Max, All-On-4 ve porselen lamina uygulamaları başlıca ilgi alanlarıdır. İyi düzeyde İngilizce bilmektedir.",
+      "en": "Born in Ankara in 1994. Graduated from Ankara High School in 2013 and from Istanbul Okan University Faculty of Dentistry in 2019 with 3rd place honors. In 2020, he started his PhD program in the Department of Prosthodontics at the University of Health Sciences, where he continues his studies. He has authored book chapters on 'Digital workflow prostheses from single unit to full edentulism' and 'Monolithic zirconia,' along with numerous publications at national and international congresses. He also provides training on 'Advanced Prosthetic Treatments' for dentists in post-graduate programs. His main areas of interest include zirconium, E-Max, All-On-4, and laminate veneers. He speaks English fluently.",
+      "de": "Geboren 1994 in Ankara. Er absolvierte 2013 das Ankara-Gymnasium und schloss 2019 sein Studium an der zahnmedizinischen Fakultät der Universität Istanbul Okan als Drittbester seines Jahrgangs ab. Im Jahr 2020 begann er sein Promotionsprogramm (PhD) in der Abteilung für Prothetik an der Universität für Gesundheitswissenschaften, welches er derzeit fortsetzt. Er ist Autor von Buchkapiteln über 'Prothesen mit digitalem Workflow vom Einzelzahn bis zur vollständigen Zahnlosigkeit' und 'Monolithisches Zirkoniumoxid' und hat zahlreiche Publikationen auf nationalen und internationalen Kongressen veröffentlicht. Darüber hinaus gibt er Fortbildungen für Zahnärzte im Bereich 'Fortgeschrittene prothetische Behandlungen'. Zu seinen Hauptinteressengebieten gehören Zirkonium, E-Max, All-On-4 und Laminate-Veneers. Er spricht fließend Englisch.",
+      "bg": "Роден е в Анкара през 1994 г. Завършва гимназия в Анкара през 2013 г. и Факултета по дентална медицина на Истанбулския университет Окан през 2019 г. на трето място по успех. През 2020 г. започва докторска (PhD) програма в Катедрата по протетична дентална медицина към Университета по здравни науки, която продължава и в момента. Има глави в книги на теми 'Протези с дигитален работен процес от единичен зъб до пълна липса на зъби' и 'Монолитен цирконий', както и множество публикации на национални и международни конгреси. Също така провежда следдипломни обучения за зъболекари в областта на 'Разширени протетични лечения'. Основните му интереси включват цирконий, E-Max, All-On-4 и ламинатни фасети. Владее отлично английски език."
+    },
+    "dernekler": {
+      "tr": [
+        "ITI (International Team for Implantology)",
+        "Türk Diş Hekimleri Birliği (TDB)"
+      ],
+      "en": [
+        "ITI (International Team for Implantology)",
+        "Turkish Dental Association (TDB)"
+      ],
+      "de": [
+        "ITI (International Team for Implantology)",
+        "Türkischer Zahnärzteverband (TDB)"
+      ],
+      "bg": [
+        "ITI (Международен екип по имплантология)",
+        "Турска дентална асоциация (TDB)"
+      ]
+    }
+  },
+  {
+    "id": "umit-selcuk",
+    "isim": "Uzm. Dt. Ümit Selçuk",
+    "resim": "/images/umit-selcuk.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "zigomatik-implant", "maksillofasiyal-cerrahi"],
+    "unvan": {
+      "tr": "Ağız, Diş ve Çene Cerrahisi Uzmanı",
+      "en": "Oral and Maxillofacial Surgery Specialist",
+      "de": "Facharzt für Mund-, Kiefer- und Gesichtschirurgie",
+      "bg": "Специалист по орална и лицево-челюстна хирургия"
+    },
+    "alt_unvan": {
+      "tr": "Çene Cerrahisi Uzmanı",
+      "en": "Maxillofacial Surgery Specialist",
+      "de": "Kieferchirurg",
+      "bg": "Специалист по лицево-челюстна хирургия"
+    },
+    "ozgecmis": {
+      "tr": "1984 yılında Aydın'da doğmuştur. 2002 yılında Aydın Adnan Menderes Anadolu Lisesi'nden, 2007 yılında ise İstanbul Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. Uzmanlık eğitimini 2007-2012 yılları arasında Samsun Ondokuz Mayıs Üniversitesi Sağlık Bilimleri Enstitüsü'nde tamamlamıştır. Mesleki ilgi alanları arasında dental implantlar, ileri derece atrofik çenelerde zigomatik implantlar ve maksillofasiyal deformite tedavileri yer almaktadır.",
+      "en": "Born in Aydın in 1984. He graduated from Aydın Adnan Menderes Anatolian High School in 2002 and from Istanbul University Faculty of Dentistry in 2007. He completed his specialization at Samsun Ondokuz Mayıs University Health Sciences Institute between 2007 and 2012. His professional interests include dental implants, zygomatic implants in severely atrophic jaws, and maxillofacial deformity treatments.",
+      "de": "Geboren 1984 in Aydın. Er absolvierte 2002 das Aydın Adnan Menderes Anadolu Gymnasium und 2007 die zahnmedizinische Fakultät der Universität Istanbul. Seine Spezialisierung schloss er zwischen 2007 und 2012 am Institut für Gesundheitswissenschaften der Samsun Ondokuz Mayıs Universität ab. Zu seinen beruflichen Interessensgebieten gehören Zahnimplantate, Zygoma-Implantate bei stark atrophen Kiefern und Behandlungen von maxillofazialen Deformitäten.",
+      "bg": "Роден в Айдън през 1984 г. Завършва Анадолската гимназия Айдън Аднан Мендерес през 2002 г. и Факултета по дентална медицина на Истанбулския университет през 2007 г. Завършва специализацията си в Института по здравни науки към университета Самсун Ондокуз Майъс между 2007 и 2012 г. Професионалните му интереси включват дентални импланти, зигоматични импланти при тежко атрофични челюсти и лечение на лицево-челюстни деформации."
+    },
+    "dernekler": {
+      "tr": [
+        "AÇBİD (Ağız ve Çene-Yüz Cerrahisi Birliği Derneği)",
+        "TOİD (Türk Oral İmplantoloji Derneği)",
+        "TAOMS (Türk Ağız Diş ve Çene Cerrahisi Derneği)",
+        "Türk Diş Hekimleri Birliği"
+      ],
+      "en": [
+        "ACBID (Oral and Maxillofacial Surgery Society)",
+        "TOID (Turkish Oral Implantology Association)",
+        "TAOMS (Turkish Association of Oral and Maxillofacial Surgery)",
+        "Turkish Dental Association"
+      ],
+      "de": [
+        "AÇBİD (Gesellschaft für Mund-, Kiefer- und Gesichtschirurgie)",
+        "TOİD (Türkische Gesellschaft für Orale Implantologie)",
+        "TAOMS (Türkische Gesellschaft für Mund-, Kiefer- und Gesichtschirurgie)",
+        "Türkischer Zahnärzteverband"
+      ],
+      "bg": [
+        "AÇBİD (Асоциация по орална и лицево-челюстна хирургия)",
+        "TOİD (Турска асоциация по орална имплантология)",
+        "TAOMS (Турска асоциация по орална и лицево-челюстна хирургия)",
+        "Турска дентална асоциация"
+      ]
+    }
+  },
+  {
+    "id": "adnan-ege-koseler",
+    "isim": "Uzm. Dt. Adnan Ege Köseler",
+    "resim": "/images/adnan-ege-koseler.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["protez", "lamine", "zirkonyum", "implant-ustu-protez", "e-max", "all-on-four", "all-on-six"],
+    "unvan": {
+      "tr": "Protetik Diş Tedavisi Uzmanı",
+      "en": "Prosthodontics Specialist",
+      "de": "Facharzt für Prothetik",
+      "bg": "Специалист по протетична дентална медицина"
+    },
+    "alt_unvan": {
+      "tr": "Diş Protez Uzmanı",
+      "en": "Dental Prosthesis Specialist",
+      "de": "Spezialist für Zahnprothesen",
+      "bg": "Специалист по зъбни протези"
+    },
+    "ozgecmis": {
+      "tr": "1989 İstanbul doğumludur. 2012 yılında Marmara Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. Uzmanlık eğitimini 2017 yılında Kocaeli Üniversitesi Diş Hekimliği Fakültesi Protetik Diş Tedavisi Anabilim Dalı'nda başarıyla tamamlamıştır. Estetik ve protetik çözümler üzerine hizmet vermektedir.",
+      "en": "Born in Istanbul in 1989. Graduated from Marmara University Faculty of Dentistry in 2012. Completed his specialization at Kocaeli University Faculty of Dentistry, Department of Prosthodontics in 2017. Provides services focusing on aesthetic and prosthetic solutions.",
+      "de": "Geboren 1989 in Istanbul. Abschluss an der Fakultät für Zahnmedizin der Marmara-Universität im Jahr 2012. Spezialisierung 2017 an der Fakultät für Zahnmedizin der Kocaeli-Universität in der Abteilung für Prothetik abgeschlossen. Bietet Dienstleistungen mit Schwerpunkt auf ästhetischen und prothetischen Lösungen.",
+      "bg": "Роден в Истанбул през 1989 г. Завършва Факултета по дентална медицина към Университета Мармара през 2012 г. Завършва специализацията си във Факултета по дентална медицина към Университета Коджаели, Катедра по протетична дентална медицина през 2017 г. Предоставя услуги, фокусирани върху естетични и протетични решения."
+    },
+    "dernekler": {
+      "tr": [],
+      "en": [],
+      "de": [],
+      "bg": []
+    }
+  },
+{
+    "id": "ecem-salmaz",
+    "isim": "Dt. Ecem Salmaz Utlu",
+    "resim": "/images/ecem-salmaz.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["cocuk-dis-hekimligi", "pedodonti", "estetik-dolgu"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnärztin",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Çocuk Diş Hekimliği (Pedodonti)",
+      "en": "Pediatric Dentistry (Pedodontics)",
+      "de": "Kinderzahnheilkunde (Pedodontie)",
+      "bg": "Детска дентална медицина (Педодонтия)"
+    },
+    "ozgecmis": {
+      "tr": "1998 yılında İzmir’de doğan Ecem Salmaz Utlu, İstanbul Aydın Üniversitesi Diş Hekimliği Fakültesi’nden 2022 yılında mezun olmuştur. Aynı yıl Pedodonti (Çocuk Diş Hekimliği) doktora programına başlamış ve meslek hayatına çocuk diş hekimi olarak devam etmektedir. Güvene dayalı iletişimi ve koruyucu, minimal invaziv tedavi yaklaşımıyla çocukların diş hekimi korkusu yaşamadan sağlıklı bir ağız yapısına kavuşmasını hedeflemektedir. Uzmanlık alanları arasında koruyucu çocuk diş hekimliği, çocuklarda çürük tedavileri, flor ve fissür örtücü uygulamaları, dental anksiyete yönetimi ve travmatik dental yaralanmalar yer almaktadır.",
+      "en": "Born in Izmir in 1998, Ecem Salmaz Utlu graduated from Istanbul Aydin University Faculty of Dentistry in 2022. She started her PhD program in Pedodontics (Pediatric Dentistry) in the same year and continues her career as a pediatric dentist. With her trust-based communication and preventive, minimally invasive treatment approach, she aims for children to achieve a healthy mouth structure without experiencing dental fear. Her areas of expertise include preventive pediatric dentistry, caries treatments in children, fluoride and fissure sealant applications, dental anxiety management, and traumatic dental injuries.",
+      "de": "Ecem Salmaz Utlu wurde 1998 in Izmir geboren und schloss 2022 ihr Studium an der zahnmedizinischen Fakultät der Istanbul Aydin Universität ab. Im selben Jahr begann sie ihr Promotionsprogramm in Pedodontie (Kinderzahnheilkunde) und setzt ihre Karriere als Kinderzahnärztin fort. Mit ihrer vertrauensvollen Kommunikation und ihrem präventiven, minimalinvasiven Behandlungsansatz möchte sie erreichen, dass Kinder ohne Zahnarztangst eine gesunde Mundstruktur erhalten. Zu ihren Fachgebieten gehören die präventive Kinderzahnheilkunde, Kariesbehandlungen bei Kindern, Fluorid- und Fissurenversiegelungen, die Bewältigung von Zahnarztangst sowie traumatische Zahnverletzungen.",
+      "bg": "Родена в Измир през 1998 г., Еджем Салмаз Утлу завършва Факултета по дентална медицина на Истанбулския университет Айдън през 2022 г. През същата година започва докторската си програма по педодонтия (детска дентална медицина) и продължава кариерата си като детски зъболекар. С базираната си на доверие комуникация и превантивен, минимално инвазивен подход на лечение, тя се стреми децата да постигнат здрава структура на устата без страх от зъболекаря. Областите ѝ на експертиза включват превантивна детска дентална медицина, лечение на кариес при деца, приложения на флуорид и силанти за фисури, управление на дентална тревожност и травматични дентални наранявания."
+    },
+    "dernekler": {
+      "tr": ["İstanbul Diş Hekimleri Odası"],
+      "en": ["Istanbul Chamber of Dentists"],
+      "de": ["Zahnärztekammer Istanbul"],
+      "bg": ["Истанбулска камара на зъболекарите"]
+    }
+  },
+  {
+    "id": "asli-baskan-onal",
+    "isim": "Dr. Dt. Aslı Başkan Önal",
+    "resim": "/images/asli-baskan-onal.webp",
+    "klinikler": ["catalca"],
+    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "gomulu-dis", "kistik-lezyon-tedavisi"],
+    "unvan": {
+      "tr": "Ağız, Diş ve Çene Cerrahisi",
+      "en": "Oral & Maxillofacial Surgery",
+      "de": "Mund-, Kiefer- und Gesichtschirurgie",
+      "bg": "Орална и лицево-челюстна хирургия"
+    },
+    "alt_unvan": {
+      "tr": "Çene Cerrahisi Uzmanı",
+      "en": "Maxillofacial Surgery Specialist",
+      "de": "Kieferchirurgin",
+      "bg": "Специалист по лицево-челюстна хирургия"
+    },
+    "ozgecmis": {
+      "tr": "1995 Hatay doğumludur. 2019 İstanbul Medipol Üniversitesi birincisi olup, uzmanlığını 2025'te Sağlık Bilimleri Üniversitesi'nde tamamlamıştır.",
+      "en": "Born in Hatay in 1995. Ranked first in Istanbul Medipol University in 2019, completed her specialization at the University of Health Sciences in 2025.",
+      "de": "Geboren 1995 in Hatay. 2019 als Jahrgangsbeste an der Istanbul Medipol Universität abgeschlossen, Spezialisierung 2025 an der Universität für Gesundheitswissenschaften abgeschlossen.",
+      "bg": "Родена в Хатай през 1995 г. Завършва като първенец Истанбулския университет Медипол през 2019 г., завършва специализацията си в Университета по здравни науки през 2025 г."
+    },
+    "dernekler": {
+      "tr": ["İstanbul Diş Hekimleri Odası"],
+      "en": ["Istanbul Chamber of Dentists"],
+      "de": ["Zahnärztekammer Istanbul"],
+      "bg": ["Истанбулска камара на зъболекарите"]
+    }
+  },
+  {
+    "id": "mert-cobanoglu",
+    "isim": "Dt. Ş. Mert Çobanoğlu",
+    "resim": "/images/mert-cobanoglu.webp",
+    "klinikler": ["catalca"],
+    "uzmanlik_alanlari": ["protetik-tedaviler", "kanal-tedavisi", "dolgu", "dis-tasi-temizligi"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnarzt",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Genel Diş Hekimliği",
+      "en": "General Dentistry",
+      "de": "Allgemeine Zahnheilkunde",
+      "bg": "Обща дентална медицина"
+    },
+    "ozgecmis": {
+      "tr": "1999 İstanbul doğumludur. 2024 yılında İstanbul Üniversitesi Diş Hekimliği Fakültesi'nden başarıyla mezun olmuştur.",
+      "en": "Born in Istanbul in 1999. Successfully graduated from Istanbul University Faculty of Dentistry in 2024.",
+      "de": "Geboren 1999 in Istanbul. Erfolgreicher Abschluss an der Fakultät für Zahnmedizin der Universität Istanbul im Jahr 2024.",
+      "bg": "Роден в Истанбул през 1999 г. Успешно завършва Факултета по дентална медицина на Истанбулския университет през 2024 г."
+    },
+    "dernekler": {
+      "tr": ["İstanbul Diş Hekimleri Odası"],
+      "en": ["Istanbul Chamber of Dentists"],
+      "de": ["Zahnärztekammer Istanbul"],
+      "bg": ["Истанбулска камара на зъболекарите"]
+    }
+  },
+  {
+    "id": "meltem-ileri-bekcioglu",
+    "isim": "Dt. Meltem İleri Bekçioğlu",
+    "resim": "/images/meltem-ileri-bekcioglu.webp",
+    "klinikler": ["catalca"],
+    "uzmanlik_alanlari": ["estetik-dis-hekimligi", "gulus-tasarimi", "lamine", "zirkonyum", "endodonti", "implant-ustu-porselen"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnärztin",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Mesul Müdür & Hasta Hakları Sorumlusu",
+      "en": "Responsible Manager & Patient Rights Supervisor",
+      "de": "Verantwortliche Managerin & Patientenrechte",
+      "bg": "Отговорен мениджър и Отговорник за правата на пациентите"
+    },
+    "ozgecmis": {
+      "tr": "1990 İstanbul doğumludur. 2015 yılında Marmara Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. 2020 yılından itibaren Çatalca şubemizde Mesul Müdür olarak görev yapmaktadır.",
+      "en": "Born in Istanbul in 1990. Graduated from Marmara University Faculty of Dentistry in 2015. She has been working as the Responsible Manager at our Çatalca branch since 2020.",
+      "de": "Geboren 1990 in Istanbul. Abschluss an der Fakultät für Zahnmedizin der Marmara-Universität im Jahr 2015. Seit 2020 arbeitet sie als verantwortliche Managerin in unserer Filiale in Çatalca.",
+      "bg": "Родена в Истанбул през 1990 г. Завършва Факултета по дентална медицина към Университета Мармара през 2015 г. От 2020 г. работи като Отговорен мениджър в нашия филиал в Чаталджа."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği", "İstanbul Diş Hekimleri Odası"],
+      "en": ["Turkish Dental Association", "Istanbul Chamber of Dentists"],
+      "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
+      "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
+    }
+  },
+  {
+    "id": "derya-mina-akirmak",
+    "isim": "Dt. Derya Mina Akırmak",
+    "resim": "/images/derya-mina-akirmak.webp",
+    "klinikler": ["catalca"],
+    "uzmanlik_alanlari": ["endodonti", "kanal-tedavisi", "cocuk-dis-hekimligi", "estetik-dolgu", "diastema-kapama", "beyazlatma"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnärztin",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Endodonti & Çocuk Diş Hekimliği",
+      "en": "Endodontics & Pediatric Dentistry",
+      "de": "Endodontie & Kinderzahnheilkunde",
+      "bg": "Ендодонтия и Детска дентална медицина"
+    },
+    "ozgecmis": {
+      "tr": "1999 İstanbul doğumludur. 2022 yılında İstanbul Aydın Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. Endodontik tedaviler ve pediatrik (çocuk) diş hekimliği alanlarında uzmanlaşmış bir hizmet sunmaktadır.",
+      "en": "Born in Istanbul in 1999. Graduated from Istanbul Aydın University Faculty of Dentistry in 2022. Provides specialized services in endodontic treatments and pediatric (children's) dentistry.",
+      "de": "Geboren 1999 in Istanbul. Abschluss an der Fakultät für Zahnmedizin der Istanbul Aydın Universität im Jahr 2022. Bietet spezialisierte Dienstleistungen in der Endodontie und pädiatrischen (Kinder-)Zahnheilkunde an.",
+      "bg": "Родена в Истанбул през 1999 г. Завършва Факултета по дентална медицина на Истанбулския университет Айдън през 2022 г. Предоставя специализирани услуги в областта на ендодонтските лечения и педиатричната (детска) дентална медицина."
+    },
+    "dernekler": {
+      "tr": [],
+      "en": [],
+      "de": [],
+      "bg": []
+    }
+  },
+  {
+    "id": "yasar-ozyurt",
+    "isim": "Dt. Yaşar Özyurt",
+    "resim": "/images/yasar-ozyurt.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["estetik-dis-hekimligi", "protetik-tedaviler", "genel-dis-hekimligi"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnarzt",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Genel Diş Hekimliği",
+      "en": "General Dentistry",
+      "de": "Allgemeine Zahnheilkunde",
+      "bg": "Обща дентална медицина"
+    },
+    "ozgecmis": {
+      "tr": "1997 İstanbul doğumludur. Marmara Üniversitesi Diş Hekimliği Fakültesi’nden 2022 yılında mezun olmuştur. Modern diş hekimliği uygulamalarıyla hasta memnuniyetini merkezine alan bir klinik yaklaşım benimsemektedir. Klinik pratiğinde fonksiyon, estetik ve uzun dönem başarıyı esas alarak tedavi planlaması yapmaktadır.",
+      "en": "Born in Istanbul in 1997. He graduated from Marmara University Faculty of Dentistry in 2022. He adopts a clinical approach that centers on patient satisfaction with modern dentistry practices. In his clinical practice, he plans treatments based on function, aesthetics, and long-term success.",
+      "de": "Geboren 1997 in Istanbul. Er schloss 2022 sein Studium an der zahnmedizinischen Fakultät der Marmara-Universität ab. Er verfolgt einen klinischen Ansatz, bei dem die Patientenzufriedenheit durch moderne zahnmedizinische Praktiken im Mittelpunkt steht. In seiner klinischen Praxis plant er Behandlungen auf der Grundlage von Funktion, Ästhetik und langfristigem Erfolg.",
+      "bg": "Роден в Истанбул през 1997 г. Завършва Факултета по дентална медицина към Университета Мармара през 2022 г. Възприема клиничен подход, фокусиран върху удовлетвореността на пациентите чрез съвременни дентални практики. В клиничната си практика планира лечения въз основа на функция, естетика и дългосрочен успех."
+    },
+    "dernekler": {
+      "tr": [],
+      "en": [],
+      "de": [],
+      "bg": []
+    }
+  },
+  {
+    "id": "ilyas-mert-yalcin",
+    "isim": "Dt. İlyas Mert Yalçın",
+    "resim": "/images/ilyas-mert-yalcin.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "gomulu-dis"],
+    "unvan": {
+      "tr": "Ağız, Diş ve Çene Cerrahisi",
+      "en": "Oral & Maxillofacial Surgery",
+      "de": "Mund-, Kiefer- und Gesichtschirurgie",
+      "bg": "Орална и лицево-челюстна хирургия"
+    },
+    "alt_unvan": {
+      "tr": "Çene Cerrahisi",
+      "en": "Maxillofacial Surgery",
+      "de": "Kieferchirurgie",
+      "bg": "Лицево-челюстна хирургия"
+    },
+    "ozgecmis": {
+      "tr": "1995 yılında Mersin’de doğmuştur. Yeditepe Üniversitesi Diş Hekimliği Fakültesi’nden 2020 yılında mezun olmuş, 2021 yılında Sağlık Bilimleri Üniversitesi Ağız, Diş ve Çene Cerrahisi Doktora Programı’na kabul edilmiştir. Çene kemiklerinde ogmentasyon işlemleri, dental implant cerrahileri ile çene kist ve tümörlerinin cerrahi tedavileri başlıca çalışma alanlarıdır.",
+      "en": "Born in Mersin in 1995. Graduated from Yeditepe University Faculty of Dentistry in 2020 and was accepted to the Oral and Maxillofacial Surgery PhD Program at Health Sciences University in 2021. His main areas of practice include jaw bone augmentation procedures, dental implant surgeries, and the surgical treatment of jaw cysts and tumors.",
+      "de": "Geboren 1995 in Mersin. Abschluss an der Fakultät für Zahnmedizin der Yeditepe-Universität im Jahr 2020 und Aufnahme in das PhD-Programm für Mund-, Kiefer- und Gesichtschirurgie an der Universität für Gesundheitswissenschaften im Jahr 2021. Zu seinen Hauptarbeitsgebieten gehören Kieferknochenaugmentationen, Zahnimplantatchirurgie sowie die chirurgische Behandlung von Kieferzysten und -tumoren.",
+      "bg": "Роден в Мерсин през 1995 г. Завършва Факултета по дентална медицина към Университета Йедитепе през 2020 г. и е приет в докторантската програма по орална и лицево-челюстна хирургия към Университета по здравни науки през 2021 г. Основните му области на работа включват процедури за аугментация на челюстната кост, дентална имплантологична хирургия и хирургично лечение на челюстни кисти и тумори."
+    },
+    "dernekler": {
+      "tr": [],
+      "en": [],
+      "de": [],
+      "bg": []
+    }
+  },
+  {
+    "id": "yusuf-enes-celik",
+    "isim": "Dt. Yusuf Enes Çelik",
+    "resim": "/images/yusuf-enes-celik.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["estetik-dis-hekimligi", "endodonti", "dolgu", "kanal-tedavisi"],
+    "unvan": {
+      "tr": "Diş Hekimi",
+      "en": "Dentist",
+      "de": "Zahnarzt",
+      "bg": "Зъболекар"
+    },
+    "alt_unvan": {
+      "tr": "Estetik & Endodonti",
+      "en": "Aesthetics & Endodontics",
+      "de": "Ästhetik & Endodontie",
+      "bg": "Естетика и Ендодонтия"
+    },
+    "ozgecmis": {
+      "tr": "2000 yılında Van’da doğdu. 2018 yılında Çatalca Sınav Lisesinden mezun oldu. 2019 yılında kazandığı İstanbul Üniversitesi Diş Hekimliği Fakültesi’nden başarıyla mezun olup mesleğini sürdürmektedir. Çalışma alanları arasında Konservatif Tedavisi, Estetik Diş Hekimliği, Endodontik Tedavi ve Restoratif Diş Tedavisi bulunmaktadır.",
+      "en": "Born in Van in 2000. Graduated from Catalca Sinav High School in 2018. Successfully graduated from Istanbul University Faculty of Dentistry, which they entered in 2019, and continues their profession. Areas of practice include Conservative Treatment, Aesthetic Dentistry, Endodontic Treatment, and Restorative Dentistry.",
+      "de": "Geboren 2000 in Van. Abschluss an der Catalca Sinav High School im Jahr 2018. Erfolgreicher Abschluss an der Fakultät für Zahnmedizin der Universität Istanbul, an der er/sie 2019 das Studium begann. Zu den Arbeitsbereichen gehören konservative Behandlung, ästhetische Zahnheilkunde, endodontische Behandlung und restaurative Zahnheilkunde.",
+      "bg": "Роден във Ван през 2000 г. Завършва гимназия Чатълджа Сънав през 2018 г. Успешно завършва Факултета по дентална медицина на Истанбулския университет, в който постъпва през 2019 г. Областите на работа включват консервативно лечение, естетична дентална медицина, ендодонтско лечение и възстановителна дентална медицина."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği", "İstanbul Diş Hekimleri Odası"],
+      "en": ["Turkish Dental Association", "Istanbul Chamber of Dentists"],
+      "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
+      "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
+    }
+  },
+  {
+    "id": "cavlan-kutlu",
+    "isim": "Dt. Çavlan Kutlu",
+    "resim": "/images/cavlan-kutlu.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "all-on-four", "all-on-six", "kemik-ogmentasyonu"],
+    "unvan": {
+      "tr": "Ağız, Diş ve Çene Cerrahisi",
+      "en": "Oral & Maxillofacial Surgery",
+      "de": "Mund-, Kiefer- und Gesichtschirurgie",
+      "bg": "Орална и лицево-челюстна хирургия"
+    },
+    "alt_unvan": {
+      "tr": "Ağız, Çene ve Yüz Cerrahisi",
+      "en": "Oral and Maxillofacial Surgery",
+      "de": "Mund-, Kiefer- und Gesichtschirurgie",
+      "bg": "Орална и лицево-челюстна хирургия"
+    },
+    "ozgecmis": {
+      "tr": "1993 yılında İstanbul Bayrampaşa’da doğmuştur. Bezmialem Vakıf Üniversitesi Diş Hekimliği Fakültesi’nden 2018 yılında mezun olmuştur. 2023 yılında İstanbul Kent Üniversitesi Ağız, Çene ve Yüz Cerrahisi Anabilim Dalı’nda Doktora eğitimine başlamıştır. Cerrahi pratiğinde implant cerrahisi, kemik ogmentasyonu, All-On-4, All-On-6 ve travma yönetimi alanlarında hizmet vermektedir.",
+      "en": "Born in Bayrampasa, Istanbul in 1993. Graduated from Bezmialem Vakif University Faculty of Dentistry in 2018. Started his PhD education at Istanbul Kent University, Department of Oral and Maxillofacial Surgery in 2023. In his surgical practice, he provides services in implant surgery, bone augmentation, All-On-4, All-On-6, and trauma management.",
+      "de": "Geboren 1993 in Bayrampasa, Istanbul. Abschluss an der Fakultät für Zahnmedizin der Bezmialem Vakif Universität im Jahr 2018. Begann 2023 seine Promotion an der Abteilung für Mund-, Kiefer- und Gesichtschirurgie der Universität Istanbul Kent. In seiner chirurgischen Praxis bietet er Dienstleistungen in den Bereichen Implantatchirurgie, Knochenaugmentation, All-On-4, All-On-6 und Traumamanagement an.",
+      "bg": "Роден в Байрампаша, Истанбул през 1993 г. Завършва Факултета по дентална медицина на университета Безмиалем Вакъф през 2018 г. През 2023 г. започва докторантурата си в Катедрата по орална и лицево-челюстна хирургия към Истанбулския университет Кент. В хирургичната си практика предоставя услуги в областта на имплантологичната хирургия, костната аугментация, All-On-4, All-On-6 и лечението на травми."
+    },
+    "dernekler": {
+      "tr": [],
+      "en": [],
+      "de": [],
+      "bg": []
+    }
+  },
+  {
+    "id": "oytun-kutsal",
+    "isim": "Uzm. Dt. Oytun Kutsal",
+    "resim": "/images/oytun-kutsal.webp",
+    "klinikler": ["catalca"],
+    "uzmanlik_alanlari": ["protez", "zirkonyum", "lamine", "e-max", "implant-ustu-protez", "all-on-four", "total-protez"],
+    "unvan": {
+      "tr": "Protetik Diş Tedavisi Uzmanı",
+      "en": "Prosthodontics Specialist",
+      "de": "Facharzt für Prothetik",
+      "bg": "Специалист по протетична дентална медицина"
+    },
+    "alt_unvan": {
+      "tr": "Diş Protez Uzmanı",
+      "en": "Dental Prosthesis Specialist",
+      "de": "Spezialist für Zahnprothesen",
+      "bg": "Специалист по зъбни протези"
+    },
+    "ozgecmis": {
+      "tr": "1991 yılında Aydın'da doğmuştur. 2009 yılında Bornova Anadolu Lisesi'nden, 2015 yılında ise Ege Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. 2016 yılında İzmir Katip Çelebi Üniversitesi Protetik Diş Tedavisi Anabilim Dalı'nda başladığı doktora eğitimini 2022 yılında başarıyla tamamlayarak 'Dr. Dt.' unvanını almıştır. 2022-2024 yılları arasında aynı üniversitede öğretim görevlisi olarak akademik eğitim vermiştir. İlgi alanları arasında implant üstü restorasyonlar, zirkonyum, lamina, e-max, All-On-4, total protezler, hassas tutuculu ve bölümlü protezler ile vidalı ve simante protezler yer almaktadır. İyi derecede İngilizce bilen hekimimizin, uluslararası ve ulusal endeksler tarafından taranan saygın akademik makaleleri bulunmaktadır.",
+      "en": "Born in Aydın in 1991. He graduated from Bornova Anatolian High School in 2009 and Ege University Faculty of Dentistry in 2015. He completed his PhD program at Izmir Katip Celebi University, Department of Prosthodontics, between 2016 and 2022, earning the title of Dr. Dt. He worked as a lecturer at the same university from 2022 to 2024. His areas of expertise include implant-supported restorations, zirconium, laminate veneers, e-max, All-On-4, total prostheses, precision attachment and partial prostheses, as well as screw-retained and cemented prostheses. Fluent in English, he also has respected academic articles indexed by national and international databases.",
+      "de": "Geboren 1991 in Aydın. Er absolvierte 2009 das Bornova Anadolu Gymnasium und 2015 die Fakultät für Zahnmedizin der Ege Universität. Von 2016 bis 2022 absolvierte er sein Promotionsstudium in der Abteilung für Prothetik an der İzmir Katip Çelebi Universität und erwarb den Titel Dr. Dt. Zwischen 2022 und 2024 war er als Dozent an derselben Universität tätig. Zu seinen Fachgebieten gehören implantatgetragene Restaurationen, Zirkonium, Laminate Veneers, E-Max, All-On-4, Totalprothesen, Geschiebeprothesen und Teilprothesen sowie verschraubte und zementierte Prothesen. Der fließend Englisch sprechende Zahnarzt hat auch angesehene wissenschaftliche Artikel veröffentlicht, die in nationalen und internationalen Datenbanken gelistet sind.",
+      "bg": "Роден е в Айдън през 1991 г. Завършва Анадолската гимназия Борнова през 2009 г. и Факултета по дентална медицина на Егейския университет през 2015 г. Между 2016 и 2022 г. завършва докторантурата си в Катедрата по протетична дентална медицина на университета Измир Катип Челеби, придобивайки титлата Dr. Dt. От 2022 до 2024 г. работи като преподавател в същия университет. Областите му на експертиза включват възстановявания върху импланти, цирконий, ламинатни фасети, E-Max, All-On-4, тотални протези, протези със специални задържащи елементи и частични протези, както и винтови и циментирани протези. Владеещ английски език, той също така има редица уважавани академични статии, индексирани в национални и международни бази данни."
+    },
+    "dernekler": {
+      "tr": ["Türk Diş Hekimleri Birliği"],
+      "en": ["Turkish Dental Association"],
+      "de": ["Türkischer Zahnärzteverband"],
+      "bg": ["Турска дентална асоциация"]
+    }
+  },
+  {
+    "id": "ugur-tuna-sazlikoglu",
+    "isim": "Uzm. Dt. Uğur Tuna Sazlıkoğlu",
+    "resim": "/images/ugur-tuna-sazlikoglu.webp",
+    "klinikler": ["silivri"],
+    "uzmanlik_alanlari": ["protez", "lamine", "zirkonyum", "implant-ustu-protez", "tme-rahatsizliklari"],
+    "unvan": {
+      "tr": "Protetik Diş Tedavisi Uzmanı",
+      "en": "Prosthodontics Specialist",
+      "de": "Facharzt für Prothetik",
+      "bg": "Специалист по протетична дентална медицина"
+    },
+    "alt_unvan": {
+      "tr": "Diş Protez Uzmanı",
+      "en": "Dental Prosthesis Specialist",
+      "de": "Spezialist für Zahnprothesen",
+      "bg": "Специалист по зъбни протези"
+    },
+    "ozgecmis": {
+      "tr": "1993 Malatya doğumludur. 2018 yılında Gazi Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. 2022 yılında Selçuk Üniversitesi Diş Hekimliği Fakültesi Protetik Diş Tedavisi Anabilim Dalı'nda uzmanlık eğitimini tamamlamıştır. Kron-köprü tedavisi, implant üstü kronlar, TME rahatsızlıkları ve laminate veneerler başlıca ilgi alanlarıdır. Ulusal ve uluslararası kongrelerde sunulmuş çeşitli bilimsel makaleleri ve bildirileri bulunmaktadır.",
+      "en": "Born in Malatya in 1993. Graduated from Gazi University Faculty of Dentistry in 2018. Completed his specialization at Selcuk University Faculty of Dentistry, Department of Prosthodontics in 2022. His main areas of interest include crown-bridge treatments, implant-supported crowns, TMJ disorders, and laminate veneers. He has various scientific articles and papers presented at national and international congresses.",
+      "de": "Geboren 1993 in Malatya. Abschluss an der Fakultät für Zahnmedizin der Gazi-Universität im Jahr 2018. Spezialisierung 2022 an der Fakultät für Zahnmedizin der Selcuk-Universität in der Abteilung für Prothetik abgeschlossen. Zu seinen Hauptinteressensgebieten gehören Kronen-Brücken-Behandlungen, implantatgetragene Kronen, Kiefergelenkserkrankungen (CMD) und Laminate-Veneers. Er hat verschiedene wissenschaftliche Artikel und Vorträge auf nationalen und internationalen Kongressen präsentiert.",
+      "bg": "Роден в Малатия през 1993 г. Завършва Факултета по дентална медицина на университета Гази през 2018 г. Завършва специализацията си във Факултета по дентална медицина на университета Селчук, Катедра по протетична дентална медицина през 2022 г. Основните му интереси включват лечения с коронки и мостове, коронки върху импланти, заболявания на ТМС и ламинатни фасети. Има редица научни статии и доклади, представени на национални и международни конгреси."
+    },
+    "dernekler": {
+      "tr": [
+        "Türk Diş Hekimleri Birliği",
+        "Türk Prostodonti ve İmplantoloji Derneği"
+      ],
+      "en": [
+        "Turkish Dental Association",
+        "Turkish Prosthodontics and Implantology Association"
+      ],
+      "de": [
+        "Türkischer Zahnärzteverband",
+        "Türkische Gesellschaft für Prothetik und Implantologie"
+      ],
+      "bg": [
+        "Турска дентална асоциация",
+        "Турска асоциация по протетична дентална медицина и имплантология"
+      ]
+    }
+  }
+]

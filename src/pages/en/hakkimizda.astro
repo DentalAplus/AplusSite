@@ -1,0 +1,169 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+// SEO for the page title and description
+const pageTitle = "About Us | Dental Implant Clinic A Plus";
+const pageDescription = "We design healthy smiles with our expert staff of over 30 physicians, 2 modern clinics, and high-tech equipment in Silivri and Catalca.";
+---
+
+<MainLayout title={pageTitle}>
+  
+  <section class="relative py-24 md:py-32 bg-white overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hakkimizda-banner.webp');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-klinik-koyu/95 via-klinik-koyu/75 to-transparent z-0"></div> 
+    
+    <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-start text-left">
+      <div class="max-w-3xl">
+        <span class="inline-block bg-klinik-turuncu text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Who Are We?</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-2xl">
+          A Trusted Address For <br/><span class="text-klinik-yesil">Healthy Smiles</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
+          As A Plus Clinic, we provide services at international standards to protect your dental health and offer you the best treatment solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-klinik-yesil relative z-20 -mt-8 mx-4 md:mx-auto max-w-5xl rounded-3xl shadow-2xl">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x-0 md:divide-x border-white/20">
+        
+        <div class="flex flex-col items-center justify-center text-white">
+          <span class="text-4xl md:text-5xl font-extrabold mb-2">30+</span>
+          <span class="text-sm md:text-base font-medium opacity-90 uppercase tracking-wide">Expert Dentists</span>
+        </div>
+        
+        <div class="flex flex-col items-center justify-center text-white">
+          <span class="text-4xl md:text-5xl font-extrabold mb-2">2</span>
+          <span class="text-sm md:text-base font-medium opacity-90 uppercase tracking-wide">Modern Clinics</span>
+        </div>
+        
+        <div class="flex flex-col items-center justify-center text-white">
+          <span class="text-4xl md:text-5xl font-extrabold mb-2">15+</span>
+          <span class="text-sm md:text-base font-medium opacity-90 uppercase tracking-wide">Years Experience</span>
+        </div>
+        
+        <div class="flex flex-col items-center justify-center text-white">
+          <span class="text-4xl md:text-5xl font-extrabold mb-2">%100</span>
+          <span class="text-sm md:text-base font-medium opacity-90 uppercase tracking-wide">Patient Satisfaction</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-32 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+        
+        <div class="w-full lg:w-1/2 prose prose-lg prose-slate max-w-none">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-6 leading-tight">A Health Journey <br/><span class="text-klinik-turuncu">Aiming for Perfection</span></h2>
+          
+          <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+            Our starting goal as <strong>Dental Implant Clinic A Plus</strong> is to provide our patients with not just a dental treatment, but a transparent, comfortable, and professional healthcare experience where they feel safe. 
+          </p>
+          
+          <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+            Today, we are proud to be one of the leading oral and dental health centers in our region with our <strong>expert staff of over 30 physicians and our branches in two important locations of Istanbul (Silivri and Catalca).</strong> 
+          </p>
+          
+          <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+            In our clinic equipped with modern technologies, we blend aesthetics and health by creating customized treatment plans for each patient's individual needs. For us, success is that happy and confident smile on the face of every patient leaving the clinic.
+          </p>
+
+          <div class="bg-gray-50 border-l-4 border-klinik-yesil p-6 rounded-r-xl italic text-gray-700 font-medium">
+            "With the principle of trust and professionalism, we are the right address for your dental health and a perfect smile."
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 relative">
+          <img src="/images/hakkimizda-klinik.webp" alt="A Plus Clinic Modern Equipment" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl relative z-10" />
+          <img src="/images/hakkimizda-doktor.webp" alt="Our Expert Dentists" class="hidden md:block absolute -bottom-12 -left-12 w-64 h-64 object-cover rounded-3xl shadow-xl border-8 border-white z-20" />
+          <div class="absolute -top-6 -right-6 w-full h-full bg-klinik-yesil/10 rounded-3xl z-0"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50 border-t border-gray-100">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Why <span class="text-klinik-yesil">A Plus Clinic?</span></h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Our distinguishing features and treatment philosophy.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+          <div class="w-14 h-14 bg-klinik-turuncu/10 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-klinik-turuncu" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Modern Technology</h3>
+          <p class="text-gray-600 leading-relaxed">We use the latest dentistry technologies such as 3D tomography, digital impression (intraoral scanner), and laser systems in our diagnosis and treatments.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+          <div class="w-14 h-14 bg-klinik-yesil/10 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Extensive Expert Staff</h3>
+          <p class="text-gray-600 leading-relaxed">We offer complete services with over 30 specialist doctors in all branches such as oral and maxillofacial surgery, orthodontics, endodontics, and pediatric dentistry.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Trust and Transparency</h3>
+          <p class="text-gray-600 leading-relaxed">Without surprise prices or unnecessary treatments, we have adopted the principle of offering our patients the most accurate and honest treatment planning.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-24 bg-klinik-koyu text-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+    
+    <div class="container mx-auto px-4 max-w-4xl relative z-10">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Take the First Step For a <span class="text-klinik-turuncu">Healthy Smile</span></h2>
+      <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+        Contact us now to meet our expert physicians and take advantage of a free personalized examination.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="tel:+902124000013" class="w-full sm:w-auto px-8 py-4 bg-white text-klinik-koyu font-bold rounded-xl hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+          Book an Appointment
+        </a>
+        <a href="https://wa.me/902124000013" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-[#25D366] text-white font-bold rounded-xl hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829zM10.826 6.299c-.198-.444-.405-.453-.591-.462-.152-.007-.327-.008-.501-.008-.175 0-.457.066-.696.326-.239.261-.913.892-.913 2.176s.935 2.523 1.066 2.697c.13.174 1.84 2.808 4.456 3.907 1.838.772 2.28.618 2.671.583.391-.035 1.261-.515 1.435-1.013.174-.499.174-.925.122-1.013-.052-.087-.196-.14-.413-.248-.218-.109-1.284-.635-1.48-.707-.196-.073-.339-.109-.482.109-.144.218-.557.707-.683.85-.126.143-.252.163-.47.054-.218-.109-.916-.338-1.745-1.077-.645-.575-1.08-1.286-1.206-1.504-.126-.218-.014-.336.095-.445.098-.098.218-.253.326-.379.109-.126.145-.218.218-.361.072-.144.036-.271-.018-.38-.054-.109-.482-1.163-.661-1.593z" /></svg>
+          Ask via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
+      <div class="max-w-2xl">
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Legal Disclaimer</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          This website has been prepared solely for the purpose of informing patients, in full compliance with the Republic of Turkey Ministry of Health's "Regulation on Promotion and Information Activities in Health Services".
+        </p>
+      </div>
+      <div class="text-sm text-gray-400 text-left md:text-right">
+        <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
+        <p class="mb-1">Joint Call Center: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
+          <p class="mb-1 text-xs">Last Update: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Editor: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="h-16 md:hidden block"></div>
+
+</MainLayout>

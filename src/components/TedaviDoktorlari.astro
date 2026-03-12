@@ -1,0 +1,161 @@
+---
+// src/components/TedaviDoktorlari.astro
+import doktorlarData from '../data/doktorlar.json';
+
+const { tedavi = "" } = Astro.props;
+
+const pathname = Astro.url.pathname;
+const pathLang = pathname.split('/')[1]; 
+const currentLang = ['tr', 'en', 'de', 'bg'].includes(pathLang) ? pathLang : 'tr'; 
+
+const ui = {
+  tr: { title1: "Bu Tedaviyi Uygulayan", title2: "Hekimlerimiz", all: "Tümü" },
+  en: { title1: "Doctors Performing", title2: "This Treatment", all: "All" },
+  de: { title1: "Ärzte für diese", title2: "Behandlung", all: "Alle" },
+  bg: { title1: "Лекари, извършващи", title2: "това лечение", all: "Всички" }
+};
+const t = ui[currentLang];
+
+// --- KUSURSUZ FİLTRELEME MOTORU V6 (KATI KURALLAR) ---
+const ilgiliDoktorlar = doktorlarData.filter(doktor => {
+  if (!doktor.uzmanlik_alanlari) return false;
+  
+  const alanlar = doktor.uzmanlik_alanlari;
+  const unvanTr = doktor.unvan?.tr || "";
+  const altUnvanTr = doktor.alt_unvan?.tr || "";
+
+  // GENEL DİŞ HEKİMİ KONTROLÜ: (Sadece Diş Hekimi yazanlar. Uzmanlar ve Çocuk Hekimleri Hariç)
+  const isGenelHekim = unvanTr === 'Diş Hekimi' && !altUnvanTr.includes('Çocuk') && !alanlar.includes('pedodonti') && !unvanTr.includes('Protetik') && !unvanTr.includes('Ph.D.');
+
+  // 1. İLERİ ESTETİK VE PROTEZ GRUBU (Zirkonyum, Gülüş Tasarımı, Lamine, E-Max vs.)
+  const protezGrup = ['gulus-tasarimi', 'zirkonyum-disler', 'zirkonyum', 'porselen-lamina', 'lamine', 'empress-porselen', 'inley-onley', 'protez'];
+  if (protezGrup.includes(tedavi)) {
+    // SADECE Protez Uzmanları (veya Ph.D. olanlar)
+    if (unvanTr.includes('Protetik') || unvanTr.includes('Protez') || unvanTr.includes('Ph.D.')) return true;
+    return false;
+  }
+
+  // 2. İMPLANT VE CERRAHİ GRUBU
+  const cerrahiGrup = ['implantlar', 'implant', 'all-on-four', 'all-on-six', 'cene-cerrahisi'];
+  if (cerrahiGrup.includes(tedavi)) {
+    // SADECE Çene Cerrahları!
+    if (unvanTr.includes('Cerrahisi') || alanlar.includes('cene-cerrahisi')) return true;
+    return false;
+  }
+
+  // 3. KANAL TEDAVİSİ GRUBU
+  const kanalGrup = ['endodonti', 'kanal-tedavisi'];
+  if (kanalGrup.includes(tedavi)) {
+    // Endodonti Uzmanları VEYA Genel Diş Hekimleri
+    if (unvanTr.includes('Endodonti') || alanlar.includes('endodonti') || isGenelHekim) return true;
+    return false;
+  }
+
+  // 4. TEMEL İŞLEMLER (Dolgu, Beyazlatma)
+  const temelGrup = ['beyazlatma', 'dis-beyazlatma', 'estetik-dolgular', 'dolgu'];
+  if (temelGrup.includes(tedavi)) {
+    // SADECE Genel Diş Hekimleri yapabilir.
+    if (isGenelHekim) return true;
+    return false;
+  }
+
+  // 5. DİŞ ETİ HASTALIKLARI (Periodontoloji)
+  const disEtiGrup = ['periodontoloji', 'dis-eti-tedavisi', 'dis-tasi-temizligi'];
+  if (disEtiGrup.includes(tedavi)) {
+    // KATI KURAL: Sadece Periodontoloji Uzmanı Çıkacak
+    if (unvanTr.includes('Periodontoloji') || alanlar.includes('periodontoloji')) return true;
+    return false;
+  }
+
+  // 6. ÇOCUK DİŞ HEKİMLİĞİ (Pedodonti)
+  const cocukGrup = ['pedodonti', 'cocuk-dis-hekimligi'];
+  if (cocukGrup.includes(tedavi)) {
+    if (altUnvanTr.includes('Çocuk') || alanlar.includes('pedodonti')) return true;
+    return false;
+  }
+
+  // 7. Ortodonti
+  const ortodontiGrup = ['ortodonti', 'dis-teli', 'seffaf-plak'];
+  if (ortodontiGrup.includes(tedavi)) {
+     if (unvanTr.includes('Ortodonti') || alanlar.includes('ortodonti')) return true;
+     return false;
+  }
+
+  // Listede olmayan spesifik bir tedavi ise ve JSON'da doktora manuel yazılmışsa al:
+  if (alanlar.includes(tedavi)) return true;
+
+  return false;
+});
+---
+
+{ilgiliDoktorlar.length > 0 && (
+  <section class="py-16 bg-white border-t border-gray-100">
+    <div class="container mx-auto px-4 max-w-6xl">
+      
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-klinik-koyu">{t.title1}&nbsp;<span class="text-klinik-yesil">{t.title2}</span></h2>
+        </div>
+        
+        <div class="flex bg-gray-50 p-1 rounded-full border border-gray-200">
+          <button class="tedavi-filtre-btn px-5 py-1.5 rounded-full text-xs font-bold transition-all bg-klinik-yesil text-white shadow-sm" data-hedef="all">{t.all}</button>
+          <button class="tedavi-filtre-btn px-5 py-1.5 rounded-full text-xs font-bold transition-all text-gray-500 hover:text-klinik-koyu" data-hedef="silivri">Silivri</button>
+          <button class="tedavi-filtre-btn px-5 py-1.5 rounded-full text-xs font-bold transition-all text-gray-500 hover:text-klinik-koyu" data-hedef="catalca">Çatalca</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 tedavi-doktor-grid">
+        {ilgiliDoktorlar.map((doktor) => (
+          <a href={`/${currentLang}/doktorlar/${doktor.id}`} class="minimal-doktor-card group bg-gray-50 rounded-2xl p-4 text-center border border-gray-100 hover:border-klinik-yesil hover:shadow-md transition-all flex flex-col items-center justify-center cursor-pointer" data-klinikler={doktor.klinikler.join(',')}>
+            <div class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white shadow-sm overflow-hidden mb-3 border border-gray-200 group-hover:scale-105 transition-transform duration-300">
+              <img 
+                src={doktor.resim} 
+                alt={doktor.isim} 
+                class="w-full h-full object-cover"
+                onerror="this.src='/images/doktor-placeholder.webp';"
+              />
+            </div>
+            <h3 class="text-sm font-extrabold text-klinik-koyu leading-tight group-hover:text-klinik-yesil transition-colors">{doktor.isim}</h3>
+            
+            <p class="text-[10px] text-gray-500 font-bold mt-1 uppercase tracking-wider line-clamp-1">{doktor.unvan[currentLang]}</p>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </section>
+)}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.tedavi-filtre-btn');
+    const doctorCards = document.querySelectorAll('.minimal-doktor-card');
+
+    if(filterBtns.length > 0 && doctorCards.length > 0) {
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-klinik-yesil', 'text-white', 'shadow-sm');
+            b.classList.add('text-gray-500');
+          });
+
+          const target = e.currentTarget;
+          target.classList.remove('text-gray-500');
+          target.classList.add('bg-klinik-yesil', 'text-white', 'shadow-sm');
+
+          const branch = target.getAttribute('data-hedef');
+          
+          doctorCards.forEach(card => {
+            const htmlCard = card;
+            const klins = htmlCard.getAttribute('data-klinikler') || "";
+            if(branch === 'all' || klins.includes(branch)) {
+              htmlCard.style.display = 'flex';
+            } else {
+              htmlCard.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+  });
+</script>

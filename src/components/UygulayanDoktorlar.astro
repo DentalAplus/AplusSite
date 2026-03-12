@@ -1,0 +1,94 @@
+---
+// src/components/UygulayanDoktorlar.astro
+import doktorlarData from '../data/doktorlar.json';
+
+const { filtre_tipi = "", filtre_degeri = "" } = Astro.props;
+
+// 1. DİLİ OTOMATİK ALGILAMA MANTIĞI
+const pathname = Astro.url.pathname;
+const pathLang = pathname.split('/')[1]; 
+const currentLang = ['tr', 'en', 'de', 'bg'].includes(pathLang) ? pathLang : 'tr'; 
+
+// 2. SABİT METİNLER İÇİN ÇEVİRİ SÖZLÜĞÜ
+const ui = {
+  tr: { title1: "Kliniğimizin", title2: "Doktorları", desc: "Alanında tecrübeli ve uzman hekim kadromuzla sağlığınız güven ellerde.", btn: "Profili İncele" },
+  en: { title1: "Our Clinic's", title2: "Doctors", desc: "Your health is in safe hands with our experienced and expert medical staff.", btn: "View Profile" },
+  de: { title1: "Unsere", title2: "Ärzte", desc: "Mit unserem erfahrenen und kompetenten Ärzteteam ist Ihre Gesundheit in sicheren Händen.", btn: "Profil ansehen" },
+  bg: { title1: "Лекари в", title2: "Нашата Клиника", desc: "Вашето здраве е в сигурни ръце с нашия опитен и експертен медицински персонал.", btn: "Вижте профила" }
+};
+const t = ui[currentLang];
+
+// 3. FİLTRELEME MANTIĞI
+const filtrelenmisDoktorlar = doktorlarData.filter(doktor => {
+  if (!doktor) return false;
+  
+  const arananDeger = filtre_degeri.toLowerCase().trim();
+  
+  if (filtre_tipi === 'klinik') {
+    const klinikler = doktor.klinikler || [];
+    return klinikler.map(k => k.toLowerCase().trim()).includes(arananDeger);
+  } else if (filtre_tipi === 'tedavi') {
+    const alanlar = doktor.uzmanlik_alanlari || [];
+    return alanlar.map(a => a.toLowerCase().trim()).includes(arananDeger);
+  }
+  
+  return true; 
+});
+---
+
+<section class="py-16 bg-[#F8FAFC]">
+  <div class="container mx-auto px-4 max-w-6xl">
+    
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">
+        {t.title1} <span class="text-klinik-yesil">{t.title2}</span>
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        {t.desc}
+      </p>
+    </div>
+
+    {filtrelenmisDoktorlar.length === 0 ? (
+      <div class="bg-red-50 border-2 border-red-500 text-red-700 p-8 rounded-2xl text-center shadow-lg max-w-2xl mx-auto">
+        <h3 class="font-bold text-xl mb-2">⚠️ Sistem Uyarı Veriyor!</h3>
+        <p>Görünüşe göre girdiğiniz filtreleme şartlarına uyan bir doktor bulunamadı.</p>
+      </div>
+    ) : (
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filtrelenmisDoktorlar.map((doktor) => (
+          <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100 group hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 flex flex-col">
+            
+            <div class="h-80 bg-gray-100 relative overflow-hidden flex items-end justify-center">
+              <img 
+                src={doktor.resim} 
+                alt={doktor.isim} 
+                class="h-[90%] w-auto object-contain group-hover:scale-105 transition-transform duration-500 origin-bottom"
+                onerror="this.src='/images/doktor-placeholder.webp'; this.onerror=null;"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+
+            <div class="p-8 flex flex-col flex-grow">
+              <h3 class="text-2xl font-bold text-klinik-koyu mb-1">{doktor.isim}</h3>
+              
+              <p class="text-klinik-turuncu font-bold text-sm uppercase tracking-wider mb-4">
+                {doktor.unvan[currentLang]}
+              </p>
+              
+              <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
+                {doktor.ozgecmis[currentLang]}
+              </p>
+              
+              <a href={`/${currentLang}/doktorlar/${doktor.id}`} class="mt-auto flex items-center justify-center gap-2 w-full py-3 rounded-xl border-2 border-gray-200 text-gray-600 font-bold hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-colors">
+                {t.btn}
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+
+  </div>
+</section>

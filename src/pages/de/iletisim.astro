@@ -1,0 +1,247 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+// SEO ayarları
+const pageTitle = "İletişim & Randevu | Dental Implant Clinic A Plus";
+const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş tedavisi fiyatlarını öğrenmek veya online danışmanlık almak için hemen bizimle iletişime geçin.";
+---
+
+<MainLayout title={pageTitle}>
+  
+  <section class="relative py-20 md:py-28 bg-klinik-koyu overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/iletisim-banner.webp')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-klinik-koyu"></div>
+    
+    <div class="container mx-auto px-4 max-w-4xl relative z-10 text-center">
+      <div class="inline-flex items-center justify-center p-3 bg-white/10 rounded-full mb-6 backdrop-blur-md border border-white/20 shadow-xl">
+        <svg class="w-6 h-6 text-klinik-turuncu mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
+        <span class="text-white font-bold tracking-wide text-sm">Sizi Dinlemeye Hazırız</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
+        Bizimle İletişime <span class="text-klinik-yesil">Geçin</span>
+      </h1>
+      <p class="text-gray-300 text-lg md:text-xl font-light">
+        Randevu, online danışmanlık veya tedavi planlamalarınız için uzman hasta danışmanlarımız 7/24 yanınızda.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50 relative z-20 -mt-8 mx-4 md:mx-auto max-w-6xl rounded-3xl shadow-xl border border-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+      
+      <a href="tel:+902124000013" class="flex flex-col items-center text-center p-8 rounded-2xl bg-white hover:bg-blue-50 hover:border-blue-200 border border-transparent transition-all duration-300 group">
+        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Merkezi Çağrı Hattı</h3>
+        <p class="text-2xl font-extrabold text-blue-600">0212 400 00 13</p>
+        <span class="text-sm text-gray-500 mt-2">Tüm randevular için arayın</span>
+      </a>
+
+      <a href="https://wa.me/902124000013" target="_blank" class="flex flex-col items-center text-center p-8 rounded-2xl bg-white hover:bg-green-50 hover:border-green-200 border border-transparent transition-all duration-300 group relative overflow-hidden">
+        <div class="absolute top-0 right-0 bg-[#25D366] text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">7/24 AKTİF</div>
+        <div class="w-16 h-16 bg-green-100 text-[#25D366] rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829zM10.826 6.299c-.198-.444-.405-.453-.591-.462-.152-.007-.327-.008-.501-.008-.175 0-.457.066-.696.326-.239.261-.913.892-.913 2.176s.935 2.523 1.066 2.697c.13.174 1.84 2.808 4.456 3.907 1.838.772 2.28.618 2.671.583.391-.035 1.261-.515 1.435-1.013.174-.499.174-.925.122-1.013-.052-.087-.196-.14-.413-.248-.218-.109-1.284-.635-1.48-.707-.196-.073-.339-.109-.482.109-.144.218-.557.707-.683.85-.126.143-.252.163-.47.054-.218-.109-.916-.338-1.745-1.077-.645-.575-1.08-1.286-1.206-1.504-.126-.218-.014-.336.095-.445.098-.098.218-.253.326-.379.109-.126.145-.218.218-.361.072-.144.036-.271-.018-.38-.054-.109-.482-1.163-.661-1.593z" /></svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">WhatsApp Danışma</h3>
+        <p class="text-xl font-extrabold text-[#25D366]">Mesaj Gönder</p>
+        <span class="text-sm text-gray-500 mt-2">Ücretsiz röntgen değerlendirmesi</span>
+      </a>
+
+      <a href="mailto:bilgi@dentalimplanttrakya.com" class="flex flex-col items-center text-center p-8 rounded-2xl bg-white hover:bg-klinik-yesil/10 hover:border-klinik-yesil/30 border border-transparent transition-all duration-300 group">
+        <div class="w-16 h-16 bg-klinik-yesil/20 text-klinik-yesil rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+        </div>
+        <h3 class="font-bold text-gray-800 text-lg mb-2">Kurumsal E-Posta</h3>
+        <p class="text-base font-bold text-klinik-yesil break-all">bilgi@dentalimplanttrakya.com</p>
+        <span class="text-sm text-gray-500 mt-2">Resmi yazışmalar ve dosyalar için</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Şubelerimiz <span class="text-klinik-turuncu">ve Ulaşım</span></h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Size en yakın kliniğimizi seçerek konum bilgilerine ve harita tarifine ulaşabilirsiniz.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <div class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+          <div class="h-64 bg-gray-200 w-full relative">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.7883603221494!2d28.24461337655454!3d41.07361861539809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b5159973818045%3A0x2d957ba5a8e8324!2sDental%20Implant%20Clinic%20A%20Plus!5e0!3m2!1str!2str!4v1772007053890!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="absolute top-4 left-4 bg-klinik-koyu text-white text-xs font-bold px-3 py-1 rounded-md shadow-lg">MERKEZ ŞUBE</div>
+          </div>
+          <div class="p-8 flex flex-col grow">
+            <h3 class="text-2xl font-extrabold text-klinik-koyu mb-4 border-b border-gray-100 pb-4">Silivri Kliniği</h3>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-klinik-turuncu shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                <p class="text-gray-600 font-medium">Piri Mehmet Paşa Mah. Yemenciler Sok. No:13<br/>Halkbankası Yanı, Silivri / İstanbul</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-klinik-yesil shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <p class="text-gray-600 font-medium">Pzt - Cmt: <span class="font-bold text-klinik-koyu">09:00 - 19:00</span></p>
+              </div>
+            </div>
+            
+            <a href="/tr/klinikler/silivri" class="mt-auto w-full text-center bg-gray-50 hover:bg-klinik-yesil hover:text-white text-klinik-koyu border border-gray-200 font-bold py-3 rounded-xl transition-colors">Şubeyi İncele</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[2rem] shadow-xl border border-gray-100 overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+          <div class="h-64 bg-gray-200 w-full relative">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.499465276856!2d28.45660887655717!3d41.14545151096641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b545176c8fa55b%3A0x119928693d1b7112!2sDental%20Implant%20Clinic%20Trakya!5e0!3m2!1str!2str!4v1772116306949!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-8 flex flex-col grow">
+            <h3 class="text-2xl font-extrabold text-klinik-koyu mb-4 border-b border-gray-100 pb-4">Çatalca Kliniği</h3>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-klinik-turuncu shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                <p class="text-gray-600 font-medium">Karadeniz Caddesi No:14/b (1. Noter Yanı)<br/>Çatalca / İstanbul</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-[#25D366] shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829zM10.826 6.299c-.198-.444-.405-.453-.591-.462-.152-.007-.327-.008-.501-.008-.175 0-.457.066-.696.326-.239.261-.913.892-.913 2.176s.935 2.523 1.066 2.697c.13.174 1.84 2.808 4.456 3.907 1.838.772 2.28.618 2.671.583.391-.035 1.261-.515 1.435-1.013.174-.499.174-.925.122-1.013-.052-.087-.196-.14-.413-.248-.218-.109-1.284-.635-1.48-.707-.196-.073-.339-.109-.482.109-.144.218-.557.707-.683.85-.126.143-.252.163-.47.054-.218-.109-.916-.338-1.745-1.077-.645-.575-1.08-1.286-1.206-1.504-.126-.218-.014-.336.095-.445.098-.098.218-.253.326-.379.109-.126.145-.218.218-.361.072-.144.036-.271-.018-.38-.054-.109-.482-1.163-.661-1.593z" /></svg>
+                <p class="text-gray-600 font-medium">Özel WhatsApp: <a href="https://wa.me/905312873440" class="font-bold text-klinik-koyu hover:text-green-600">+90 (531) 287 34 40</a></p>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-klinik-yesil shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <p class="text-gray-600 font-medium">Pzt - Cmt: <span class="font-bold text-klinik-koyu">09:00 - 19:00</span></p>
+              </div>
+            </div>
+
+            <a href="/tr/klinikler/catalca" class="mt-auto w-full text-center bg-gray-50 hover:bg-klinik-yesil hover:text-white text-klinik-koyu border border-gray-200 font-bold py-3 rounded-xl transition-colors">Şubeyi İncele</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#F8FAFC]">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl border border-gray-100 relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-klinik-yesil/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-klinik-turuncu/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-klinik-koyu mb-3">Online <span class="text-klinik-yesil">Randevu Talebi</span></h2>
+                <p class="text-gray-600">Formu doldurun, uzman hasta danışmanlarımız size en kısa sürede dönüş yapsın.</p>
+            </div>
+
+            <form action='https://crm.zoho.eu/crm/WebToLeadForm' name='WebToLeads821351000022557341' method='POST' accept-charset='UTF-8' class="space-y-6">
+                
+                <input type='text' style='display:none;' name='xnQsjsdp' value='a836530a32ce19fae67b1aec795737d9bbcfb548068b4df9970e4a9b456c7615'>
+                <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+                <input type='text' style='display:none;' name='xmIwtLD' value='0f489dd25dd3185d56c26b2aca17fe74d5f8bfd50674c575e783ab4ab1271ec1ef6764ef7730c476b63db28a30c9d009'>
+                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+                <input type='text' style='display:none;' name='returnURL' value='https://www.dentalimplanttrakya.com/tesekkurler'> 
+                <input type='text' style='display:none;' name='aG9uZXlwb3Q' value=''>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Adınız Soyadınız *</label>
+                        <input type="text" name="Last Name" placeholder="Adınız Soyadınız" required maxlength="80" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Cep Telefonunuz *</label>
+                         <input type="tel" name="Mobile" placeholder="05XX XXX XX XX" required maxlength="30" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white" />
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Uygun Klinik</label>
+                        <select name="LEADCF5" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white text-gray-700 appearance-none">
+                            <option value="-None-">- Farketmez / Danışmak İstiyorum -</option>
+                            <option value="Silivri">Silivri</option>
+                            <option value="&Ccedil;atalca">Çatalca</option>
+                            <option value="B&uuml;y&uuml;k&ccedil;ekmece">Büyükçekmece</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">İlgilendiğiniz Hizmetler</label>
+                        <select name="LEADCF2" class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white text-gray-700 appearance-none">
+                            <option value="Genel&#x20;Muayene">Genel Muayene</option>
+                            <option value="&#x130;mplant">İmplant</option>
+                            <option value="Hollywood&#x20;Smile">Hollywood Smile</option>
+                            <option value="All&#x20;on&#x20;Four">All on Four</option>
+                            <option value="Zirkonyum">Zirkonyum</option>
+                            <option value="Porselen">Porselen</option>
+                            <option value="Laminate&#x20;Veneer">Laminate Veneer</option>
+                            <option value="Dolgu">Dolgu</option>
+                            <option value="Kanal&#x20;Tedavisi">Kanal Tedavisi</option>
+                            <option value="Di&#x15f;&#x20;Beyazlatma">Diş Beyazlatma</option>
+                            <option value="Di&#x15f;&#x20;Temizleme">Diş Temizleme</option>
+                            <option value="Di&#x15f;&#x20;&Ccedil;ekimi">Diş Çekimi</option>
+                            <option value="Ortodonti">Ortodonti</option>
+                            <option value="Periodontoloji">Periodontoloji</option>
+                            <option value="&Ccedil;ocuk&#x20;Muayene">Çocuk Muayene</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Mesajınız / Şikayetiniz</label>
+                     <textarea name="Description" rows="4" placeholder="Nasıl yardımcı olabiliriz? Hastalığınızı veya şikayetinizi kısaca özetleyebilirsiniz." class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white resize-none"></textarea>
+                </div>
+
+                <div class="flex items-start gap-3 mt-2">
+                    <input type="checkbox" id="kvkk" required class="mt-1 w-4 h-4 text-klinik-yesil bg-gray-100 border-gray-300 rounded focus:ring-klinik-yesil focus:ring-2 cursor-pointer">
+                    <label for="kvkk" class="text-sm text-gray-500 cursor-pointer">
+                        <a href="#" class="text-klinik-yesil hover:underline font-semibold">Kişisel Verilerin Korunması (KVKK) Metni'ni</a> okudum, onaylıyorum.
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-klinik-koyu text-white font-extrabold py-5 rounded-xl hover:bg-klinik-yesil hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-2 text-lg mt-4">
+                    Talebi Gönder
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
+                </button>
+            </form>
+
+            <script id='wf_anal' src='https://crm.zohopublic.eu/crm/WebFormAnalyticsServeServlet?rid=59934bf56264a438515808c987c8878df0072da4db42a522a978e5d3d35379e912f428b616e898159514fda7e91d8e87gidfbcf60f7df4aee4f51e0e6d769602a4e42b4a5947839d03f465a408f575dba9egid3db143947072a17f7996a7083bf38c9cc09fa6fd1c4805376c8e3061a908cb40gidf7cc46112fa8198aa0061fa71c36d5fdadbd8f388e80a848b34945fe90812ccc&tw=75b31b79dcecf67669f9ba84b95bdc41c1c6767082c1659bd21b32616c57306f'></script>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
+      <div class="max-w-2xl">
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+        </p>
+      </div>
+      <div class="text-sm text-gray-400 text-left md:text-right">
+        <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
+        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
+          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="h-16 md:hidden block"></div>
+  
+  <div class="hidden md:flex flex-col fixed bottom-8 left-8 z-[100] gap-4">
+    <a href="tel:+902124000013" class="bg-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-blue-700 transition-all duration-300 flex items-center justify-center group relative">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.864-1.051l-3.215-.536a2.25 2.25 0 0 0-2.15.586l-1.48 1.48a18.04 18.04 0 0 1-7.143-7.143l1.48-1.48a2.25 2.25 0 0 0 .586-2.15l-.536-3.215A2.25 2.25 0 0 0 7.372 2.25H6.002c-1.243 0-2.25 1.007-2.25 2.25Z" /></svg>
+      <span class="absolute left-16 bg-gray-900 text-white px-3 py-1.5 rounded-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">Hemen Ara</span>
+    </a>
+    <a href="https://wa.me/902124000013" target="_blank" class="bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-green-600 transition-all duration-300 flex items-center justify-center group relative">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829zM10.826 6.299c-.198-.444-.405-.453-.591-.462-.152-.007-.327-.008-.501-.008-.175 0-.457.066-.696.326-.239.261-.913.892-.913 2.176s.935 2.523 1.066 2.697c.13.174 1.84 2.808 4.456 3.907 1.838.772 2.28.618 2.671.583.391-.035 1.261-.515 1.435-1.013.174-.499.174-.925.122-1.013-.052-.087-.196-.14-.413-.248-.218-.109-1.284-.635-1.48-.707-.196-.073-.339-.109-.482.109-.144.218-.557.707-.683.85-.126.143-.252.163-.47.054-.218-.109-.916-.338-1.745-1.077-.645-.575-1.08-1.286-1.206-1.504-.126-.218-.014-.336.095-.445.098-.098.218-.253.326-.379.109-.126.145-.218.218-.361.072-.144.036-.271-.018-.38-.054-.109-.482-1.163-.661-1.593z" /></svg>
+      <span class="absolute left-16 bg-gray-900 text-white px-3 py-1.5 rounded-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">WhatsApp Destek</span>
+    </a>
+  </div>
+
+</MainLayout>

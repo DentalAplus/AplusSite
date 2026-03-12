@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-klinik-turuncu: #f26522;
+  --color-klinik-yesil: #00a651;
+  --color-klinik-koyu: #3a3a3c;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-color: #ffffff;
+}

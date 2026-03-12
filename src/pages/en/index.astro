@@ -1,0 +1,348 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import doktorlarData from '../../data/doktorlar.json';
+
+// LANGUAGE DETECTION LOGIC
+const pathname = Astro.url.pathname;
+const pathLang = pathname.split('/')[1]; 
+const currentLang = ['tr', 'en', 'de', 'bg'].includes(pathLang) ? pathLang : 'tr'; 
+
+// TRANSLATION DICTIONARY
+const ui = {
+  tr: { profileBtn: "Profili İncele", allTreatments: "Tüm Tedavilerimizi İnceleyin", explore: "Kliniğimizi Keşfedin", review: "TEDAVİYİ İNCELE", quickLine: "Fast Info Line" },
+  en: { profileBtn: "View Profile", allTreatments: "View All Treatments", explore: "Explore Our Clinic", review: "VIEW TREATMENT", quickLine: "Fast Info Line" },
+  de: { profileBtn: "Profil Ansehen", allTreatments: "Alle Behandlungen ansehen", explore: "Entdecken Sie unsere Klinik", review: "BEHANDLUNG ANSEHEN", quickLine: "Schnell-Info" },
+  bg: { profileBtn: "Вижте профила", allTreatments: "Вижте всички лечения", explore: "Разгледайте нашата клиника", review: "ВИЖТЕ ЛЕЧЕНИЕТО", quickLine: "Бърза линия" }
+};
+const t = ui[currentLang];
+---
+
+<MainLayout title="Home">
+  
+  <section class="relative h-[600px] md:h-[700px] overflow-hidden flex-grow group">
+    
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100 z-10" id="slide-1">
+      <div class="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[10000ms] ease-linear group-hover:scale-100" style="background-image: url('/images/ana-banner.webp');"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-klinik-koyu/80 via-klinik-koyu/40 to-transparent z-0"></div>
+      <div class="container mx-auto max-w-6xl h-full flex flex-col justify-center text-left relative z-10 px-6">
+        <div class="max-w-2xl">
+          <span class="inline-block bg-klinik-yesil text-white px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase">Global Health Standards</span>
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-white">
+            Global Standards <br/><span class="text-klinik-yesil">In Your Smile</span>
+          </h1>
+          <p class="text-base md:text-xl text-gray-100 mb-8 max-w-lg leading-relaxed">
+            At our Silivri and Çatalca branches, we stand by you with our internationally certified medical staff. Flawless planning with modern aesthetic solutions.
+          </p>
+          <div class="flex flex-wrap gap-4 items-center">
+              <a href="https://wa.me/902124000013" target="_blank" class="bg-klinik-yesil text-white font-bold py-4 px-8 rounded-full shadow-xl hover:bg-green-700 transition-all text-base">
+                  WHATSAPP APPOINTMENT
+              </a>
+              <div class="flex flex-col">
+                <span class="text-white font-bold text-lg">+90 212 400 00 13</span>
+                <span class="text-gray-300 text-[10px] uppercase tracking-wider">{t.quickLine}</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 z-0" id="slide-2">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/ana-banner2.webp');"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-0"></div> 
+      <div class="container mx-auto max-w-6xl h-full flex flex-col justify-center text-left relative z-10 px-6">
+        <div class="max-w-2xl">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight text-white">
+              Natural Beauty, <br/><span class="text-klinik-yesil">Lasting Aesthetics</span>
+            </h2>
+            <p class="text-base md:text-lg text-gray-200 mb-8 max-w-lg leading-relaxed">
+                Achieve your dream smile with the light translucency and durability of Zirconium. Personalized restorations with digital design technology.
+            </p>
+            <a href={`/${currentLang}/treatments/zirconium-crowns`} class="inline-block bg-klinik-turuncu text-white font-bold py-4 px-8 rounded-full shadow-xl hover:bg-orange-600 transition-all text-base">
+                {t.review}
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-6 z-30 flex gap-2">
+        <button class="w-10 h-1 rounded-full bg-white transition-all" id="dot-1"></button>
+        <button class="w-10 h-1 rounded-full bg-white/30 transition-all" id="dot-2"></button>
+    </div>
+  </section>
+
+  <script>
+    let currentSlide = 1;
+    const slide1 = document.getElementById('slide-1');
+    const slide2 = document.getElementById('slide-2');
+    const dot1 = document.getElementById('dot-1');
+    const dot2 = document.getElementById('dot-2');
+
+    function showSlide(slideNumber) {
+        if (slideNumber === 1) {
+            if(slide1) { slide1.style.opacity = '1'; slide1.style.zIndex = '10'; }
+            if(slide2) { slide2.style.opacity = '0'; slide2.style.zIndex = '0'; }
+            if(dot1) dot1.classList.replace('bg-white/40', 'bg-white');
+            if(dot2) dot2.classList.replace('bg-white', 'bg-white/40');
+        } else {
+            if(slide1) { slide1.style.opacity = '0'; slide1.style.zIndex = '0'; }
+            if(slide2) { slide2.style.opacity = '1'; slide2.style.zIndex = '10'; }
+            if(dot1) dot1.classList.replace('bg-white', 'bg-white/40');
+            if(dot2) dot2.classList.replace('bg-white/40', 'bg-white');
+        }
+    }
+
+    setInterval(() => {
+        currentSlide = currentSlide === 1 ? 2 : 1;
+        showSlide(currentSlide);
+    }, 6000); 
+  </script>
+
+  <section class="py-20 md:py-32 bg-white overflow-hidden">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+        <div class="w-full lg:w-1/2 relative">
+          <div class="absolute -inset-4 bg-klinik-yesil/10 rounded-3xl transform -rotate-3 z-0"></div>
+          <img src="/images/ana-banner.webp" alt="Personalized Dental Treatment" class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-cover aspect-[4/3]" />
+          <div class="absolute -bottom-8 -right-4 md:-right-8 bg-white p-6 rounded-2xl shadow-xl z-20 border-t-4 border-klinik-turuncu">
+            <p class="text-4xl font-extrabold text-klinik-koyu mb-1">A+</p>
+            <p class="text-sm text-gray-500 font-bold uppercase tracking-wider">Premium Quality</p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 relative z-10 text-left">
+          <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-4 block">A Plus Approach</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu mb-6 leading-tight">
+            Every Smile Is <br><span class="text-klinik-yesil">Custom Planned</span>
+          </h2>
+          <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+            We listen to you in detail; carefully analyzing your facial features, bone structure, and expectations with our modern 3D Tomography devices.
+          </p>
+          <p class="text-gray-600 text-lg mb-10 leading-relaxed">
+            We design a treatment process unique to you and your anatomical structure. In our fully equipped center serving at international standards, our priority is always your health and comfort.
+          </p>
+          <ul class="space-y-5 mb-10">
+            <li class="flex items-center gap-4 text-klinik-koyu font-semibold text-lg text-left">
+              <div class="bg-klinik-yesil/10 p-2 rounded-full text-klinik-yesil flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              Aesthetic Planning Compatible with Facial Features
+            </li>
+            <li class="flex items-center gap-4 text-klinik-koyu font-semibold text-lg text-left">
+              <div class="bg-klinik-yesil/10 p-2 rounded-full text-klinik-yesil flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              Implant Treatment Suitable for Personal Bone Structure
+            </li>
+            <li class="flex items-center gap-4 text-klinik-koyu font-semibold text-lg text-left">
+              <div class="bg-klinik-yesil/10 p-2 rounded-full text-klinik-yesil flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              Maximum Patient Comfort and Detailed Information
+            </li>
+          </ul>
+          <a href={`/${currentLang}/about-us`} class="inline-flex items-center gap-2 bg-white text-klinik-koyu border-2 border-gray-200 font-bold py-4 px-8 rounded-full shadow-sm hover:border-klinik-turuncu hover:text-klinik-turuncu transition-all duration-300">
+            {t.explore} 
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50 border-t border-gray-100">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="text-center mb-16">
+        <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-3 block text-center">Our Expertise</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu mb-4 text-center">
+          Personalized <span class="text-klinik-yesil">Treatment Options</span>
+        </h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto text-center">
+          With modern technology and our expert medical staff, we create the most suitable treatment plan for your needs together.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href={`/${currentLang}/treatments/implants`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+          <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
+            <img src="/icons/implant.svg" alt="Implant" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Implant Treatment</h3>
+          <p class="text-gray-500 mb-8 flex-grow">We complete your missing teeth with titanium or zirconium roots using 3D planning specific to your jaw structure.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detailed Info</div>
+          <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </a>
+
+        <a href={`/${currentLang}/treatments/smile-design`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+          <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
+            <img src="/icons/gulus.svg" alt="Smile" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Smile Design</h3>
+          <p class="text-gray-500 mb-8 flex-grow">We digitally design the most aesthetic smile suitable for your facial features, age, and gender.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detailed Info</div>
+          <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </a>
+
+        <a href={`/${currentLang}/treatments/zirconium-crowns`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+          <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
+            <img src="/icons/zirkonyum.svg" alt="Zirconium" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Zirconium Crowns</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Durable crowns that offer the closest appearance to your natural teeth thanks to their light translucency.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detailed Info</div>
+          <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </a>
+
+        <a href={`/${currentLang}/treatments/aesthetic-dentistry`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+          <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
+            <img src="/icons/estetik.svg" alt="Aesthetic" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Aesthetic Fillings & Veneers</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Porcelain veneers and aesthetic composite restorations applied with minimum intervention to the tooth structure.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detailed Info</div>
+          <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </a>
+
+        <a href={`/${currentLang}/treatments/orthodontics`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+          <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
+            <img src="/icons/ortodonti.svg" alt="Orthodontics" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Invisalign (Clear Aligners)</h3>
+          <p class="text-gray-500 mb-8 flex-grow">An alternative to classic braces; aesthetic tooth alignment with invisible clear aligners.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detailed Info</div>
+          <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </a>
+
+        <a href={`/${currentLang}/treatments/oral-surgery`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+          <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
+            <img src="/icons/cerrahi.svg" alt="Surgery" class="w-full h-full object-contain" />
+          </div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Oral & Maxillofacial Surgery</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Impacted wisdom teeth, cyst operations, and advanced surgical procedures are managed by expert doctors.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detailed Info</div>
+          <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </a>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href={`/${currentLang}/treatments`} class="inline-flex items-center gap-2 bg-white text-klinik-koyu border-2 border-gray-200 font-bold py-4 px-8 rounded-full shadow-sm hover:border-klinik-turuncu hover:text-klinik-turuncu transition-all duration-300">
+          {t.allTreatments}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white border-t border-gray-100 overflow-hidden relative">
+    <div class="absolute right-0 top-0 w-1/3 h-full bg-klinik-yesil/5 rounded-l-[100px] -z-10"></div>
+    <div class="container mx-auto px-4 max-w-7xl relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+        <div class="text-left">
+          <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-3 block">Our Expert Team</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu">Our Doctors</h2>
+        </div>
+        <div class="flex bg-gray-100 p-1.5 rounded-full border border-gray-200 shadow-inner">
+          <button id="filterAll" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all bg-klinik-yesil text-white shadow-md">All</button>
+          <button id="filterSilivri" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Silivri</button>
+          <button id="filterCatalca" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Çatalca</button>
+        </div>
+      </div>
+      <div id="doctorsSlider" class="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 pt-4 -mx-4 px-4 md:mx-0 md:px-0 scroll-smooth cursor-grab active:cursor-grabbing relative z-10">
+        {doktorlarData.map((doktor) => (
+          <div class="doctor-card min-w-[280px] md:min-w-[320px] snap-start bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 flex flex-col group hover:-translate-y-2 transition-all duration-300" data-klinikler={doktor.klinikler.join(',')}>
+            <div class="h-[300px] bg-gray-100 relative overflow-hidden flex items-end justify-center pointer-events-none">
+              <img src={doktor.resim} alt={doktor.isim} class="h-[95%] w-auto object-contain group-hover:scale-105 transition-transform duration-500 origin-bottom" onerror="this.src='/images/doktor-placeholder.webp';" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow text-left">
+              <h3 class="text-xl font-extrabold text-klinik-koyu mb-1">{doktor.isim}</h3>
+              
+              <p class="text-klinik-turuncu font-bold text-sm mb-3 uppercase tracking-wider">{doktor.unvan[currentLang]}</p>
+              
+              <div class="flex gap-2 mb-5">
+                {doktor.klinikler.map(k => (
+                  <span class={`px-3 py-1 text-[10px] font-bold rounded-full uppercase tracking-widest ${k === 'silivri' ? 'bg-blue-50 text-blue-700' : 'bg-orange-50 text-orange-700'}`}>{k}</span>
+                ))}
+              </div>
+              <a href={`/${currentLang}/doctors/${doktor.id}`} class="mt-auto inline-flex items-center gap-2 text-gray-500 font-bold hover:text-klinik-yesil transition-colors group/link cursor-pointer relative z-20">
+                {t.profileBtn} <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="flex justify-center gap-4 mt-8 relative z-10">
+        <button id="slideLeftBtn" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-all shadow-md bg-white">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+        </button>
+        <button id="slideRightBtn" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-all shadow-md bg-white">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-[#F8FAFC]">
+    <div class="container mx-auto px-4 max-w-7xl">
+        <div class="bg-white rounded-[40px] p-8 md:p-16 shadow-sm border border-gray-100 flex flex-col lg:flex-row gap-16 items-start">
+            <div class="w-full lg:w-1/2 text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1E293B] leading-tight mb-8">
+                    Providing 100% Original Certified,<br /><span class="text-[#334155]">Guaranteed</span> Implants to You
+                </h2>
+                <p class="text-gray-500 mb-6 text-sm md:text-base">As Dental Implant Clinic A Plus Oral and Dental Health Polyclinic, we offer Turkey's most affordable implant solutions.</p>
+                <ul class="space-y-2 mb-8 text-[#1E293B] font-medium text-sm md:text-base">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Our Straumann implants are 40,000 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Our Bego implants are 9,500 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Our Nobel implants are 30,750 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Our Medentika implants are 14,000 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Our Medigma implants are 7,000 ₺</li>
+                </ul>
+                <a href="https://wa.me/902124000013" target="_blank" class="inline-flex items-center gap-4 bg-[#212E3D] text-white pl-2 pr-8 py-2 rounded-xl font-bold hover:bg-black transition-all shadow-xl group">
+                    <div class="bg-[#5C8AB4] p-3 rounded-lg group-hover:bg-klinik-yesil transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    </div>
+                    Inquire Original Implant Product
+                </a>
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col">
+                {[
+                    { name: 'Straumann Implant', logo: 'straumann.svg' },
+                    { name: 'Bego Implant', logo: 'bego.svg' },
+                    { name: 'Nobel Biocare Implant', logo: 'nobel.svg' },
+                    { name: 'Medentika Implant', logo: 'medentika.svg' },
+                    { name: 'Medigma Implant', logo: 'medigma.svg' }
+                ].map((brand) => (
+                    <div class="flex items-center justify-start gap-8 py-6 border-b border-gray-100 last:border-0 hover:bg-gray-50 px-4 transition-colors group">
+                        <img src={`/icons/${brand.logo}`} alt={brand.name} class="h-8 md:h-10 w-28 md:w-32 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <span class="text-lg md:text-xl font-medium text-[#475569]">{brand.name}</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8 text-left">
+      <div class="max-w-2xl text-left">
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Legal Information</h3>
+        <p class="text-sm text-gray-300 leading-relaxed text-left">
+          This website has been prepared for information purposes only, in full compliance with the rules of the T.R. Ministry of Health.
+        </p>
+      </div>
+      <div class="text-sm text-gray-400 text-left md:text-right">
+        <p class="mb-2 text-white font-semibold text-left md:text-right">Dental Implant Clinic A Plus</p>
+        <p class="mb-1 text-left md:text-right">Shared Call Center: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
+          <p class="mb-1 text-xs">Last Update: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Editor: <a href="mailto:info@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">info@dentalimplanttrakya.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="h-16 md:hidden block"></div>
+
+</MainLayout>
+
+<style>
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

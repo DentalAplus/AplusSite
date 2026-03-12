@@ -1,0 +1,296 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+// SEO ayarları
+const pageTitle = "Size Özel Tedavi Fiyat Listesi | Yüceler A+ Klinik";
+const pageDescription = "Dental Implant Clinic A Plus - Hastalarımıza özel güncel diş tedavi, implant ve estetik kaplama fiyat listemiz.";
+---
+
+<MainLayout title={pageTitle}>
+  
+  <section class="relative py-20 md:py-28 bg-klinik-koyu overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/images/fiyat-listesi-banner.webp')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-klinik-koyu"></div>
+    
+    <div class="container mx-auto px-4 max-w-4xl relative z-10 text-center">
+      <div class="inline-flex items-center justify-center p-3 bg-white/10 rounded-full mb-6 backdrop-blur-md border border-white/20 shadow-xl">
+        <svg class="w-6 h-6 text-klinik-turuncu mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+        <span class="text-white font-bold tracking-wide text-sm">Size Özel Ayrıcalıklı Fiyatlar</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
+        Güncel Tedavi <br /> <span class="text-klinik-yesil">Fiyat Listesi</span>
+      </h1>
+      <p class="text-gray-300 text-lg md:text-xl font-light">
+        Dental Implant Clinic A Plus güvencesiyle; şeffaf, sürprizsiz ve en yüksek kalite standartlarında hazırlanan net fiyatlarımız.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-[#F8FAFC]">
+    <div class="container mx-auto px-4 max-w-6xl space-y-20">
+
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+            <div class="w-12 h-1 bg-klinik-turuncu rounded-full"></div>
+            <h2 class="text-3xl font-extrabold text-klinik-koyu">Premium <span class="text-klinik-turuncu">Paketler</span></h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="relative rounded-[2rem] p-8 md:p-10 text-white overflow-hidden shadow-2xl group hover:-translate-y-2 transition-transform duration-300 bg-gray-900 min-h-[350px] flex flex-col justify-end">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('/images/hollywood-paket.webp');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                
+                <div class="relative z-10 flex flex-col h-full">
+                    <span class="inline-block self-start px-4 py-1 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold tracking-widest uppercase mb-auto border border-white/20 shadow-sm">Estetik Zirvesi</span>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-3xl font-bold mb-1 text-white drop-shadow-md">Hollywood Smile</h3>
+                        <p class="text-gray-300 font-medium mb-4 drop-shadow-md">16 Adet Alman Zirkonyum Kaplama</p>
+                        <div class="flex items-end gap-2">
+                            <span class="text-5xl font-extrabold text-klinik-turuncu drop-shadow-lg">99.000</span>
+                            <span class="text-2xl font-bold text-gray-300 mb-1">₺</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative rounded-[2rem] p-8 md:p-10 text-white overflow-hidden shadow-2xl group hover:-translate-y-2 transition-transform duration-300 bg-slate-900 min-h-[350px] flex flex-col justify-end">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('/images/allon6-paket.webp');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                
+                <div class="relative z-10 flex flex-col h-full">
+                    <span class="inline-block self-start px-4 py-1 bg-klinik-yesil/80 backdrop-blur-md rounded-full text-xs font-bold tracking-widest uppercase mb-auto border border-white/20 shadow-sm">Tam Dişsizlik Çözümü</span>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-3xl font-bold mb-1 text-white drop-shadow-md">All On 6 Full Ağız</h3>
+                        <p class="text-gray-300 font-medium mb-4 drop-shadow-md">12 Alman İmplant + 24 Zirkonyum Diş</p>
+                        <div class="flex items-end gap-2">
+                            <span class="text-5xl font-extrabold text-white drop-shadow-lg">190.000</span>
+                            <span class="text-2xl font-bold text-gray-300 mb-1">₺</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-4 mb-8">
+            <div class="w-12 h-1 bg-klinik-yesil rounded-full"></div>
+            <h2 class="text-3xl font-extrabold text-klinik-koyu">Diş <span class="text-klinik-yesil">İmplantları</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center relative overflow-hidden group hover:border-klinik-yesil transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                <div class="absolute top-0 right-0 bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl shadow-sm flex items-center gap-2 border-b border-l border-gray-200">
+                   <img src="https://flagcdn.com/de.svg" alt="Almanya" class="w-4 h-4 object-cover rounded-full" /> Almanya
+                </div>
+                
+                <div class="h-16 flex items-center justify-center mb-6 mt-4">
+                    <img src="/icons/medigma.svg" alt="Medigma İmplant" class="max-h-full max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Medigma İmplant</h3>
+                <div class="mt-auto pt-6 border-t border-gray-100 w-full flex flex-col items-center">
+                    <span class="text-gray-400 line-through text-sm font-semibold mb-1">14.000 ₺</span>
+                    <span class="text-3xl font-extrabold text-klinik-yesil">7.000 <span class="text-xl">₺</span></span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center relative overflow-hidden group hover:border-klinik-yesil transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                 <div class="absolute top-0 right-0 bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl shadow-sm flex items-center gap-2 border-b border-l border-gray-200">
+                    <img src="https://flagcdn.com/de.svg" alt="Almanya" class="w-4 h-4 object-cover rounded-full" /> Almanya
+                 </div>
+
+                <div class="h-16 flex items-center justify-center mb-6 mt-4">
+                    <img src="/icons/bego.svg" alt="Bego İmplant" class="max-h-full max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Bego İmplant</h3>
+                <div class="mt-auto pt-6 border-t border-gray-100 w-full flex flex-col items-center">
+                    <span class="text-gray-400 line-through text-sm font-semibold mb-1">18.000 ₺</span>
+                    <span class="text-3xl font-extrabold text-klinik-yesil">9.500 <span class="text-xl">₺</span></span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center relative overflow-hidden group hover:border-klinik-yesil transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                 <div class="absolute top-0 right-0 bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl shadow-sm flex items-center gap-2 border-b border-l border-gray-200">
+                    <img src="https://flagcdn.com/de.svg" alt="Almanya" class="w-4 h-4 object-cover rounded-full" /> Almanya
+                 </div>
+
+                <div class="h-16 flex items-center justify-center mb-6 mt-4">
+                    <img src="/icons/medentika.svg" alt="Medentika İmplant" class="max-h-full max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Medentika İmplant</h3>
+                <div class="mt-auto pt-6 border-t border-gray-100 w-full flex flex-col items-center">
+                    <span class="text-gray-400 line-through text-sm font-semibold mb-1">21.000 ₺</span>
+                    <span class="text-3xl font-extrabold text-klinik-yesil">14.000 <span class="text-xl">₺</span></span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 flex flex-col items-center text-center relative overflow-hidden group hover:border-klinik-turuncu transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                 <div class="absolute top-0 right-0 bg-klinik-turuncu text-white text-xs font-bold px-3 py-1.5 rounded-bl-xl shadow-md flex items-center gap-2">
+                    <img src="https://flagcdn.com/ch.svg" alt="İsviçre" class="w-4 h-4 object-cover rounded-full border border-white/20" /> İsviçre
+                 </div>
+
+                <div class="h-16 flex items-center justify-center mb-6 mt-4">
+                    <img src="/icons/straumann.svg" alt="Straumann İmplant" class="max-h-full max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg mb-2">Straumann İmplant</h3>
+                <div class="mt-auto pt-6 border-t border-gray-100 w-full flex flex-col items-center">
+                    <span class="text-gray-400 line-through text-sm font-semibold mb-1">51.000 ₺</span>
+                    <span class="text-3xl font-extrabold text-klinik-turuncu">40.000 <span class="text-xl">₺</span></span>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <div class="bg-white rounded-[2rem] shadow-xl border border-gray-100 p-8 md:p-10">
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-8 flex items-center gap-3">
+                <div class="bg-klinik-yesil/10 p-3 rounded-xl text-klinik-yesil">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                </div>
+                Diş Kaplamaları
+            </h3>
+            <ul class="space-y-4">
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Zirkonyum Kaplama</span>
+                    <span class="font-bold text-klinik-koyu text-lg">6.200 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">İmp. Üstü Zirkonyum</span>
+                    <span class="font-bold text-klinik-koyu text-lg">6.700 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Metal Porselen</span>
+                    <span class="font-bold text-klinik-koyu text-lg">5.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">İmp. Üstü Metal Porselen</span>
+                    <span class="font-bold text-klinik-koyu text-lg">5.500 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Lamine Porselen</span>
+                    <span class="font-bold text-klinik-koyu text-lg">14.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">E-Max Porselen</span>
+                    <span class="font-bold text-klinik-koyu text-lg">14.000 ₺</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white rounded-[2rem] shadow-xl border border-gray-100 p-8 md:p-10">
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-8 flex items-center gap-3">
+                <div class="bg-klinik-turuncu/10 p-3 rounded-xl text-klinik-turuncu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                </div>
+                Genel Diş Tedavileri
+            </h3>
+            <ul class="space-y-4">
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Diş Hekimi Muayenesi</span>
+                    <span class="font-extrabold text-white bg-klinik-yesil px-3 py-1 rounded-lg text-sm tracking-wide">ÜCRETSİZ</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">3D Tomografi & Röntgen</span>
+                    <span class="font-extrabold text-white bg-klinik-yesil px-3 py-1 rounded-lg text-sm tracking-wide">ÜCRETSİZ</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-gray-700">1 Kök Kanal Tedavisi</span>
+                        <span class="text-xs text-gray-400">Dolgu Dahil</span>
+                    </div>
+                    <span class="font-bold text-klinik-koyu text-lg">6.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-gray-700">2-3 Kök Kanal Tedavisi</span>
+                        <span class="text-xs text-gray-400">Dolgu Dahil</span>
+                    </div>
+                    <span class="font-bold text-klinik-koyu text-lg">6.900 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Diş Dolgusu</span>
+                    <span class="font-bold text-klinik-koyu text-lg">2.800 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Estetik Dolgu</span>
+                    <span class="font-bold text-klinik-koyu text-lg">4.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Diş Çekimi</span>
+                    <span class="font-bold text-klinik-koyu text-lg">1.500 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Komplikasyonlu Diş Çekimi</span>
+                    <span class="font-bold text-klinik-koyu text-lg">3.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Cerrahi Diş Çekimi</span>
+                    <span class="font-bold text-klinik-koyu text-lg">4.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Gömülü Diş Operasyonu</span>
+                    <span class="font-bold text-klinik-koyu text-lg">6.000 ₺</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-gray-100 pb-4 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Diş Taşı Temizliği</span>
+                    <span class="font-bold text-klinik-koyu text-lg">2.250 ₺</span>
+                </li>
+                <li class="flex justify-between items-center pb-2 hover:bg-gray-50 px-2 rounded transition-colors">
+                    <span class="font-semibold text-gray-700">Diş Beyazlatma</span>
+                    <span class="font-bold text-klinik-koyu text-lg">7.500 ₺</span>
+                </li>
+            </ul>
+        </div>
+        
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
+        <div class="flex items-start gap-4">
+            <svg class="w-6 h-6 text-blue-500 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <p class="text-sm text-blue-800 leading-relaxed">
+                <strong>Bilgilendirme:</strong> Yukarıda belirtilen fiyatlar standart tedavi prosedürleri için geçerli olup bilgilendirme amaçlıdır. Hastamızın ağız, diş ve çene yapısına, uygulanacak ekstra cerrahi işlemlere (kemik tozu, sinüs lifting vb.) göre fiyatlarda değişiklik olabilir. Kesin tedavi planı ve net fiyatlandırma, kliniklerimizde yapılacak olan <strong>ücretsiz muayene ve 3D tomografi</strong> çekimi sonrasında hekimlerimiz tarafından belirlenecektir.
+            </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
+      <div class="max-w-2xl">
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+        </p>
+      </div>
+      <div class="text-sm text-gray-400 text-left md:text-right">
+        <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
+        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
+          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="h-16 md:hidden block"></div>
+  
+  <div class="hidden md:flex flex-col fixed bottom-8 left-8 z-[100] gap-4">
+    <a href="tel:+902124000013" class="bg-blue-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-blue-700 transition-all duration-300 flex items-center justify-center group relative">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.864-1.051l-3.215-.536a2.25 2.25 0 0 0-2.15.586l-1.48 1.48a18.04 18.04 0 0 1-7.143-7.143l1.48-1.48a2.25 2.25 0 0 0 .586-2.15l-.536-3.215A2.25 2.25 0 0 0 7.372 2.25H6.002c-1.243 0-2.25 1.007-2.25 2.25Z" /></svg>
+      <span class="absolute left-16 bg-gray-900 text-white px-3 py-1.5 rounded-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">Hemen Ara</span>
+    </a>
+    <a href="https://wa.me/902124000013" target="_blank" class="bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-green-600 transition-all duration-300 flex items-center justify-center group relative">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829zM10.826 6.299c-.198-.444-.405-.453-.591-.462-.152-.007-.327-.008-.501-.008-.175 0-.457.066-.696.326-.239.261-.913.892-.913 2.176s.935 2.523 1.066 2.697c.13.174 1.84 2.808 4.456 3.907 1.838.772 2.28.618 2.671.583.391-.035 1.261-.515 1.435-1.013.174-.499.174-.925.122-1.013-.052-.087-.196-.14-.413-.248-.218-.109-1.284-.635-1.48-.707-.196-.073-.339-.109-.482.109-.144.218-.557.707-.683.85-.126.143-.252.163-.47.054-.218-.109-.916-.338-1.745-1.077-.645-.575-1.08-1.286-1.206-1.504-.126-.218-.014-.336.095-.445.098-.098.218-.253.326-.379.109-.126.145-.218.218-.361.072-.144.036-.271-.018-.38-.054-.109-.482-1.163-.661-1.593z" /></svg>
+      <span class="absolute left-16 bg-gray-900 text-white px-3 py-1.5 rounded-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">WhatsApp Destek</span>
+    </a>
+  </div>
+
+</MainLayout>
