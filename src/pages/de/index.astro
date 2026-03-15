@@ -17,7 +17,7 @@ const ui = {
 const t = ui[currentLang];
 ---
 
-<MainLayout title="Ana Sayfa">
+<MainLayout title="Startseite | Yuceler A+ Klinik">
   
   <section class="relative h-[600px] md:h-[700px] overflow-hidden flex-grow group">
     
@@ -26,20 +26,20 @@ const t = ui[currentLang];
       <div class="absolute inset-0 bg-gradient-to-r from-klinik-koyu/80 via-klinik-koyu/40 to-transparent z-0"></div>
       <div class="container mx-auto max-w-6xl h-full flex flex-col justify-center text-left relative z-10 px-6">
         <div class="max-w-2xl">
-          <span class="inline-block bg-klinik-yesil text-white px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase">Global Sağlık Standartları</span>
+          <span class="inline-block bg-klinik-yesil text-white px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase">Globale Gesundheitsstandards</span>
           <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-white">
-            Gülüşünüzde <br/><span class="text-klinik-yesil">Global</span> Standartlar
+            Globale Standards <br/><span class="text-klinik-yesil">für Ihr Lächeln</span>
           </h1>
           <p class="text-base md:text-xl text-gray-100 mb-8 max-w-lg leading-relaxed">
-            Silivri ve Çatalca şubelerimizde, uluslararası sertifikalı hekim kadromuzla yanınızdayız. Modern estetik çözümlerle kusursuz planlama.
+            In unseren Filialen in Silivri und Çatalca stehen wir Ihnen mit unserem international zertifizierten Ärzteteam zur Seite. Perfekte Planung mit modernen ästhetischen Lösungen.
           </p>
           <div class="flex flex-wrap gap-4 items-center">
               <a href="https://wa.me/902124000013" target="_blank" class="bg-klinik-yesil text-white font-bold py-4 px-8 rounded-full shadow-xl hover:bg-green-700 transition-all text-base">
-                  WHATSAPP RANDEVU
+                  WHATSAPP TERMIN
               </a>
               <div class="flex flex-col">
                 <span class="text-white font-bold text-lg">+90 212 400 00 13</span>
-                <span class="text-gray-300 text-[10px] uppercase tracking-wider">Hızlı Bilgi Hattı</span>
+                <span class="text-gray-300 text-[10px] uppercase tracking-wider">Schnelle Info-Hotline</span>
               </div>
           </div>
         </div>
@@ -52,10 +52,10 @@ const t = ui[currentLang];
       <div class="container mx-auto max-w-6xl h-full flex flex-col justify-center text-left relative z-10 px-6">
         <div class="max-w-2xl">
             <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight text-white">
-              Doğal Güzellik, <br/><span class="text-klinik-yesil">Kalıcı Estetik</span>
+              Natürliche Schönheit, <br/><span class="text-klinik-yesil">dauerhafte Ästhetik</span>
             </h2>
             <p class="text-base md:text-lg text-gray-200 mb-8 max-w-lg leading-relaxed">
-                Zirkonyumun ışık geçirgenliği ve dayanıklılığı ile hayalinizdeki gülüşe kavuşun. Dijital tasarım teknolojisi ile size özel restorasyonlar.
+                Erreichen Sie das Lächeln Ihrer Träume mit der Lichtdurchlässigkeit und Haltbarkeit von Zirkonium. Maßgeschneiderte Restaurationen mit digitaler Designtechnologie.
             </p>
             <a href={`/${currentLang}/tedaviler/zirkonyum-disler`} class="inline-block bg-klinik-turuncu text-white font-bold py-4 px-8 rounded-full shadow-xl hover:bg-orange-600 transition-all text-base">
                 {t.review}
@@ -70,7 +70,7 @@ const t = ui[currentLang];
     </div>
   </section>
 
-  <script>
+  <script is:inline>
     let currentSlide = 1;
     const slide1 = document.getElementById('slide-1');
     const slide2 = document.getElementById('slide-2');
@@ -102,41 +102,41 @@ const t = ui[currentLang];
       <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         <div class="w-full lg:w-1/2 relative">
           <div class="absolute -inset-4 bg-klinik-yesil/10 rounded-3xl transform -rotate-3 z-0"></div>
-          <img src="/images/ana-banner.webp" alt="Kişiye Özel Diş Tedavisi" class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-cover aspect-[4/3]" />
+          <img src="/images/ana-banner.webp" alt="Individuelle Zahnbehandlung" class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-cover aspect-[4/3]" />
           <div class="absolute -bottom-8 -right-4 md:-right-8 bg-white p-6 rounded-2xl shadow-xl z-20 border-t-4 border-klinik-turuncu">
             <p class="text-4xl font-extrabold text-klinik-koyu mb-1">A+</p>
-            <p class="text-sm text-gray-500 font-bold uppercase tracking-wider">Premium Kalite</p>
+            <p class="text-sm text-gray-500 font-bold uppercase tracking-wider">Premium Qualität</p>
           </div>
         </div>
         <div class="w-full lg:w-1/2 relative z-10 text-left">
-          <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-4 block">A Plus Yaklaşımı</span>
+          <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-4 block">Der A-Plus-Ansatz</span>
           <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu mb-6 leading-tight">
-            Her Gülüş <br><span class="text-klinik-yesil">Kişiye Özel</span> Planlanır
+            Jedes Lächeln wird <br><span class="text-klinik-yesil">individuell</span> geplant
           </h2>
           <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-            Sizi detaylıca dinliyor; yüz hatlarınızı, kemik yapınızı ve beklentilerinizi modern 3D Tomografi cihazlarımızla titizlikle analiz ediyoruz.
+            Wir hören Ihnen genau zu; wir analysieren Ihre Gesichtszüge, Knochenstruktur und Erwartungen akribisch mit unseren modernen 3D-Tomographiegeräten.
           </p>
           <p class="text-gray-600 text-lg mb-10 leading-relaxed">
-            Sadece size, sizin anatomik yapınıza özel bir tedavi süreci tasarlıyoruz. Uluslararası standartlarda hizmet veren tam donanımlı merkezimizde, önceliğimiz daima sağlığınız ve konforunuzdur.
+            Wir entwerfen einen Behandlungsprozess speziell für Sie und Ihre anatomische Struktur. In unserem voll ausgestatteten Zentrum, das nach internationalen Standards arbeitet, stehen Ihre Gesundheit und Ihr Komfort immer an erster Stelle.
           </p>
           <ul class="space-y-5 mb-10">
             <li class="flex items-center gap-4 text-klinik-koyu font-semibold text-lg text-left">
               <div class="bg-klinik-yesil/10 p-2 rounded-full text-klinik-yesil flex-shrink-0">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              Yüz Hatlarıyla Uyumlu Estetik Planlama
+              Ästhetische Planung im Einklang mit den Gesichtszügen
             </li>
             <li class="flex items-center gap-4 text-klinik-koyu font-semibold text-lg text-left">
               <div class="bg-klinik-yesil/10 p-2 rounded-full text-klinik-yesil flex-shrink-0">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              Kişisel Kemik Yapısına Uygun İmplant Tedavisi
+              Implantatbehandlung passend zur individuellen Knochenstruktur
             </li>
             <li class="flex items-center gap-4 text-klinik-koyu font-semibold text-lg text-left">
               <div class="bg-klinik-yesil/10 p-2 rounded-full text-klinik-yesil flex-shrink-0">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
               </div>
-              Maksimum Hasta Konforu ve Detaylı Bilgilendirme
+              Maximaler Patientenkomfort und detaillierte Information
             </li>
           </ul>
           <a href={`/${currentLang}/hakkimizda`} class="inline-flex items-center gap-2 bg-white text-klinik-koyu border-2 border-gray-200 font-bold py-4 px-8 rounded-full shadow-sm hover:border-klinik-turuncu hover:text-klinik-turuncu transition-all duration-300">
@@ -151,73 +151,73 @@ const t = ui[currentLang];
   <section class="py-20 bg-gray-50 border-t border-gray-100">
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="text-center mb-16">
-        <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-3 block text-center">Uzmanlık Alanlarımız</span>
+        <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-3 block text-center">Unsere Fachgebiete</span>
         <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu mb-4 text-center">
-          Kişiye Özel <span class="text-klinik-yesil">Tedavi Seçenekleri</span>
+          Individuelle <span class="text-klinik-yesil">Behandlungsoptionen</span>
         </h2>
         <p class="text-gray-600 text-lg max-w-2xl mx-auto text-center">
-          Modern teknoloji ve uzman hekim kadromuzla, ihtiyaçlarınıza en uygun tedavi planını birlikte oluşturuyoruz.
+          Mit moderner Technologie und unserem erfahrenen Ärzteteam erstellen wir gemeinsam den für Ihre Bedürfnisse am besten geeigneten Behandlungsplan.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <a href={`/${currentLang}/tedaviler/implantlar`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/implant.svg" alt="İmplant" class="w-full h-full object-contain" />
+            <img src="/icons/implant.svg" alt="Implantate" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold text-klinik-koyu mb-3">İmplant Tedavisi</h3>
-          <p class="text-gray-500 mb-8 flex-grow">Eksik dişlerinizi, çene yapınıza özel 3D planlama ile titanyum veya zirkonyum köklerle tamamlıyoruz.</p>
-          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaylı Bilgi</div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Implantatbehandlung</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Wir ersetzen Ihre fehlenden Zähne durch Titan- oder Zirkoniumwurzeln mit spezieller 3D-Planung für Ihre Kieferstruktur.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaillierte Informationen</div>
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
         <a href={`/${currentLang}/tedaviler/gulus-tasarimi`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/gulus.svg" alt="Gülüş" class="w-full h-full object-contain" />
+            <img src="/icons/gulus.svg" alt="Smile Design" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Gülüş Tasarımı</h3>
-          <p class="text-gray-500 mb-8 flex-grow">Yüz hatlarınıza, yaşınıza ve cinsiyetinize en uygun estetik gülüşü dijital ortamda tasarlıyoruz.</p>
-          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaylı Bilgi</div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Smile Design</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Wir entwerfen digital das ästhetischste Lächeln, das am besten zu Ihren Gesichtszügen, Ihrem Alter und Ihrem Geschlecht passt.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaillierte Informationen</div>
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
         <a href={`/${currentLang}/tedaviler/zirkonyum-disler`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/zirkonyum.svg" alt="Zirkonyum" class="w-full h-full object-contain" />
+            <img src="/icons/zirkonyum.svg" alt="Zirkonium" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Zirkonyum Dişler</h3>
-          <p class="text-gray-500 mb-8 flex-grow">Işık geçirgenliği sayesinde doğal dişlerinize en yakın görünümü sunan dayanıklı kaplamalar.</p>
-          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaylı Bilgi</div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Zirkonkronen</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Langlebige Kronen, die dank ihrer Lichtdurchlässigkeit das natürlichste Aussehen bieten, das Ihren eigenen Zähnen am nächsten kommt.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaillierte Informationen</div>
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
         <a href={`/${currentLang}/tedaviler/estetik-dis-hekimligi`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/estetik.svg" alt="Estetik" class="w-full h-full object-contain" />
+            <img src="/icons/estetik.svg" alt="Ästhetik" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Estetik Dolgular & Lamina</h3>
-          <p class="text-gray-500 mb-8 flex-grow">Diş yapısına minimum müdahale ile uygulanan yaprak porselenler ve estetik kompozit restorasyonlar.</p>
-          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaylı Bilgi</div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Ästhetische Füllungen & Veneers</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Porzellan-Veneers und ästhetische Komposit-Restaurationen, die mit minimalem Eingriff in die Zahnstruktur angewendet werden.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaillierte Informationen</div>
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
         <a href={`/${currentLang}/tedaviler/ortodonti`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/ortodonti.svg" alt="Ortodonti" class="w-full h-full object-contain" />
+            <img src="/icons/ortodonti.svg" alt="Kieferorthopädie" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Telsiz Ortodonti</h3>
-          <p class="text-gray-500 mb-8 flex-grow">Klasik tel tedavisine alternatif, dışarıdan belli olmayan şeffaf plaklarla estetik diş hizalama.</p>
-          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaylı Bilgi</div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Unsichtbare Zahnspangen</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Die Alternative zur klassischen Zahnspange: Ästhetische Zahnausrichtung mit von außen unsichtbaren transparenten Schienen.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaillierte Informationen</div>
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
         <a href={`/${currentLang}/tedaviler/cene-cerrahisi`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/cerrahi.svg" alt="Cerrahi" class="w-full h-full object-contain" />
+            <img src="/icons/cerrahi.svg" alt="Chirurgie" class="w-full h-full object-contain" />
           </div>
-          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Ağız ve Çene Cerrahisi</h3>
-          <p class="text-gray-500 mb-8 flex-grow">Gömülü 20'lik yaş dişleri, kist operasyonları ve ileri cerrahi prosedürler uzman hekimlerce yönetilir.</p>
-          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaylı Bilgi</div>
+          <h3 class="text-xl font-bold text-klinik-koyu mb-3">Mund- und Kieferchirurgie</h3>
+          <p class="text-gray-500 mb-8 flex-grow">Eingebettete Weisheitszähne, Zystenoperationen und fortgeschrittene chirurgische Eingriffe werden von Fachärzten durchgeführt.</p>
+          <div class="flex items-center text-klinik-turuncu font-bold text-sm mt-auto">Detaillierte Informationen</div>
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
       </div>
@@ -235,11 +235,11 @@ const t = ui[currentLang];
     <div class="container mx-auto px-4 max-w-7xl relative z-10">
       <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
         <div class="text-left">
-          <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-3 block">Uzman Kadromuz</span>
-          <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu">Hekimlerimiz</h2>
+          <span class="text-klinik-turuncu font-extrabold tracking-widest uppercase text-sm mb-3 block">Unser Expertenteam</span>
+          <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu">Unsere Ärzte</h2>
         </div>
         <div class="flex bg-gray-100 p-1.5 rounded-full border border-gray-200 shadow-inner">
-          <button id="filterAll" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all bg-klinik-yesil text-white shadow-md">Tümü</button>
+          <button id="filterAll" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all bg-klinik-yesil text-white shadow-md">Alle</button>
           <button id="filterSilivri" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Silivri</button>
           <button id="filterCatalca" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Çatalca</button>
         </div>
@@ -284,30 +284,30 @@ const t = ui[currentLang];
         <div class="bg-white rounded-[40px] p-8 md:p-16 shadow-sm border border-gray-100 flex flex-col lg:flex-row gap-16 items-start">
             <div class="w-full lg:w-1/2 text-left">
                 <h2 class="text-3xl md:text-4xl font-bold text-[#1E293B] leading-tight mb-8">
-                    %100 Orijinal Sertifikalı,<br /><span class="text-[#334155]">Garantili</span> İmplantları Sizlere Sunuyoruz
+                    Wir bieten Ihnen 100% original zertifizierte,<br /><span class="text-[#334155]">Garantierte</span> Implantate
                 </h2>
-                <p class="text-gray-500 mb-6 text-sm md:text-base">Dental Implant Clinic A Plus Ağız ve Diş Sağlığı Polikliniği olarak, Türkiye'nin en uygun fiyatlı implant çözümlerini sizlere sunuyoruz.</p>
+                <p class="text-gray-500 mb-6 text-sm md:text-base">Als Dental Implant Clinic A Plus Zahnklinik bieten wir Ihnen die günstigsten Implantatlösungen in der Türkei.</p>
                 <ul class="space-y-2 mb-8 text-[#1E293B] font-medium text-sm md:text-base">
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Straumann implantlarımız 40.000 ₺,</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Bego implantlarımız 9.500 ₺,</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Nobel implantlarımız 30.750 ₺,</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Medentika implantlarımız 14.000 ₺,</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Medigma implantlarımız 7.000 ₺</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> unsere Straumann Implantate 40.000 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> unsere Bego Implantate 9.500 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> unsere Nobel Implantate 30.750 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> unsere Medentika Implantate 14.000 ₺,</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> unsere Medigma Implantate 7.000 ₺</li>
                 </ul>
                 <a href="https://wa.me/902124000013" target="_blank" class="inline-flex items-center gap-4 bg-[#212E3D] text-white pl-2 pr-8 py-2 rounded-xl font-bold hover:bg-black transition-all shadow-xl group">
                     <div class="bg-[#5C8AB4] p-3 rounded-lg group-hover:bg-klinik-yesil transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                     </div>
-                    İmplant Orijinal Ürün Sorgula
+                    Implantat Originalprodukt prüfen
                 </a>
             </div>
             <div class="w-full lg:w-1/2 flex flex-col">
                 {[
-                    { name: 'Straumann İmplant', logo: 'straumann.svg' },
-                    { name: 'Bego İmplant', logo: 'bego.svg' },
-                    { name: 'Nobel Biocare İmplant', logo: 'nobel.svg' },
-                    { name: 'Medentika İmplant', logo: 'medentika.svg' },
-                    { name: 'Medigma İmplant', logo: 'medigma.svg' }
+                    { name: 'Straumann Implantate', logo: 'straumann.svg' },
+                    { name: 'Bego Implantate', logo: 'bego.svg' },
+                    { name: 'Nobel Biocare Implantate', logo: 'nobel.svg' },
+                    { name: 'Medentika Implantate', logo: 'medentika.svg' },
+                    { name: 'Medigma Implantate', logo: 'medigma.svg' }
                 ].map((brand) => (
                     <div class="flex items-center justify-start gap-8 py-6 border-b border-gray-100 last:border-0 hover:bg-gray-50 px-4 transition-colors group">
                         <img src={`/icons/${brand.logo}`} alt={brand.name} class="h-8 md:h-10 w-28 md:w-32 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
@@ -322,17 +322,17 @@ const t = ui[currentLang];
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8 text-left">
       <div class="max-w-2xl text-left">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Rechtlicher Hinweis</h3>
         <p class="text-sm text-gray-300 leading-relaxed text-left">
-          Bu web sitesi, T.C. Sağlık Bakanlığı kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+          Diese Website wurde in voller Übereinstimmung mit den Vorschriften des Gesundheitsministeriums der Republik Türkei und ausschließlich zur Information der Patienten erstellt.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold text-left md:text-right">Dental Implant Clinic A Plus</p>
-        <p class="mb-1 text-left md:text-right">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1 text-left md:text-right">Gemeinsames Callcenter: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Letztes Update: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Redakteur: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>
@@ -347,7 +347,7 @@ const t = ui[currentLang];
   .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
 
-<script>
+<script is:inline>
   const slider = document.getElementById('doctorsSlider');
   const cards = document.querySelectorAll('.doctor-card');
   const btnAll = document.getElementById('filterAll');
