@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.dentalimplanttrakya.com/sitemap-index.xml
