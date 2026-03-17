@@ -249,6 +249,96 @@ const pageDescription = "Dental Implant Clinic A Plus - Hastalarımıza özel g�
         
       </div>
 
+      {/* BURAYA EKLENEN CRM FORMU */}
+      <div class="bg-klinik-koyu rounded-[2.5rem] shadow-2xl overflow-hidden border border-white/10 relative">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-klinik-turuncu/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+          
+          <div class="p-8 md:p-12 relative z-10">
+              <div class="text-center mb-10">
+                  <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ücretsiz Muayene İçin <span class="text-klinik-yesil">Randevu Alın</span></h2>
+                  <p class="text-gray-400">Formu doldurun, uzman hekimlerimiz size özel tedavi planını hazırlasın.</p>
+              </div>
+
+              <form id='webform821351000022820770' action='https://crm.zoho.eu/crm/WebToLeadForm' name='WebToLeads821351000022820770' method='POST' onsubmit='javascript:document.charset="UTF-8"; return checkMandatory821351000022820770()' accept-charset='UTF-8' class="space-y-6">
+                  
+                  <input type='text' style='display:none;' name='xnQsjsdp' value='bba4fccf1776dad2005716b264411d0d2541c67abf78c246aeabb81e6b417576'>
+                  <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+                  <input type='text' style='display:none;' name='xmIwtLD' value='3080e129b37823d93b607f3149e6dfb2eed32e9568080f2b11385aeccb0bbe50706cc7e979b6629165ac32d3e2d2d1ca'>
+                  <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+                  <input type='text' style='display:none;' name='returnURL' value='https://www.dentalimplanttrakya.com/tr/tesekkurler'>
+                  <input type='text' style='display:none;' name='LEADCF14' value='TR_X_Reklam_Form'>
+                  <input type='hidden' name='Lead Source' value='Twitter'>
+                  <input type='hidden' name='LEADCF6' value='Yurt İçi Hasta'>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="space-y-2">
+                          <label class="text-sm font-semibold text-gray-300 ml-1">Adınız Soyadınız *</label>
+                          <input type='text' id='Last_Name' name='Last Name' required placeholder="Örn: Ahmet Yılmaz" class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-klinik-yesil transition-all">
+                      </div>
+                      <div class="space-y-2">
+                          <label class="text-sm font-semibold text-gray-300 ml-1">Cep Telefonunuz *</label>
+                          <input type='text' id='Mobile' name='Mobile' required placeholder="05XX XXX XX XX" class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-klinik-yesil transition-all">
+                      </div>
+                  </div>
+
+                  <div class="space-y-3">
+                      <label class="text-sm font-semibold text-gray-300 ml-1">İlgilendiğiniz Hizmetler</label>
+                      <select class='w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-klinik-yesil transition-all' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='LEADCF2' onchange='addAriaSelected821351000022820770()' aria-label='LEADCF2' name='LEADCF2' multiple>
+                          <option value='İmplant' class="bg-klinik-koyu">İmplant</option>
+                          <option value='Hollywood Smile' class="bg-klinik-koyu">Hollywood Smile</option>
+                          <option value='All on Four' class="bg-klinik-koyu">All on Four</option>
+                          <option value='Diş Beyazlatma' class="bg-klinik-koyu">Diş Beyazlatma</option>
+                          <option value='Zirkonyum' class="bg-klinik-koyu">Zirkonyum</option>
+                          <option value='Porselen' class="bg-klinik-koyu">Porselen</option>
+                          <option value='Laminate Veneer' class="bg-klinik-koyu">Laminate Veneer</option>
+                          <option value='Dolgu' class="bg-klinik-koyu">Dolgu</option>
+                          <option value='Diş Çekimi' class="bg-klinik-koyu">Diş Çekimi</option>
+                          <option value='Kanal Tedavisi' class="bg-klinik-koyu">Kanal Tedavisi</option>
+                          <option value='Protez' class="bg-klinik-koyu">Protez</option>
+                          <option value='Genel Muayene' class="bg-klinik-koyu">Genel Muayene</option>
+                          <option value='Ortodonti' class="bg-klinik-koyu">Ortodonti</option>
+                          <option value='Diş Temizleme' class="bg-klinik-koyu">Diş Temizleme</option>
+                          <option value='Periodontoloji' class="bg-klinik-koyu">Periodontoloji</option>
+                          <option value='Çocuk Muayene' class="bg-klinik-koyu">Çocuk Muayene</option>
+                      </select>
+                      <p class="text-xs text-gray-500 italic mt-1 ml-1">Birden fazla seçmek için basılı tutun (veya mobilde dokunun).</p>
+                  </div>
+
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="space-y-2 relative">
+                          <label class="text-sm font-semibold text-gray-300 ml-1">Randevu Tarih Saat</label>
+                          <input type='text' id='LEADCF116' name='LEADCF116' data-ftype='date' placeholder='DD.MM.YYYY' data-tplid='821351000022820770LEADCF116' onfocus='formCalender.stEv(event);formCalender.createCalendar(this);' autocomplete='off' class="w-full bg-white/5 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-klinik-yesil transition-all">
+                          <div id='template821351000022820770LEADCF116' onclick='formCalender.stEv(event);' class='tempCalDiv text-black'></div>
+                      </div>
+                      <div class="space-y-2">
+                          <label class="text-sm font-semibold text-gray-300 ml-1">&nbsp;</label>
+                          <div class="flex gap-2">
+                              <select name='LEADCF116hour' role='combobox' class="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white focus:outline-none focus:border-klinik-yesil">
+                                  {Array.from({ length: 24 }, (_, i) => i.toString().padStart(2, '0')).map(h => (
+                                      <option value={h} class="bg-klinik-koyu">{h}</option>
+                                  ))}
+                              </select>
+                              <select name='LEADCF116minute' role='combobox' class="flex-1 bg-white/5 border border-white/10 rounded-2xl px-4 py-4 text-white focus:outline-none focus:border-klinik-yesil">
+                                  {Array.from({ length: 60 }, (_, i) => i.toString().padStart(2, '0')).map(m => (
+                                      <option value={m} class="bg-klinik-koyu">{m}</option>
+                                  ))}
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="pt-4">
+                      <button type="submit" id='formsubmit' class="formsubmit w-full bg-klinik-yesil hover:bg-white hover:text-klinik-koyu text-klinik-koyu font-bold py-5 rounded-2xl transition-all duration-300 transform hover:scale-[1.02] shadow-xl flex items-center justify-center gap-2">
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                          RANDEVUYU ONAYLA
+                      </button>
+                  </div>
+                  <input type='text' style='display:none;' name='aG9uZXlwb3Q' value='' />
+              </form>
+          </div>
+      </div>
+      {/* FORM BÖLÜMÜ BİTİŞİ */}
+
       <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-xl">
         <div class="flex items-start gap-4">
             <svg class="w-6 h-6 text-blue-500 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -293,4 +383,136 @@ const pageDescription = "Dental Implant Clinic A Plus - Hastalarımıza özel g�
     </a>
   </div>
 
+  <script is:inline>
+    function addAriaSelected821351000022820770() {
+        var optionElem = event.target;
+        var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+        if (previousSelectedOption) {
+            previousSelectedOption.removeAttribute('aria-selected');
+        }
+        optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+    }
+
+    var formCalender = {
+        userPattern: 'YYYY-MM-DD',
+        currDateObj: void 0, currMonth: void 0, currYear: void 0, currDate: void 0,
+        currMonthEnd: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+        monthName: void 0, days: void 0, displayPanel: void 0, isHideToday: void 0, calDefColor: '#515CCB',
+        weekdays: { 1: 'Sunday', 2: 'Monday', 3: 'Tuesday', 4: 'Wednesday', 5: 'Thursday', 6: 'Friday', 7: 'Saturday' },
+        months: { 1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June', 7: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December' },
+        init: function() {
+            this.monthName = [{ html: 'Ocak', value: 0 }, { html: 'Şubat', value: 1 }, { html: 'Mart', value: 2 }, { html: 'Nisan', value: 3 }, { html: 'Mayıs', value: 4 }, { html: 'Haziran', value: 5 }, { html: 'Temmuz', value: 6 }, { html: 'Ağustos', value: 7 }, { html: 'Eylül', value: 8 }, { html: 'Ekim', value: 9 }, { html: 'Kasım', value: 10 }, { html: 'Aralık', value: 11 }];
+            this.days = ['ssunday', 'smonday', 'stuesday', 'swednesday', 'sthursday', 'sfriday', 'ssaturday'];
+            this.dayNamesShort = ['Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt', 'Paz'];
+            this.daysBasedOnPrefernce = ['smonday', 'stuesday', 'swednesday', 'sthursday', 'sfriday', 'ssaturday', 'ssunday'];
+            this.currDateObj = new Date();
+            this.currMonth = this.currDateObj.getMonth();
+            this.currYear = this.currDateObj.getFullYear();
+            this.currDate = this.currDateObj.getDate();
+        },
+        getTitle: function() { return this.monthName[this.currMonth].html + ' ' + this.currYear; },
+        createCalendar: function(e) {
+            for (var t = document.getElementsByClassName('tempCalDiv'), a = t.length, r = 0; r < a; r++) {
+                var n = t[r].style;
+                'block' === n.display && (n.display = 'none');
+            }
+            this.calendarNode = e;
+            this.userPattern = this.calendarNode.placeholder;
+            var s = this.calendarNode.value, i = !1;
+            if (s) {
+                var l = dateFormatConvert.validate(s, this.userPattern);
+                l && (this.currDate = l.getDate(), this.currMonth = l.getMonth(), this.currYear = l.getFullYear(), this.currYear < 1e3 && (this.currYear = Number(this.currYear) + 1900));
+            } else i = !0, formCalender.init();
+            this.monthName || formCalender.init();
+            this.createDatePicker(this.currDate, this.currMonth, this.currYear, i, !1);
+        },
+        createDatePicker: function(e, t, a, r, n) {
+            1 === this.currMonth && (this.currMonthEnd[1] = this.currYear % 400 == 0 || this.currYear % 4 == 0 && this.currYear % 100 != 0 ? 29 : 28);
+            var s = new Date(a, t, 1), i = 6, l = this.daysBasedOnPrefernce.indexOf(this.days[s.getDay()]) + 1;
+            i = 31 === this.currMonthEnd[t] && l >= 6 || 30 === this.currMonthEnd[t] && 7 === l ? 7 : 28 === this.currMonthEnd[t] && 1 === l ? 5 : 6;
+            var d = this.getTitle(e, a, t), o = this.dayNamesShort, h = '<div id="calenDiv" style="background:#fff; padding:10px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,0.1); border:1px solid #ddd; width:220px; font-family:sans-serif;"><div><div>';
+            h += '<div style="text-align:center; font-weight:bold; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center;"><span style="cursor:pointer; padding:0 5px;" onClick="formCalender.updateDatePicker(event,-1)">&lt;</span><span class="sCalMon">' + d + '</span><span style="cursor:pointer; padding:0 5px;" onClick="formCalender.updateDatePicker(event,1)">&gt;</span></div>', h += '<table class="calDay" style="width:100%; text-align:center; border-collapse:collapse; font-size:12px; color:#555; margin-bottom:5px;"><tr> <th>' + o[0] + '</th> <th>' + o[1] + '</th><th>' + o[2] + '</th><th>' + o[3] + '</th> <th>' + o[4] + '</th> <th>' + o[5] + '</th> <th>' + o[6] + '</th></tr></table>', h += '</div>', h += '<table id="calHeader" class="calDay" style="width:100%; text-align:center; border-collapse:collapse; font-size:13px; color:#222;">';
+            var c = '', u = new Date(), y = a || u.getFullYear(), v = e || u.getDate(), g = void 0 === t ? u.getMonth() : t, m = u.getMonth(), p = u.getFullYear();
+            for (var f, D, M, b = s.getDay(); 1 !== b;) s.setDate(s.getDate() - 1), b = s.getDay();
+            for (var x = 1; x <= i; x++) {
+                h += '<tr>';
+                for (var Y = 1; Y < 8; Y++) {
+                    f = s.getMonth(), D = s.getFullYear(), M = s.getDate();
+                    var F = 'padding:4px; cursor:pointer;';
+                    if (f !== g) F += ' color:#ccc;';
+                    if ((r && M === v && m === g && p === y || !n && M === v && f === g && D === y) || (n && dateFormatConvert.validate(this.calendarNode.value, formCalender.userPattern) && M === dateFormatConvert.validate(this.calendarNode.value, formCalender.userPattern).getDate() && f === dateFormatConvert.validate(this.calendarNode.value, formCalender.userPattern).getMonth() && D === dateFormatConvert.validate(this.calendarNode.value, formCalender.userPattern).getFullYear())) F += ' background:#8DC63F; color:#fff; border-radius:4px; font-weight:bold;';
+                    h += '<td style="' + F + '" onClick="formCalender.displaySelectedDate(\'' + M + ' ' + f + ' ' + D + '\')">' + M + '</td>', s.setDate(s.getDate() + 1);
+                }
+                h += '</tr>';
+            }
+            h += '</table></div></div>';
+            var C = document.getElementById('template' + this.calendarNode.getAttribute('data-tplid'));
+            C.innerHTML = h, C.style.display = 'block', C.style.position = 'absolute', C.style.zIndex = '1000';
+        },
+        displaySelectedDate: function(e, t) {
+            if (!t) t = this.calendarNode;
+            e = e.split(' ');
+            var r = dateFormatConvert.convertFormat(new Date(e[2], e[1], e[0]), this.userPattern);
+            t.value = r; t.focus(); formCalender.closeDatePicker(); t.blur();
+        },
+        closeDatePicker: function() { document.getElementById('template' + this.calendarNode.getAttribute('data-tplid')).style.display = 'none'; },
+        updateDatePicker: function(e, t) {
+            void 0 !== t ? 1 === t ? 11 === this.currMonth ? (this.currMonth = 0, this.currYear++) : this.currMonth++ : 0 === this.currMonth ? (this.currMonth = 11, this.currYear--) : this.currMonth-- : null;
+            this.createDatePicker(this.currDate, this.currMonth, this.currYear, !1, !0);
+        },
+        stEv: function(e) { e || (e = window.event), e && (e.cancelBubble = !0, e.stopPropagation && e.stopPropagation()); }
+    };
+    
+    var dateFormatConvert = {
+        dayArr: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+        lm: 'userdate',
+        crctLength: function(e, t) { e = e.toString(); if(t) { for (var n = 1; n < t; n++) e.length <= n && (e = '0' + e); } return e; },
+        convertFormat: function(e, t) {
+            var s = { date: e.getDate(), month: e.getMonth(), year: e.getFullYear() };
+            t = t.replace('DD', this.crctLength(s.date, 2));
+            t = t.replace('MM', this.crctLength(s.month + 1, 2));
+            t = t.replace('YYYY', s.year);
+            return t;
+        },
+        validate: function(e, t) {
+            if(!e) return null;
+            var parts = e.split('.');
+            if(parts.length === 3) return new Date(parts[2], parseInt(parts[1])-1, parts[0]);
+            return null;
+        }
+    };
+
+    function validateDateFormat821351000022820770() {
+        var form = document.forms['WebToLeads821351000022820770'];
+        var dateFlds = form.querySelectorAll('[data-ftype="date"]');
+        for (var i = 0; i < dateFlds.length; i++) {
+            if (dateFlds[i].value.trim() != '' && !dateFormatConvert.validate(dateFlds[i].value, dateFlds[i].placeholder)) {
+                alert('Lütfen geçerli bir tarih girin.');
+                dateFlds[i].focus();
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function checkMandatory821351000022820770() {
+        var mndFileds = new Array('Last Name', 'Mobile');
+        var fldLangVal = new Array('Adı Soyadı', 'Cep Telefonu');
+        for (var i = 0; i < mndFileds.length; i++) {
+            var fieldObj = document.forms['WebToLeads821351000022820770'][mndFileds[i]];
+            if (fieldObj && (fieldObj.value.replace(/^\s+|\s+$/g, '')).length == 0) {
+                alert(fldLangVal[i] + ' boş olamaz.');
+                fieldObj.focus();
+                return false;
+            }
+        }
+        if (!validateDateFormat821351000022820770()) return false;
+        
+        document.querySelector('.formsubmit').setAttribute('disabled', true);
+        document.querySelector('.formsubmit').innerText = "Gönderiliyor...";
+        return true;
+    }
+  </script>
+  
+  <script id='wf_anal' src='https://crm.zohopublic.eu/crm/WebFormAnalyticsServeServlet?rid=8ba73a4113b6ad5fe635ea440e72e1dc7582e28832e4b0102588e73688edec5a3e909ffea4a8ac623dd2bb718ea063e7gid5ad653ae278c834498efa303d5a52f7c7e59d2f8dbaa69a3172ef1b4ae96d690gidcd9d21afab15ab88b0292a39ebd44699c2654bbfb198c094fc7e89727d38929egid54e58abf48a25c5932cdb1ff92639d81af41b492faee9883a270fdaf202643e7&tw=8f25e4130ab94266e4cce95fabf2c0d48aeb92267fc9f5bb88bb5f3f7cc2b7e1'></script>
 </MainLayout>
