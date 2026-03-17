@@ -27,6 +27,9 @@ const metaDescription = description || "Dental Implant Clinic A Plus - Silivri v
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+
     <link rel="preload" as="image" href="/images/ana-banner.webp" type="image/webp" fetchpriority="high" />
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap" rel="stylesheet" />
 
@@ -208,14 +211,24 @@ const metaDescription = description || "Dental Implant Clinic A Plus - Silivri v
     <script is:inline>
       document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function() {
-          // Google Tag Manager
+          // 1. Google Tag Manager
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-NMGZJXT');
 
-          // Facebook Pixel
+          // 2. Google Ads (AW-775556470) - Yeni Eklendi
+          var scriptAds = document.createElement('script');
+          scriptAds.async = true;
+          scriptAds.src = 'https://www.googletagmanager.com/gtag/js?id=AW-775556470';
+          document.head.appendChild(scriptAds);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-775556470');
+
+          // 3. Facebook Pixel
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
