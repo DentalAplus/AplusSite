@@ -22,7 +22,7 @@ const t = ui[currentLang];
   <section class="relative h-[600px] md:h-[700px] overflow-hidden flex-grow group">
     
     <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100 z-10" id="slide-1">
-      <div class="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[10000ms] ease-linear group-hover:scale-100" style="background-image: url('/images/ana-banner.webp');"></div>
+      <img src="/images/ana-banner.webp" alt="Global Sağlık Standartları" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-[10000ms] ease-linear group-hover:scale-100" width="1920" height="1080" />
       <div class="absolute inset-0 bg-gradient-to-r from-klinik-koyu/80 via-klinik-koyu/40 to-transparent z-0"></div>
       <div class="container mx-auto max-w-6xl h-full flex flex-col justify-center text-left relative z-10 px-6">
         <div class="max-w-2xl">
@@ -34,7 +34,7 @@ const t = ui[currentLang];
             Silivri ve Çatalca şubelerimizde, uluslararası sertifikalı hekim kadromuzla yanınızdayız. Modern estetik çözümlerle kusursuz planlama.
           </p>
           <div class="flex flex-wrap gap-4 items-center">
-              <a href="https://wa.me/902124000013" target="_blank" class="bg-klinik-yesil text-white font-bold py-4 px-8 rounded-full shadow-xl hover:bg-green-700 transition-all text-base">
+              <a href="https://wa.me/902124000013" target="_blank" aria-label="WhatsApp Randevu Hattı" class="bg-klinik-yesil text-white font-bold py-4 px-8 rounded-full shadow-xl hover:bg-green-700 transition-all text-base">
                   WHATSAPP RANDEVU
               </a>
               <div class="flex flex-col">
@@ -47,7 +47,7 @@ const t = ui[currentLang];
     </div>
 
     <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 z-0" id="slide-2">
-      <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/ana-banner2.webp');"></div>
+       <img src="/images/ana-banner2.webp" alt="Kalıcı Estetik" class="absolute inset-0 w-full h-full object-cover" width="1920" height="1080" />
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-0"></div> 
       <div class="container mx-auto max-w-6xl h-full flex flex-col justify-center text-left relative z-10 px-6">
         <div class="max-w-2xl">
@@ -65,8 +65,8 @@ const t = ui[currentLang];
     </div>
 
     <div class="absolute bottom-10 left-6 z-30 flex gap-2">
-        <button class="w-10 h-1 rounded-full bg-white transition-all" id="dot-1"></button>
-        <button class="w-10 h-1 rounded-full bg-white/30 transition-all" id="dot-2"></button>
+        <button class="w-10 h-1 rounded-full bg-white transition-all" id="dot-1" aria-label="1. Slayt"></button>
+        <button class="w-10 h-1 rounded-full bg-white/30 transition-all" id="dot-2" aria-label="2. Slayt"></button>
     </div>
   </section>
 
@@ -102,7 +102,7 @@ const t = ui[currentLang];
       <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         <div class="w-full lg:w-1/2 relative">
           <div class="absolute -inset-4 bg-klinik-yesil/10 rounded-3xl transform -rotate-3 z-0"></div>
-          <img src="/images/ana-banner.webp" alt="Kişiye Özel Diş Tedavisi" class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-cover aspect-[4/3]" />
+          <img src="/images/ana-banner.webp" alt="Kişiye Özel Diş Tedavisi" class="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-cover aspect-[4/3]" width="800" height="600" loading="lazy" />
           <div class="absolute -bottom-8 -right-4 md:-right-8 bg-white p-6 rounded-2xl shadow-xl z-20 border-t-4 border-klinik-turuncu">
             <p class="text-4xl font-extrabold text-klinik-koyu mb-1">A+</p>
             <p class="text-sm text-gray-500 font-bold uppercase tracking-wider">Premium Kalite</p>
@@ -161,9 +161,9 @@ const t = ui[currentLang];
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href={`/${currentLang}/tedaviler/implantlar`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+        <a href={`/${currentLang}/tedaviler/implantlar`} aria-label="İmplant Tedavisi Hakkında Detaylı Bilgi" class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/implant.svg" alt="İmplant" class="w-full h-full object-contain" />
+            <img src="/icons/implant.svg" alt="İmplant" class="w-full h-full object-contain" width="64" height="64" loading="lazy" />
           </div>
           <h3 class="text-xl font-bold text-klinik-koyu mb-3">İmplant Tedavisi</h3>
           <p class="text-gray-500 mb-8 flex-grow">Eksik dişlerinizi, çene yapınıza özel 3D planlama ile titanyum veya zirkonyum köklerle tamamlıyoruz.</p>
@@ -171,9 +171,9 @@ const t = ui[currentLang];
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
-        <a href={`/${currentLang}/tedaviler/gulus-tasarimi`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+        <a href={`/${currentLang}/tedaviler/gulus-tasarimi`} aria-label="Gülüş Tasarımı Hakkında Detaylı Bilgi" class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/gulus.svg" alt="Gülüş" class="w-full h-full object-contain" />
+            <img src="/icons/gulus.svg" alt="Gülüş" class="w-full h-full object-contain" width="64" height="64" loading="lazy" />
           </div>
           <h3 class="text-xl font-bold text-klinik-koyu mb-3">Gülüş Tasarımı</h3>
           <p class="text-gray-500 mb-8 flex-grow">Yüz hatlarınıza, yaşınıza ve cinsiyetinize en uygun estetik gülüşü dijital ortamda tasarlıyoruz.</p>
@@ -181,9 +181,9 @@ const t = ui[currentLang];
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
-        <a href={`/${currentLang}/tedaviler/zirkonyum-disler`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+        <a href={`/${currentLang}/tedaviler/zirkonyum-disler`} aria-label="Zirkonyum Dişler Hakkında Detaylı Bilgi" class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/zirkonyum.svg" alt="Zirkonyum" class="w-full h-full object-contain" />
+            <img src="/icons/zirkonyum.svg" alt="Zirkonyum" class="w-full h-full object-contain" width="64" height="64" loading="lazy" />
           </div>
           <h3 class="text-xl font-bold text-klinik-koyu mb-3">Zirkonyum Dişler</h3>
           <p class="text-gray-500 mb-8 flex-grow">Işık geçirgenliği sayesinde doğal dişlerinize en yakın görünümü sunan dayanıklı kaplamalar.</p>
@@ -191,9 +191,9 @@ const t = ui[currentLang];
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
-        <a href={`/${currentLang}/tedaviler/estetik-dis-hekimligi`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+        <a href={`/${currentLang}/tedaviler/estetik-dis-hekimligi`} aria-label="Estetik Dolgular ve Lamina Hakkında Detaylı Bilgi" class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/estetik.svg" alt="Estetik" class="w-full h-full object-contain" />
+            <img src="/icons/estetik.svg" alt="Estetik" class="w-full h-full object-contain" width="64" height="64" loading="lazy" />
           </div>
           <h3 class="text-xl font-bold text-klinik-koyu mb-3">Estetik Dolgular & Lamina</h3>
           <p class="text-gray-500 mb-8 flex-grow">Diş yapısına minimum müdahale ile uygulanan yaprak porselenler ve estetik kompozit restorasyonlar.</p>
@@ -201,9 +201,9 @@ const t = ui[currentLang];
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
-        <a href={`/${currentLang}/tedaviler/ortodonti`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+        <a href={`/${currentLang}/tedaviler/ortodonti`} aria-label="Telsiz Ortodonti Hakkında Detaylı Bilgi" class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/ortodonti.svg" alt="Ortodonti" class="w-full h-full object-contain" />
+            <img src="/icons/ortodonti.svg" alt="Ortodonti" class="w-full h-full object-contain" width="64" height="64" loading="lazy" />
           </div>
           <h3 class="text-xl font-bold text-klinik-koyu mb-3">Telsiz Ortodonti</h3>
           <p class="text-gray-500 mb-8 flex-grow">Klasik tel tedavisine alternatif, dışarıdan belli olmayan şeffaf plaklarla estetik diş hizalama.</p>
@@ -211,9 +211,9 @@ const t = ui[currentLang];
           <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         </a>
 
-        <a href={`/${currentLang}/tedaviler/cene-cerrahisi`} class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
+        <a href={`/${currentLang}/tedaviler/cene-cerrahisi`} aria-label="Ağız ve Çene Cerrahisi Hakkında Detaylı Bilgi" class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
           <div class="w-16 h-16 bg-klinik-yesil/5 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 p-2">
-            <img src="/icons/cerrahi.svg" alt="Cerrahi" class="w-full h-full object-contain" />
+            <img src="/icons/cerrahi.svg" alt="Cerrahi" class="w-full h-full object-contain" width="64" height="64" loading="lazy" />
           </div>
           <h3 class="text-xl font-bold text-klinik-koyu mb-3">Ağız ve Çene Cerrahisi</h3>
           <p class="text-gray-500 mb-8 flex-grow">Gömülü 20'lik yaş dişleri, kist operasyonları ve ileri cerrahi prosedürler uzman hekimlerce yönetilir.</p>
@@ -239,16 +239,16 @@ const t = ui[currentLang];
           <h2 class="text-4xl md:text-5xl font-extrabold text-klinik-koyu">Hekimlerimiz</h2>
         </div>
         <div class="flex bg-gray-100 p-1.5 rounded-full border border-gray-200 shadow-inner">
-          <button id="filterAll" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all bg-klinik-yesil text-white shadow-md">Tümü</button>
-          <button id="filterSilivri" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Silivri</button>
-          <button id="filterCatalca" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Çatalca</button>
+          <button id="filterAll" aria-label="Tüm Doktorları Göster" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all bg-klinik-yesil text-white shadow-md">Tümü</button>
+          <button id="filterSilivri" aria-label="Silivri Doktorlarını Göster" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Silivri</button>
+          <button id="filterCatalca" aria-label="Çatalca Doktorlarını Göster" class="px-6 py-2.5 rounded-full text-sm font-bold transition-all text-gray-600 hover:text-klinik-koyu">Çatalca</button>
         </div>
       </div>
       <div id="doctorsSlider" class="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 pt-4 -mx-4 px-4 md:mx-0 md:px-0 scroll-smooth cursor-grab active:cursor-grabbing relative z-10">
         {doktorlarData.map((doktor) => (
           <div class="doctor-card min-w-[280px] md:min-w-[320px] snap-start bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 flex flex-col group hover:-translate-y-2 transition-all duration-300" data-klinikler={doktor.klinikler.join(',')}>
             <div class="h-[300px] bg-gray-100 relative overflow-hidden flex items-end justify-center pointer-events-none">
-              <img src={doktor.resim} alt={doktor.isim} class="h-[95%] w-auto object-contain group-hover:scale-105 transition-transform duration-500 origin-bottom" onerror="this.src='/images/doktor-placeholder.webp';" />
+              <img src={doktor.resim} alt={doktor.isim} class="h-[95%] w-auto object-contain group-hover:scale-105 transition-transform duration-500 origin-bottom" width="400" height="400" loading="lazy" onerror="this.src='/images/doktor-placeholder.webp';" />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div class="p-6 flex flex-col flex-grow text-left">
@@ -261,7 +261,7 @@ const t = ui[currentLang];
                   <span class={`px-3 py-1 text-[10px] font-bold rounded-full uppercase tracking-widest ${k === 'silivri' ? 'bg-blue-50 text-blue-700' : 'bg-orange-50 text-orange-700'}`}>{k}</span>
                 ))}
               </div>
-              <a href={`/${currentLang}/doktorlar/${doktor.id}`} class="mt-auto inline-flex items-center gap-2 text-gray-500 font-bold hover:text-klinik-yesil transition-colors group/link cursor-pointer relative z-20">
+              <a href={`/${currentLang}/doktorlar/${doktor.id}`} aria-label={`${doktor.isim} Profilini İncele`} class="mt-auto inline-flex items-center gap-2 text-gray-500 font-bold hover:text-klinik-yesil transition-colors group/link cursor-pointer relative z-20">
                 {t.profileBtn} <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </a>
             </div>
@@ -269,10 +269,10 @@ const t = ui[currentLang];
         ))}
       </div>
       <div class="flex justify-center gap-4 mt-8 relative z-10">
-        <button id="slideLeftBtn" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-all shadow-md bg-white">
+        <button id="slideLeftBtn" aria-label="Önceki Doktorlar" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-all shadow-md bg-white">
           <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
         </button>
-        <button id="slideRightBtn" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-all shadow-md bg-white">
+        <button id="slideRightBtn" aria-label="Sonraki Doktorlar" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center text-gray-500 hover:bg-klinik-yesil hover:border-klinik-yesil hover:text-white transition-all shadow-md bg-white">
           <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
         </button>
       </div>
@@ -294,7 +294,7 @@ const t = ui[currentLang];
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Medentika implantlarımız 14.000 ₺,</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#1E293B] rounded-full"></span> Medigma implantlarımız 7.000 ₺</li>
                 </ul>
-                <a href="https://wa.me/902124000013" target="_blank" class="inline-flex items-center gap-4 bg-[#212E3D] text-white pl-2 pr-8 py-2 rounded-xl font-bold hover:bg-black transition-all shadow-xl group">
+                <a href="https://wa.me/902124000013" target="_blank" aria-label="İmplant Sorgulama WhatsApp" class="inline-flex items-center gap-4 bg-[#212E3D] text-white pl-2 pr-8 py-2 rounded-xl font-bold hover:bg-black transition-all shadow-xl group">
                     <div class="bg-[#5C8AB4] p-3 rounded-lg group-hover:bg-klinik-yesil transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                     </div>
@@ -310,7 +310,7 @@ const t = ui[currentLang];
                     { name: 'Medigma İmplant', logo: 'medigma.svg' }
                 ].map((brand) => (
                     <div class="flex items-center justify-start gap-8 py-6 border-b border-gray-100 last:border-0 hover:bg-gray-50 px-4 transition-colors group">
-                        <img src={`/icons/${brand.logo}`} alt={brand.name} class="h-8 md:h-10 w-28 md:w-32 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                        <img src={`/icons/${brand.logo}`} alt={brand.name} class="h-8 md:h-10 w-28 md:w-32 object-contain grayscale group-hover:grayscale-0 transition-all duration-300" width="128" height="40" loading="lazy" />
                         <span class="text-lg md:text-xl font-medium text-[#475569]">{brand.name}</span>
                     </div>
                 ))}
