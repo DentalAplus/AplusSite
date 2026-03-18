@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/index.php/tr/pages/silivri",
+      "destination": "/tr/klinikler/silivri",
+      "permanent": true
+    },
+    {
+      "source": "/index.php/tr/",
+      "destination": "/tr",
+      "permanent": true
+    },
+    {
+      "source": "/index.php/(.*)",
+      "destination": "/tr",
+      "permanent": true
+    }
+  ]
+}
