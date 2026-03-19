@@ -1,10 +1,13 @@
 ---
+// BG (Bulgarca) versiyonu için:
+// src/pages/bg/tedaviler/zirkonyum-disler.astro
+
 import MainLayout from '../../../layouts/MainLayout.astro';
 import TedaviDoktorlari from '../../../components/TedaviDoktorlari.astro';
 
 // SEO için sayfa başlığı ve açıklaması
-const pageTitle = "Zirkonyum Diş Kaplama | Doğal ve Estetik | Yüceler A+ Klinik";
-const pageDescription = "Silivri ve Çatalca'da dijital ölçü ile kusursuz zirkonyum diş kaplama tedavisi. Işık geçirgenliği yüksek, dayanıklı ve doğal diş görünümüne sahip estetik sonuçlar.";
+const pageTitle = "Циркониеви коронки | Естествени и Естетични | Клиника Yüceler A+";
+const pageDescription = "Перфектно лечение с циркониеви коронки с дигитален отпечатък в Силиври и Чаталджа. Естетични резултати с висока светлопропускливост, издръжливост и естествен вид на зъбите.";
 ---
 
 <MainLayout title={pageTitle}>
@@ -13,12 +16,12 @@ const pageDescription = "Silivri ve Çatalca'da dijital ölçü ile kusursuz zir
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/zirkonyum-banner.webp');"></div>
     
     <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-start text-left">
-      <span class="inline-block bg-klinik-koyu text-white px-4 py-1 rounded-full text-sm font-bold mb-6 tracking-widest uppercase">Premium Estetik</span>
+      <span class="inline-block bg-klinik-koyu text-white px-4 py-1 rounded-full text-sm font-bold mb-6 tracking-widest uppercase">Премиум естетика</span>
       <h1 class="text-4xl md:text-6xl font-extrabold text-klinik-koyu mb-6 drop-shadow-sm">
-        Doğal ve Dayanıklı <br/><span class="text-klinik-yesil">Zirkonyum Dişler</span>
+        Естествени и издръжливи <br/><span class="text-klinik-yesil">Циркониеви зъби</span>
       </h1>
       <p class="text-lg md:text-xl text-gray-800 font-medium max-w-xl leading-relaxed drop-shadow-sm bg-white/50 backdrop-blur-sm p-4 rounded-xl">
-        Metal desteksiz, ışık geçirgenliği yüksek ve biyouyumlu zirkonyum kaplamalar ile hayalinizdeki kusursuz gülüşe uzun yıllar boyunca sahip olun.
+        Запазете безупречната усмивка на вашите мечти в продължение на много години с циркониеви фасети, които не съдържат метал, имат висока светлопропускливост и са биосъвместими.
       </p>
     </div>
   </section>
@@ -28,63 +31,63 @@ const pageDescription = "Silivri ve Çatalca'da dijital ölçü ile kusursuz zir
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         
         <div class="w-full lg:w-2/3 prose prose-lg prose-slate max-w-none">
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Zirkonyum Diş Kaplama Nedir?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Какво представляват циркониевите коронки?</h2>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            Geleneksel porselen kaplamalarda dayanıklılık sağlamak için alt yapıda metal kullanılırdı. Bu metal altyapı, diş etlerinde gri bir yansıma yapar ve dişin mat görünmesine sebep olurdu. <strong>Zirkonyum</strong>, doğada bulunan beyaz renkli, son derece dayanıklı ve ışığı geçiren bir elementtir. 
+            В традиционните порцеланови фасети се използва метал в инфраструктурата за осигуряване на издръжливост. Тази метална инфраструктура причиняваше сиво отражение върху венците и правеше зъба да изглежда матов. <strong>Цирконият</strong> е бял, изключително издръжлив и светлопропусклив елемент, открит в природата. 
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Zirkonyum diş kaplamalar, metal içermediği için <strong>%100 doğal diş görünümü</strong> sunar. Hem ön dişlerde estetik bir sonuç almak hem de arka dişlerde yüksek çiğneme direncini karşılamak için diş hekimliğinde ulaşılan en üst düzey materyallerden biridir.
+            Тъй като не съдържат метал, циркониевите зъбни коронки предлагат <strong>100% естествен вид на зъбите</strong>. Това е един от материалите от най-високо ниво, достигнати в стоматологията както за постигане на естетичен резултат на предните зъби, така и за посрещане на висока устойчивост на дъвчене на задните зъби.
           </p>
 
           <div class="bg-gray-50 rounded-2xl p-8 border-l-4 border-klinik-yesil mb-10">
-            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Zirkonyum Kaplamanın Avantajları Nelerdir?</h3>
+            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Какви са предимствата на циркониевите коронки?</h3>
             <ul class="space-y-3 text-gray-700 font-medium">
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Yüksek Işık Geçirgenliği:</strong> Mat durmaz, tıpkı doğal diş minesi gibi canlı görünür.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Doku Dostu (Biyouyumlu):</strong> Diş etlerinde alerjiye veya morarma oluşumuna neden olmaz.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Üstün Dayanıklılık:</strong> Kırılma ve aşınmalara karşı metal altyapılar kadar dirençlidir.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Renk Değiştirmez:</strong> Çay, kahve veya sigara kullanımı nedeniyle sararmaz.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Висока светлопропускливост:</strong> Не изглежда матово, изглежда жизнено точно като естествения зъбен емайл.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Щадящи тъканите (Биосъвместими):</strong> Не причиняват алергии или посиняване на венците.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Превъзходна издръжливост:</strong> Устойчиви на счупване и износване колкото металните инфраструктури.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Не променя цвета:</strong> Не пожълтява от употреба на чай, кафе или цигари.</li>
             </ul>
           </div>
 
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Zirkonyum Tedavisi Nasıl Uygulanır?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Как се прилага лечението с цирконий?</h2>
           <div class="space-y-6 mb-10">
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Dijital Ölçü ve Hazırlık</h4>
-                <p class="text-gray-600">Dişleriniz kaplama için uygun hale getirilecek şekilde çok az miktarda küçültülür. Ardından 3D ağız içi tarayıcılarla saniyeler içinde dijital ölçünüz alınır.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Дигитален отпечатък и подготовка</h4>
+                <p class="text-gray-600">Вашите зъби се намаляват много леко, за да ги направят подходящи за фасети. След това вашият цифров отпечатък се взема за секунди с 3D интраорални скенери.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Geçici Dişlerin Takılması</h4>
-                <p class="text-gray-600">Laboratuvar süreci tamamlanana kadar hassasiyet yaşamamanız için geçici dişleriniz hemen takılır. Asla dişsiz beklemezsiniz.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Поставяне на временни зъби</h4>
+                <p class="text-gray-600">За да предотвратите чувствителност, докато лабораторният процес приключи, веднага се поставят временните ви зъби. Никога не чакате без зъби.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Prova ve Kalıcı Yapıştırma</h4>
-                <p class="text-gray-600">CAD/CAM teknolojisiyle üretilen zirkonyum dişleriniz ağzınızda prova edilir. Renk ve uyum onayınızdan geçtikten sonra kalıcı olarak sabitlenir.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Проба и постоянно залепване</h4>
+                <p class="text-gray-600">Вашите циркониеви зъби, произведени по CAD/CAM технология, се пробват в устата ви. След вашето одобрение за цвят и съответствие, те се фиксират за постоянно.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="w-full lg:w-1/3 sticky top-32">
-          <img src="/images/zirkonyum-kutu.webp" alt="Zirkonyum Diş Tedavisi" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
+          <img src="/images/zirkonyum-kutu.webp" alt="Лечение с циркониеви зъби" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
           <div class="bg-gray-50 border border-gray-100 p-8 rounded-b-2xl shadow-xl">
-            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Gülüşünüzü Şansa Bırakmayın</h3>
-            <p class="text-gray-500 mb-6 text-sm">Ücretsiz tomografi ve dijital analiz ile size özel zirkonyum tedavi planınızı hemen oluşturalım.</p>
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Не оставяйте усмивката си на случайността</h3>
+            <p class="text-gray-500 mb-6 text-sm">Нека веднага създадем вашия специален план за лечение с цирконий с безплатна томография и дигитален анализ.</p>
             
             <a href="https://wa.me/902124000013" target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-6 rounded-xl hover:bg-green-600 transition-colors mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829z" /></svg>
-              WhatsApp'tan Fiyat Sor
+              Попитайте за цена по WhatsApp
             </a>
             <a href="tel:+902124000013" class="w-full flex items-center justify-center gap-2 bg-klinik-koyu text-white font-bold py-4 px-6 rounded-xl hover:bg-black transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              Kliniği Ara: 0212 400 00 13
+              Обадете се в клиниката: +90 212 400 00 13
             </a>
           </div>
         </div>
@@ -98,39 +101,39 @@ const pageDescription = "Silivri ve Çatalca'da dijital ölçü ile kusursuz zir
   <section class="py-20 bg-gray-50 border-t border-gray-100 pb-32">
     <div class="container mx-auto px-4 max-w-4xl">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Sıkça Sorulan <span class="text-klinik-yesil">Sorular</span></h2>
-        <p class="text-gray-600">Zirkonyum diş kaplama hakkında merak edilenler.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Често задавани <span class="text-klinik-yesil">въпроси</span></h2>
+        <p class="text-gray-600">Нещата, които се чудят относно циркониевите коронки.</p>
       </div>
 
       <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Zirkonyum diş kaplama tedavisi ne kadar sürer?
+            Колко време отнема лечението с циркониеви коронки?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Dijital laboratuvar altyapımız sayesinde süreç oldukça hızlıdır. Ortalama 3 veya 4 seansta, yani 5 ila 7 gün içerisinde tamamlanmaktadır.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Процесът е много бърз благодарение на нашата дигитална лабораторна инфраструктура. Завършва се средно за 3 или 4 сесии, тоест в рамките на 5 до 7 дни.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Diş etlerinde morarma veya siyah çizgi yapar mı?
+            Причинява ли посиняване или черна линия на венците?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Kesinlikle yapmaz. Eski tip metal destekli porselenlerin aksine, zirkonyumun altyapısı da beyazdır ve tamamen doku dostudur.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Абсолютно не. За разлика от по-старите порцелани на метална основа, инфраструктурата на циркония също е бяла и напълно щадяща тъканите.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Zirkonyum dişlerin ömrü ne kadardır?
+            Какъв е животът на циркониевите зъби?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Ağız hijyenine dikkat edildiği sürece 15-20+ yıl sağlıklı şekilde kullanabilirsiniz.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Стига да се обръща внимание на устната хигиена, можете да ги използвате здравословно 15-20+ години.</p>
         </details>
       </div>
     </div>
@@ -139,17 +142,17 @@ const pageDescription = "Silivri ve Çatalca'da dijital ölçü ile kusursuz zir
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Правна информация</h3>
         <p class="text-sm text-gray-300 leading-relaxed">
-          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak hazırlanmıştır.
+          Този уебсайт е създаден изключително с цел информиране на пациентите, в пълно съответствие с правилата на Министерството на здравеопазването на Република Турция.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
-        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1">Общ кол център: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Последна актуализация: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Редактор: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>

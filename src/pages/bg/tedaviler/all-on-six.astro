@@ -1,13 +1,14 @@
 ---
-import MainLayout from '../../../layouts/MainLayout.astro';
-import doktorlarData from '../../../data/doktorlar.json';
+// BG (Bulgarca) versiyonu için:
+// src/pages/bg/tedaviler/all-on-six.astro
 
-// DİLİ OTOMATİK ALGILAMA MANTIĞI EKLENDİ
+import MainLayout from '../../../layouts/MainLayout.astro';
+import TedaviDoktorlari from '../../../components/TedaviDoktorlari.astro'; 
+
 const pathname = Astro.url.pathname;
 const pathLang = pathname.split('/')[1]; 
 const currentLang = ['tr', 'en', 'de', 'bg'].includes(pathLang) ? pathLang : 'tr'; 
 
-// SÖZLÜK (Doktor alanı ve filtreler için)
 const ui = {
   tr: { title1: "Bu Tedaviyi Uygulayan", title2: "Hekimlerimiz", all: "Tümü", noData: "Bu tedavi için atanmış doktor bulunamadı." },
   en: { title1: "Doctors Performing", title2: "This Treatment", all: "All", noData: "No doctors found for this treatment." },
@@ -16,11 +17,10 @@ const ui = {
 };
 const t = ui[currentLang];
 
-// SEO için sayfa başlığı ve açıklaması
-const pageTitle = "All On 6 İmplant Tedavisi | Sabit ve Güçlü Dişler | Yüceler A+ Klinik";
-const pageDescription = "Silivri ve Çatalca'da tam dişsizlik vakalarında All On 6 implant tedavisi. 6 implant ile maksimum stabilite ve ömür boyu garantili sabit dişlere kavuşun.";
+const pageTitle = "Лечение с импланти All On 6 | Фиксирани и здрави зъби | Клиника Yüceler A+";
+const pageDescription = "Лечение с импланти All-on-6 при пълна липса на зъби в Силиври и Чаталджа. Постигнете максимална стабилност и доживотно гарантирани фиксирани зъби с 6 импланта.";
 
-// SADECE BU TEDAVİ İLE İLGİLİ DOKTORLARI FİLTRELİYORUZ
+import doktorlarData from '../../../data/doktorlar.json';
 const ilgiliDoktorlar = doktorlarData.filter(doktor => 
   doktor.uzmanlik_alanlari.includes("all-on-six") || 
   doktor.uzmanlik_alanlari.includes("implant") ||
@@ -36,12 +36,12 @@ const ilgiliDoktorlar = doktorlarData.filter(doktor =>
     
     <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-start text-left">
       <div class="max-w-3xl">
-        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Maksimum Stabilite</span>
+        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Максимална стабилност</span>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-2xl">
-          Güçlü ve Sabit Çözüm: <br/><span class="text-klinik-yesil">All On 6 İmplant</span>
+          Здраво и фиксирано решение: <br/><span class="text-klinik-yesil">Импланти All On 6</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
-          Tüm dişlerini kaybetmiş hastalarımız için, çene kemiğine yerleştirilen 6 adet titanyum implant ile doğal dişlerinizi aratmayacak sağlamlıkta sabit protez tedavisi.
+          За нашите пациенти, които са загубили всичките си зъби, фиксирана протеза, която е толкова здрава, колкото вашите естествени зъби, с 6 титаниеви импланта, поставени в челюстната кост.
         </p>
       </div>
     </div>
@@ -52,63 +52,63 @@ const ilgiliDoktorlar = doktorlarData.filter(doktor =>
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         
         <div class="w-full lg:w-2/3 prose prose-lg prose-slate max-w-none">
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">All On 6 İmplant Tekniği Nedir?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Какво представлява техниката с импланти All On 6?</h2>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            <strong>All On 6 İmplant sistemi</strong>, tam dişsizlik problemi yaşayan hastalarımızda, tek bir çeneye 6 adet titanyum implantın belirli açılar ve aralıklarla yerleştirilerek üzerine sabit porselen veya zirkonyum köprülerin uygulandığı ileri cerrahi bir tekniktir.
+            <strong>Системата с импланти All On 6</strong> е усъвършенствана хирургична техника, прилагана при пациенти с проблеми с пълна липса на зъби, при която 6 титаниеви импланта се поставят в една челюст под определени ъгли и интервали и върху тях се поставят фиксирани порцеланови или циркониеви мостове.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            All On 4 tekniğinden farklı olarak arka bölgelere eklenen 2 adet ekstra implant sayesinde, <strong>çiğneme kuvveti çene kemiğine çok daha dengeli ve eşit dağılır.</strong> Yeterli kemik hacmine sahip hastalarda tercih edilen All On 6, uzun vadeli mekanik dayanıklılık açısından ulaşılabilecek en üst düzey tedavi standartlarından biridir.
+            За разлика от техниката All On 4, благодарение на 2-та допълнителни импланта, добавени в задните зони, <strong>дъвкателната сила се разпределя много по-балансирано и равномерно върху челюстната кост.</strong> All On 6, предпочитан при пациенти с достатъчен обем на костта, е един от най-високите стандарти на лечение, които могат да бъдат постигнати по отношение на дългосрочната механична издръжливост.
           </p>
 
           <div class="bg-gray-50 rounded-2xl p-8 border-l-4 border-klinik-yesil mb-10">
-            <h3 class="text-xl font-bold text-klinik-koyu mb-4">All On 6 Tedavisinin Avantajları Nelerdir?</h3>
+            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Какви са предимствата на лечението All On 6?</h3>
             <ul class="space-y-3 text-gray-700 font-medium">
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Maksimum Stabilite:</strong> 6 implant kullanımı, protezin hiçbir şekilde esnememesini ve kemiğe tam tutunmasını sağlar.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Mükemmel Çiğneme Fonksiyonu:</strong> Kendi doğal dişlerinizle yiyebildiğiniz her türlü sert gıdayı rahatça tüketebilirsiniz.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Damak Protezine Son:</strong> Takıp çıkarılan protezlerin yarattığı vuruk, tat alamama ve konuşma bozukluğunu tamamen bitirir.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Kemik Erimesini Durdurur:</strong> İmplantlar doğal diş kökü görevi gördüğü için çene kemiğini uyarır ve erimesini engeller.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Максимална стабилност:</strong> Използването на 6 импланта гарантира, че протезата не се огъва по никакъв начин и напълно прилепва към костта.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Перфектна дъвкателна функция:</strong> Можете удобно да консумирате всички видове твърди храни, които можете да ядете със собствените си естествени зъби.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Край на небните протези:</strong> Напълно премахва раните, загубата на вкус и говорните нарушения, причинени от подвижните протези.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Спира стопяването на костта:</strong> Тъй като имплантите действат като естествени зъбни корени, те стимулират челюстната кост и предотвратяват нейното стопяване.</li>
             </ul>
           </div>
 
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">All On 6 Tedavi Süreci Nasıl İlerler?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Как протича процесът на лечение All On 6?</h2>
           <div class="space-y-6 mb-10">
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">3D Tomografi ve Dijital Planlama</h4>
-                <p class="text-gray-600">Çene kemiğinizin hacmi ve yoğunluğu 3D tomografi ile analiz edilir. 6 adet implantın kemiğe yerleşeceği en ideal pozisyonlar milimetrik olarak dijital ortamda belirlenir.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">3D томография и дигитално планиране</h4>
+                <p class="text-gray-600">Обемът и плътността на вашата челюстна кост се анализират с 3D томография. Най-идеалните позиции, където 6-те импланта ще бъдат поставени в костта, се определят с точност до милиметър в дигитална среда.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Cerrahi Operasyon ve Geçici Dişler</h4>
-                <p class="text-gray-600">Lokal anestezi altında 6 implant çene kemiğine yerleştirilir. Eğer kemik kaliteniz uygunsa (primer stabilite yüksekse), operasyonun yapıldığı gün geçici sabit dişleriniz implantlara vidalanır.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Хирургична операция и временни зъби</h4>
+                <p class="text-gray-600">Под местна анестезия се поставят 6 импланта в челюстната кост. Ако качеството на костта ви е подходящо (първичната стабилност е висока), вашите временни фиксирани зъби се завинтват към имплантите в деня на операцията.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Kalıcı Dişlerin Takılması</h4>
-                <p class="text-gray-600">Ortalama 3 aylık bir iyileşme (kemiğe kaynama) sürecinin ardından, geçici dişleriniz çıkarılır ve yüz hatlarınıza göre estetik olarak tasarlanmış kalıcı porselen/zirkonyum dişleriniz takılır.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Поставяне на постоянните зъби</h4>
+                <p class="text-gray-600">След период на заздравяване (сливане с костта) от средно 3 месеца, вашите временни зъби се премахват и се поставят вашите постоянни порцеланови/циркониеви зъби, които са естетически проектирани според чертите на лицето ви.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="w-full lg:w-1/3 sticky top-32">
-          <img src="/images/all-on-six-kutu.webp" alt="All On 6 İmplant Tedavisi" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
+          <img src="/images/all-on-six-kutu.webp" alt="Лечение с импланти All On 6" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
           <div class="bg-gray-50 border border-gray-100 p-8 rounded-b-2xl shadow-xl">
-            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Güçlü Isırma Hissini Geri Kazanın</h3>
-            <p class="text-gray-500 mb-6 text-sm">Ücretsiz 3D tomografi ile çene kemiğinizin All On 6 tedavisi için uygunluğunu kontrol edelim.</p>
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Възвърнете усещането за силна захапка</h3>
+            <p class="text-gray-500 mb-6 text-sm">Нека проверим пригодността на вашата челюстна кост за лечение All On 6 с безплатна 3D томография.</p>
             
             <a href="https://wa.me/902124000013" target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-6 rounded-xl hover:bg-green-600 transition-colors mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829z" /></svg>
-              WhatsApp'tan Fiyat Sor
+              Попитайте за цена по WhatsApp
             </a>
             <a href="tel:+902124000013" class="w-full flex items-center justify-center gap-2 bg-klinik-koyu text-white font-bold py-4 px-6 rounded-xl hover:bg-black transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              Kliniği Ara: 0212 400 00 13
+              Обадете се в клиниката: +90 212 400 00 13
             </a>
           </div>
         </div>
@@ -163,26 +163,22 @@ const ilgiliDoktorlar = doktorlarData.filter(doktor =>
       if(filterBtns.length > 0 && docCards.length > 0) {
         filterBtns.forEach(btn => {
           btn.addEventListener('click', (e) => {
-            // Tüm butonları gri yap
             filterBtns.forEach(b => {
               b.classList.remove('bg-klinik-yesil', 'text-white', 'shadow-sm');
               b.classList.add('text-gray-500');
             });
             
-            // Tıklananı yeşil yap
-            const target = e.currentTarget as HTMLElement;
+            const target = e.currentTarget;
             target.classList.remove('text-gray-500');
             target.classList.add('bg-klinik-yesil', 'text-white', 'shadow-sm');
 
-            // Şubeye göre gizle/göster
             const branch = target.getAttribute('data-hedef');
             docCards.forEach(card => {
-              const htmlCard = card as HTMLElement;
-              const klins = htmlCard.getAttribute('data-klinikler') || "";
+              const klins = card.getAttribute('data-klinikler') || "";
               if(branch === 'all' || klins.includes(branch)) {
-                htmlCard.style.display = 'flex';
+                card.style.display = 'flex';
               } else {
-                htmlCard.style.display = 'none';
+                card.style.display = 'none';
               }
             });
           });
@@ -194,39 +190,39 @@ const ilgiliDoktorlar = doktorlarData.filter(doktor =>
   <section class="py-20 bg-gray-50 border-t border-gray-100 pb-32">
     <div class="container mx-auto px-4 max-w-4xl">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Sıkça Sorulan <span class="text-klinik-yesil">Sorular</span></h2>
-        <p class="text-gray-600">All On 6 implant tedavisi hakkında hastalarımızın en çok merak ettikleri.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Често задавани <span class="text-klinik-yesil">въпроси</span></h2>
+        <p class="text-gray-600">Това, което нашите пациенти се чудят най-много относно лечението с импланти All On 6.</p>
       </div>
 
       <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            All On 4 ile All On 6 arasındaki fark nedir?
+            Каква е разликата между All On 4 и All On 6?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">İsimlerinden de anlaşıldığı gibi temel fark kullanılan implant sayısıdır. All On 6'da çene arka bölgelerine 2 adet implant daha yerleştirilir. Bu sayede protez daha geniş bir alana desteklenir ve çiğneme kuvveti çeneye daha mükemmel dağılır. Ancak All On 6 yapabilmek için arka bölgelerde yeterli kemik yoğunluğunun olması şarttır; kemik yoksa All On 4 tercih edilir.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Както подсказват имената им, основната разлика е броят на използваните импланти. При All On 6 се поставят още 2 импланта в задните части на челюстта. По този начин протезата се поддържа на по-широка площ и дъвкателната сила се разпределя по-перфектно върху челюстта. Въпреки това, за да се направи All On 6, е от съществено значение да има достатъчна костна плътност в задните зони; ако няма кост, се предпочита All On 4.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Cerrahi işlem ne kadar sürer, ağrı hisseder miyim?
+            Колко време отнема хирургичната процедура, ще изпитам ли болка?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">İşlem tamamen lokal anestezi (bölgesel uyuşturma) altında yapıldığı için operasyon anında kesinlikle hiçbir ağrı hissetmezsiniz. 6 implantın yerleştirilmesi tek bir çene için ortalama 1.5 - 2 saat sürmektedir.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Тъй като процедурата се извършва изцяло под местна анестезия (регионална упойка), вие абсолютно няма да почувствате никаква болка по време на операцията. Поставянето на 6 импланта отнема средно 1.5 - 2 часа за една челюст.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Kemik erimem varsa All On 6 yapılabilir mi?
+            Може ли да се направи All On 6, ако имам стопяване на костта?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Eğer arka bölgelerdeki kemik erimesi çok ileri boyutta değilse, sinüs lifting (sinüs zarı kaldırma) ve kemik tozu ilavesi yapılarak kemik hacmi artırılır ve All On 6 uygulanabilir. 3D tomografi çekilmeden kesin bir şey söylemek mümkün değildir.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Ако стопяването на костта в задните зони не е много напреднало, костният обем се увеличава чрез извършване на синус лифт (повдигане на синусната мембрана) и добавяне на костен прах и може да се приложи All On 6. Не е възможно да се каже нещо окончателно, без да се направи 3D томография.</p>
         </details>
       </div>
     </div>
@@ -235,17 +231,17 @@ const ilgiliDoktorlar = doktorlarData.filter(doktor =>
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Правна информация</h3>
         <p class="text-sm text-gray-300 leading-relaxed">
-          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+          Този уебсайт е създаден изключително с цел информиране на пациентите, в пълно съответствие с правилата на Министерството на здравеопазването на Република Турция.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
-        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1">Общ кол център: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Последна актуализация: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Редактор: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>

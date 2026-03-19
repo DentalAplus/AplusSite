@@ -1,21 +1,24 @@
 ---
+// BG (Bulgarca) versiyonu için:
+// src/pages/bg/kvkk.astro
+
 import MainLayout from '../../layouts/MainLayout.astro';
 
 // SEO için sayfa başlığı ve açıklaması
-const pageTitle = "KVKK Aydınlatma Metni ve Politikalarımız | Yüceler A+ Klinik";
-const pageDescription = "Dental Implant Clinic A Plus kişisel verilerin korunması kanunu (KVKK) aydınlatma metni, veri işleme ve imha politikaları.";
+const pageTitle = "KVKK Информационен текст и нашите политики | Клиника Yüceler A+";
+const pageDescription = "Dental Implant Clinic A Plus Закон за защита на личните данни (KVKK) информационен текст, политики за обработка и унищожаване на данни.";
 ---
 
 <MainLayout title={pageTitle}>
   
   <section class="relative py-20 bg-klinik-koyu overflow-hidden">
     <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-center text-center">
-      <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Kurumsal Politikalarımız</span>
+      <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Нашите корпоративни политики</span>
       <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4">
-        Kişisel Verilerin Korunması (KVKK)
+        Защита на личните данни (KVKK)
       </h1>
       <p class="text-gray-300 max-w-2xl">
-        Kişisel verilerinizin güvenliği ve gizliliği yasal güvencemiz altındadır. Tüm hukuki metinlerimizi ve politikalarımızı aşağıdaki sekmelerden inceleyebilirsiniz.
+        Сигурността и поверителността на вашите лични данни са под нашата правна гаранция. Можете да разгледате всички наши правни текстове и политики в разделите по-долу.
       </p>
     </div>
   </section>
@@ -25,356 +28,356 @@ const pageDescription = "Dental Implant Clinic A Plus kişisel verilerin korunma
       
       <div class="flex flex-col md:flex-row border-b border-gray-200 mb-10 overflow-x-auto no-scrollbar">
         <button class="tab-btn whitespace-nowrap active px-6 py-4 font-bold text-klinik-yesil border-b-2 border-klinik-yesil transition-colors" data-target="tab-aydinlatma">
-          KVKK Aydınlatma Metni
+          KVKK Информационен текст
         </button>
         <button class="tab-btn whitespace-nowrap px-6 py-4 font-bold text-gray-500 hover:text-klinik-yesil transition-colors" data-target="tab-politika">
-          KVKK Politikamız
+          Нашата KVKK политика
         </button>
         <button class="tab-btn whitespace-nowrap px-6 py-4 font-bold text-gray-500 hover:text-klinik-yesil transition-colors" data-target="tab-imha">
-          Veri Saklama ve İmha Politikası
+          Политика за съхранение и унищожаване на данни
         </button>
       </div>
 
       <div id="tab-aydinlatma" class="tab-content block prose prose-sm md:prose-base prose-slate max-w-none">
-        <h2 class="text-xl md:text-2xl font-bold text-klinik-koyu mb-6">DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ HASTALARI KİŞİSEL VERİLERİN KORUNMASI VE İŞLENMESİ HAKKINDA AYDINLATMA METNİ</h2>
+        <h2 class="text-xl md:text-2xl font-bold text-klinik-koyu mb-6">DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ ИНФОРМАЦИОНЕН ТЕКСТ ОТНОСНО ЗАЩИТАТА И ОБРАБОТКАТА НА ЛИЧНИ ДАННИ НА ПАЦИЕНТИТЕ</h2>
         
-        <p>Veri sorumlusu DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. (bundan sonra “Dentalİmplant Clinic” olarak anılacaktır) olarak, başta özel hayatın gizliliği olmak üzere, temel hak ve özgürlüklerin korunması amacıyla, kişisel verilerle ilgili düzenlenen “Kişisel Verilerin Korunması Kanunu” (KVKK) hususunda sizi bilgilendirmek ve bu kapsamda “Aydınlatma Yükümlülüğümüzü” yerine getirmek istiyoruz. Amacımız; kişisel verilerinizin alınma şekilleri, işlenme amaçları, hukuki nedenleri ve haklarınız konularında sizi en şeffaf şekilde bilgilendirmektir. Daha ayrıntılı bilgi ve kliniğimizin KVKK Politikası, Saklama ve İmha Politikası gibi politikalarımıza www.dentalimplanttrakya.com adresinden veya kliğimizde asılı panolardan ulaşabilir bilgi alabilirsiniz.</p>
+        <p>Като администратор на данни DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. (наричана по-нататък „Dentalİmplant Clinic“), бихме искали да ви информираме за „Закона за защита на личните данни“ (KVKK), регламентиращ личните данни, за да защитим основните права и свободи, особено правото на личен живот, и да изпълним нашето „Задължение за информиране“ в този контекст. Нашата цел е; да ви информираме по възможно най-прозрачния начин относно начините за получаване на вашите лични данни, целите на обработката, правните основания и вашите права. За по-подробна информация и нашите политики като KVKK политика на нашата клиника, Политика за съхранение и унищожаване, можете да получите информация от www.dentalimplanttrakya.com или от таблата, окачени в нашата клиника.</p>
         
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">İŞLENEN KİŞİSEL VERİLER</h3>
-        <p>Tarafınıza/çocuğunuza/vesayet altında bulunana ait başta sağlık verileriniz olmak üzere, kişisel ve özel nitelikli kişisel verileriniz; kimlik bilgileriniz (ad, soyad, T.C. kimlik no, imza vb.), iletişim verileriniz (adres, telefon numarası, e-posta adresi vb.), finansal verileriniz (ödeme bilgileri, fatura bilgileri vb.), görsel verileriniz (ortak alanlarda sürekli kayıt halinde olan güvenlik kamerası görüntüleri), ödeyici kurum bilgisi verileriniz (sağlık hizmetlerinin finansmanı ve planlanması amacıyla SGK ve özel sağlık sigortasına ilişkin verileriniz), sağlık bilgileri ile ilgili her türlü kişisel verileriniz (hasta raporları, röntgen, muayene verileri, tanı verileri, hekim analiz ve yorumları, tomografi, randevu bilgileri, reçete bilgileri vb.), web siteleri ve online hizmetler aracılığı ile gönderdiğiniz ve/veya girdiğiniz sağlık verileriniz (IP adresi ve sair kişisel verileriniz); kısaca siz müşteri/hastalarımızın kimliğini belirli veya belirlenebilir hale getirmeye yarayan her türlü bilgi ve belge KVKK madde 3/d hükmüne istinaden kişisel veri kapsamında olup şirketimiz tarafında 2’nci başlıkta yer alan amaçlar ile bağlantılı ve ölçülü şekilde işlenebilmekte açık rızanız veya ilgili mevzuatta öngörülen sebepler dahilinde 3’üncü başlıkta belirtilen kişi, kurum ve kuruluşlara aktarılabilmektedir.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ОБРАБОТВАНИ ЛИЧНИ ДАННИ</h3>
+        <p>Вашите лични данни и лични данни от специален характер, особено вашите здравни данни, принадлежащи на вас/вашето дете/лице под настойничество; вашата информация за самоличност (име, фамилия, турски идентификационен номер, подпис и т.н.), вашите данни за контакт (адрес, телефонен номер, имейл адрес и т.н.), вашите финансови данни (информация за плащане, информация за фактура и т.н.), вашите визуални данни (изображения от охранителни камери, които постоянно записват в общите части), информация за плащащата институция (вашите данни относно SGK и частно здравно осигуряване за целите на финансирането и планирането на здравните услуги), всички видове лични данни, свързани със здравна информация (пациентски доклади, рентгенови снимки, данни от прегледи, диагностични данни, анализи и коментари на лекари, томография, информация за часове, информация за рецепти и т.н.), вашите здравни данни, изпратени и/или въведени от вас чрез уебсайтове и онлайн услуги (IP адрес и други ваши лични данни); накратко, всякакъв вид информация и документи, които служат да направят самоличността на вас, нашите клиенти/пациенти, идентифицирана или идентифицируема, са в обхвата на личните данни съгласно член 3/d на KVKK и могат да бъдат обработвани от нашата компания във връзка и пропорционално на целите, посочени в заглавие 2, и могат да бъдат прехвърляни на лица, институции и организации, посочени в заглавие 3, в рамките на вашето изрично съгласие или причините, предвидени в съответното законодателство.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİLERİN İŞLENME AMAÇLARI VE HUKUKİ SEBEPLERİ</h3>
-        <p>Dentalİmplant Clinic tarafından Kişisel Veri/Kişisel Verileriniz aşağıdaki amaçlar dahilinde işlenebilecektir:</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ЦЕЛИ И ПРАВНИ ОСНОВАНИЯ ЗА ОБРАБОТВАНЕ НА ЛИЧНИ ДАННИ</h3>
+        <p>Вашите лични данни/Лични данни могат да бъдат обработвани от Dentalİmplant Clinic за следните цели:</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>3359 sayılı Sağlık Hizmetleri Temel Kanunu, 663 sayılı Sağlık Bakanlığı ve Bağlı Kuruluşlarının Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname, Ağız ve Diş Sağlığı Hizmeti Sunulan Özel Sağlık Kuruluşları Hakkındaki Yönetmelik, 6698 sayılı Kişisel Verilerin Korunması Kanunu, Kişisel Sağlık Verilerinin İşlenmesi ve Mahremiyetinin Sağlanması Hakkında Yönetmelik ile ilgili diğer sair mevzuatta yer alan hukuki yükümlülüklerimizi ve iş sözleşmesinin gereklerini, yan haklar ve menfaat süreçlerinin yürütülmesini yerine getirmek,</li>
-            <li>Kişisel Veri/Kişisel Verileriniz in başkaları tarafından ele geçirilmesini engelleyebilmek adına kimlik tespiti ve doğrulama, kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi,</li>
-            <li>Diş Kliniğimizin iç işleyişi ile günlük operasyonların planlanması ve yönetilmesi, yönetim aktivitelerinin yerine getirilmesi, iç politika ve prensiplerine uyum sağlama, size özel ilaç ve/veya tıbbi malzeme ve/veya cihaz temini,</li>
-            <li>Randevu almanız halinde randevu hakkında sizi haberdar edebilme, bilgi sağlama ve/veya randevu hatırlatma, tedavi ve hizmet kapsamında tercih ettiğiniz iletişim kanalı üzerinden size bilgi paylaşımı yapılması, işlem bilgilerinin tespiti,</li>
-            <li>Yasal ve düzenleyici gereksinimlerin yerine getirilmesi ile mevzuat hükümleri uyarınca Sağlık Bakanlığı ve diğer kamu kurum ve kuruluşları ile edinilen bilgileri paylaşma ve yanıt verme, düzenleyici ve denetleyici kurumlarla resmi mercilerin talep ve denetimleri doğrultusunda gerekli bilgilerin temini, sağlık hizmetlerinin finansmanı kapsamında özel sigorta şirketleri başta olmak üzere anlaşmalı kurum/kuruluşlarca talep edilen bilgileri paylaşma ve kimlik doğrulama, diş Kliniğimiz ile anlaşmalı olan kurum/kuruluşlarla hak sahipliğinizi sorgulama veya bu kurumlarla size sunulan sağlık hizmetlerine ilişkin finansal mutabakat sağlanması,</li>
-            <li>Ödemelerinizin gerçekleşebilmesi, e-faturalama, e-arşiv faturalama ve gerekmesi durumunda iade ve değişiklik işlemlerinin yapılabilmesi, sunduğumuz hizmetler karşılığında fatura tanzim etme,</li>
-            <li>Size sunduğumuz sağlık hizmetlerinin geliştirilmesi ve iyileştirilmesi amacıyla sağlık hizmetleri kullanımınızı analiz etme ve sağlık verilerinizi saklama, hizmetlerimize ilişkin soru veya şikayetlerinize yanıt verme</li>
-            <li>Düzenleyici ve denetleyici kurumlarla resmi mercilerin talep ve denetimleri doğrultusunda gerekli bilgilerin temini, ilgili mevzuat gereği saklanması gereken sağlık verilerinize ilişkin bilgileri muhafaza etme,</li>
-            <li>Tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, geliştirilmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi, hasta memnuniyetinin artırılması, araştırılması ve bağlı nedenler,</li>
-            <li>Yapılan işlem kayıtlarının yedeklenmesi/arşivlenmesi, depolanması ve saklanması, ilgili mevzuat hükümlerince bilgi saklama, raporlama, bilgilendirme yükümlülüklerine uyulması ve yasal yükümlülüklerimizin ifası.</li>
+            <li>За изпълнение на нашите законови задължения по Основния закон за здравеопазването № 3359, Закона с декрет № 663 относно организацията и задълженията на Министерството на здравеопазването и свързаните с него институции, Наредбата за частните здравни заведения, предоставящи услуги за орално и дентално здраве, Закона за защита на личните данни № 6698, Наредбата за обработване на лични здравни данни и защита на личния живот и друго свързано законодателство, както и изискванията на трудовия договор, изпълнението на процесите на допълнителни придобивки и предимства,</li>
+            <li>За идентификация и проверка на самоличността, за да се предотврати прихващането на вашите лични данни/Лични данни от други, опазване на общественото здраве, превантивна медицина, извършване на медицинска диагностика, лечение и услуги по обгрижване, планиране и управление на здравни услуги и финансиране,</li>
+            <li>Планиране и управление на вътрешното функциониране и ежедневните операции на нашата дентална клиника, изпълнение на управленски дейности, спазване на вътрешните политики и принципи, предоставяне на специфични за вас лекарства и/или медицински консумативи и/или устройства,</li>
+            <li>Ако си запишете час, да можем да ви информираме за часа, да предоставяме информация и/или да напомняме за часа, да споделяме информация с вас чрез комуникационния канал, който предпочитате в рамките на лечението и услугата, да определяме информацията за транзакцията,</li>
+            <li>Изпълнение на законови и регулаторни изисквания и споделяне на информация, получена с Министерството на здравеопазването и други публични институции и организации в съответствие с разпоредбите на законодателството, и отговаряне на тях, предоставяне на необходимата информация в съответствие с исканията и одитите на регулаторни и надзорни органи и официални органи, споделяне на информация, изисквана от договорени институции/организации, особено частни застрахователни компании, в рамките на финансирането на здравните услуги и проверка на самоличността, проверка на вашите права в институции/организации, които имат споразумение с нашата дентална клиника, или осигуряване на финансово съгласие с тези институции относно здравните услуги, предлагани ви,</li>
+            <li>За извършване на вашите плащания, електронно фактуриране, фактуриране от електронен архив и за извършване на операции по връщане и промяна, ако е необходимо, за издаване на фактури за предлаганите от нас услуги,</li>
+            <li>Да анализираме използването на здравните услуги от ваша страна и да съхраняваме вашите здравни данни, за да развиваме и подобряваме здравните услуги, които ви предлагаме, да отговаряме на вашите въпроси или оплаквания относно нашите услуги</li>
+            <li>За предоставяне на необходимата информация в съответствие с исканията и одитите на регулаторни и надзорни органи и официални власти, за запазване на информация относно вашите здравни данни, която трябва да се съхранява съгласно съответното законодателство,</li>
+            <li>Извършване и развитие на услуги по медицинска диагностика, лечение и грижи, планиране и управление на здравни услуги и финансиране, повишаване на удовлетвореността на пациентите, изследвания и свързани причини,</li>
+            <li>Резервно копиране/архивиране, складиране и запазване на записите за транзакциите, спазване на задълженията за запазване на информация, докладване, информиране съгласно разпоредбите на съответното законодателство и изпълнение на нашите законови задължения.</li>
         </ul>
-        <p>İlgili mevzuat uyarınca elde edilen ve işlenen Kişisel Veri/Kişisel Verileriniz idari ve teknik tedbirler alınmak vasıtasıyla korunarak, Dentalİmplant Clinic’e ait fiziki arşivler ve/veya bilişim sistemlerine nakledilerek hem dijital ortamda hem de fiziki ortamda 4’üncü başlıkta belirtilen süre dahilinde muhafaza altında tutulabilecektir. Kişisel verileriniz, kanunlarda açıkça öngörülmüş olması, bir sözleşmenin kurulması ve ifası, bir hukuki yükümlülüğün yerine getirilmesi, kişisel verilerinin tarafınızca alenileştirilmiş olması, temel hak ve özgürlüklerinize zarar vermemek kaydıyla veri sorumlusunun meşru menfaatleri nedeniyle, mevzuattan kaynaklanan kanuni yükümlülüklerin yerine getirilmesi amacıyla KVKK md. 5 hükmü uyarınca işlenebilmektedir.</p>
+        <p>Вашите лични данни/Лични данни, получени и обработени съгласно съответното законодателство, могат да бъдат защитени чрез предприемане на административни и технически мерки и прехвърляне във физически архиви и/или информационни системи на Dentalİmplant Clinic и съхранявани както в цифрова, така и във физическа среда за периода, посочен в заглавие 4. Вашите лични данни могат да бъдат обработвани в съответствие с чл. 5 от KVKK с цел изпълнение на законови задължения, произтичащи от законодателството, при условие че е изрично предвидено в законите, сключване и изпълнение на договор, изпълнение на законово задължение, публично достояние от вас, и за легитимните интереси на администратора на данни, при условие че това не вреди на основните ви права и свободи.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİ AKTARIMI</h3>
-        <p>KVKK ve ilgili mevzuatlar uyarınca uygun güvenlik düzeyini temin etmeye yönelik gerekli her türlü teknik ve idari tedbirlerin alınmasını sağlayarak, Kişisel Veri/Kişisel Verilerinizi 2’nci bölümde yer alan amaçlar doğrultusunda; 3359 sayılı Sağlık Hizmetleri Temel Kanunu, 663 sayılı Sağlık Bakanlığı ve Bağlı Kuruluşlarının Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname, Ağız ve Diş Sağlığı Hizmeti Sunulan Özel Sağlık Kuruluşları Hakkındaki Yönetmelik, Ayaktan Teşhis ve Tedavi Yönetmeliği, 6698 Kişisel Verilerin Korunması Kanunu, Kişisel Sağlık Verileri Hakkında Yönetmelik ve ilgili diğer mevzuat hükümlerinin izin verdiği kişi/kurum ve/veya kuruluşlara; tercih ettiğiniz ödeme şekline bağlı olarak ilgili Bankalara, online ödeme sistemlerine, sigorta/vakıf/sandık kapsamında hizmet almış iseniz ilgili sigorta şirketine, vakfa, sandığa ve aracı kurumlarına, size daha iyi bir hizmet sunabilmemiz için alt yapı sağlayıcısına, e-faturalama/e-arşiv faturalama işlemleri kapsamında ilgili kurum/kuruluş ve alt yapı sağlayıcılarına, yapılan işlem kayıtlarının yedeklenmesi/saklanması/arşivlenmesi/depolanması için birlikte çalıştığımız sunucu barındırma, arşivleme, depolama ve yazılım hizmetleri sağlayıcılarına; şikayetlerinizin ya da hasıl olan bir sorunun giderimi ya da yasal yükümlülüklerimizin ifası için Şirket’imizin çalışanlarına, hukuk, mali ve vergi danışmanlarına, denetçilerine ve de mevzuat hükümlerinin izin verdiği kişi, kurum ve kuruluşlara aktarılabilecektir. Kişisel verileriniz bu maddede belirtilen üçüncü kişilere aktarılırken sadece gerektiği kadarı ile ve ilgisi kapsamında bir aktarım yapılacaktır.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ПРЕДАВАНЕ НА ЛИЧНИ ДАННИ</h3>
+        <p>В съответствие с KVKK и свързаните разпоредби, като гарантираме, че са предприети всички необходими технически и административни мерки за осигуряване на подходящо ниво на сигурност, вашите Лични данни/Лични данни в съответствие с целите в раздел 2; на лица/институции и/или организации, разрешени от Основния закон за здравните услуги № 3359, Закона с декрет № 663 относно организацията и задълженията на Министерството на здравеопазването и свързаните с него институции, Наредбата за частните здравни заведения, предоставящи услуги за орално и дентално здраве, Наредбата за амбулаторна диагностика и лечение, Закона за защита на личните данни № 6698, Наредбата за личните здравни данни и други съответни разпоредби на законодателството; в зависимост от начина на плащане, който предпочитате, на съответните банки, системи за онлайн разплащания, ако сте получили услуга в обхвата на застраховка/фондация/фонд, на съответната застрахователна компания, фондация, фонд и нейните посреднически институции, на доставчика на инфраструктура, за да ви предоставим по-добро обслужване, на съответните институции/организации и доставчици на инфраструктура в обхвата на транзакциите за е-фактуриране/фактуриране от е-архив, на доставчици на услуги за хостинг на сървъри, архивиране, съхранение и софтуер, с които работим, за да архивираме/съхраняваме/пазим записи за извършени транзакции; на служители, правни, финансови и данъчни съветници, одитори на нашата компания и лица, институции и организации, разрешени от разпоредбите на законодателството, за разрешаване на вашите жалби или проблеми, които възникват, или за изпълнение на нашите правни задължения. Когато личните ви данни се предават на третите страни, посочени в този член, ще се прави предаване само дотолкова, доколкото е необходимо и в рамките на неговата релевантност.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİLERİN TOPLANMA YÖNTEMİ VE SAKLAMA SÜRESİ</h3>
-        <p>Kişisel Veri/Kişisel Verileriniz; 2’nci başlıkta belirtilen amaçlarla; Dentalİmplant Clinic tarafından; gelişiniz esnasında ve/veya öncesinde ve/veya sonrasında; sözlü, yazılı, görsel ya da elektronik ortamda, telefon, SMS, MMS vb. telekomünikasyon iletişim vasıtalarıyla Sosyal Güvenlik Kurumu sistemi üzerinden online olarak, özel sigorta şirketinden yararlanma halinde paylaşılan kayıtlardan, diğer sağlık kurum ve kuruluşlarının kayıtları üzerinden, gönderdiğiniz e-postalar ve benzer kanallar aracılığıyla, internet sitesi aracılığıyla, güvenlik amaçları ile yapılan ses ve görüntü kayıtları aracılığı ile, otomatik ya da otomatik olmayan yollarla, yazılı, sözlü şekilde ya da elektronik ortamda toplanmakta ve fiziki ve dijital ortamda saklanmaktadır. Şirketimiz, temin ettiği kişisel verileri, tabii olduğu mevzuat hükümleri kapsamında öngörülen bir süre olması durumunda ilgili sürelere riayet ederek; eğer böyle bir süre öngörülmemişse ancak işlendikleri amaç için gerekli olan süre kadar saklayabilecektir. Kişisel Verileriniz KVKK md. 7/f.1.’e göre işlenmesini gerektiren amaç ortadan kalktığında ve/veya mevzuat uyarınca verilerinizi işlememiz için zorunlu kıldığımız zamanaşımı/saklama süreleri dolduğunda, silinecek, yok edilecek veya anonim hale getirilecektir.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">МЕТОД ЗА СЪБИРАНЕ НА ЛИЧНИ ДАННИ И ПЕРИОД НА СЪХРАНЕНИЕ</h3>
+        <p>Вашите лични данни/Лични данни; за целите, посочени в заглавие 2; от Dentalİmplant Clinic; по време и/или преди и/или след вашето пристигане; устно, писмено, визуално или в електронна среда, телефон, SMS, MMS и др. чрез телекомуникационни средства за комуникация онлайн чрез системата на Институцията за социално осигуряване, от записи, споделени в случай на използване на частна застрахователна компания, чрез записите на други здравни институции и организации, чрез имейли и подобни канали, които изпращате, чрез уебсайта, чрез аудио и видео записи, направени за целите на сигурността, чрез автоматични или неавтоматични средства, събрани писмено, устно или в електронна среда и съхранявани във физическа и цифрова среда. Нашата компания ще може да съхранява личните данни, които получава, чрез спазване на съответните периоди, ако има период, предвиден в рамките на законовите разпоредби, на които е подчинена; ако такъв период не е предвиден, но само за периода, необходим за целта, за която са обработени. Когато целта, изискваща обработката им съгласно чл. 7/ал.1 от KVKK изчезне и/или когато изтекат давностните срокове/периодите на съхранение, които сме задължени да спазваме съгласно законодателството, вашите лични данни ще бъдат изтрити, унищожени или анонимизирани.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİ SAHİBİNİN HAKLARI</h3>
-        <p>Şirketimize yazılı olarak veya Kurulun belirleyeceği diğer yöntemlerle başvurarak; kişisel verilerinizin a) işlenip işlenmediğini öğrenme, b) kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme, c) kişisel verilerinizin işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, ç) kişisel verilerinizin yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, d) kişisel verilerinizin eksik veya yanlış işlenmiş ise düzeltilmesini isteme, e) Kanun’un 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme, f) kişisel verilerinizin aktarıldığı üçüncü kişilere yukarıda sayılan (d) ve (e) bentleri uyarınca yapılan işlemlerin bildirilmesini isteme, g) kişisel verilerinizin münhasıran otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme ve ğ) kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme hakkına sahipsiniz.</p>
-        <p>Kişisel verilerle ilgili taleplerinizi; kimliğinizi tespit edici gerekli bilgiler ve kullanmak istediğiniz hakkınıza yönelik açıklamalarınızla birlikte: a) Şirketimizin bilgi@dentalimplanttrakya.com e-posta adresine göndereceğiniz bir e-posta, b) Kaleiçi Mah. Semt Kradeniz Cad. No.14 B Çatalca/İstanbul adresine iadeli taahhütlü posta, noter vasıtasıyla veya elden teslim yöntemi ile göndereceğiniz bir dilekçe/müracaat yazısı ile iletebilirsiniz.</p>
-        <p>Tarafıma tebliğ edilen Aydınlatma Metnini okuduğumu ve anladığımı, şahsıma ait/velayetimde bulunan çocuğa ait yukarıda sayılı kişisel verilerin hangi amaçlar ve yöntemlerle işleneceğini ve 6698 sayılı Kanun’dan doğan haklarım ile bu haklarımı nasıl kullanacağıma ilişkin açık ve anlaşılır şekilde bilgilendirildiğimi kabul ve beyan ederim.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ПРАВА НА СОБСТВЕНИКА НА ЛИЧНИ ДАННИ</h3>
+        <p>Кандидатствайки в нашата компания писмено или чрез други методи, определени от Съвета; имате право да а) научите дали личните ви данни се обработват, б) да поискате информация, ако личните ви данни са били обработвани, в) да научите целта на обработката на вашите лични данни и дали те се използват в съответствие с целта им, г) да знаете третите страни, на които вашите лични данни се предават в страната или чужбина, д) да поискате коригиране на личните ви данни, ако са непълни или неправилно обработени, е) да поискате изтриване или унищожаване на личните ви данни в рамките на условията, предвидени в член 7 от Закона, ж) да поискате уведомяване на третите страни, на които са предадени вашите лични данни, за транзакциите, извършени съгласно букви (д) и (е) по-горе, з) да възразите срещу появата на резултат срещу вас поради анализирането на личните ви данни изключително чрез автоматизирани системи и и) да поискате обезщетение за вредите, в случай че претърпите вреди поради неправомерно обработване на личните ви данни.</p>
+        <p>Можете да изпратите вашите заявки относно лични данни; заедно с необходимата информация за установяване на вашата самоличност и вашите обяснения относно правото, което искате да използвате: а) с имейл, който ще изпратите на имейл адреса на нашата компания bilgi@dentalimplanttrakya.com, б) с петиция/писмо за кандидатстване, което ще изпратите до Kaleiçi Mah. Semt Kradeniz Cad. No.14 B Çatalca/İstanbul чрез препоръчана поща с обратна разписка, чрез нотариус или чрез ръчна доставка.</p>
+        <p>Приемам и декларирам, че съм прочел и разбрал Информационния текст, който ми беше връчен, че съм ясно и разбираемо информиран за това с какви цели и методи ще се обработват изброените по-горе лични данни, принадлежащи на мен/детето под мое попечителство, и за моите права, произтичащи от Закон № 6698, и как да ги упражнявам.</p>
       </div>
 
       <div id="tab-politika" class="tab-content hidden prose prose-sm md:prose-base prose-slate max-w-none">
-        <h2 class="text-xl md:text-2xl font-bold text-klinik-koyu mb-6">DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ KİŞİSEL VERİLERİN KORUNMASI VE İŞLENMESİ POLİTİKASI</h2>
+        <h2 class="text-xl md:text-2xl font-bold text-klinik-koyu mb-6">DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ ПОЛИТИКА ЗА ЗАЩИТА И ОБРАБОТВАНЕ НА ЛИЧНИ ДАННИ</h2>
         
-        <p>Veri sorumlusu DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. (bundan sonra “Dentalİmplant Clinic” olarak anılacaktır) olarak, başta özel hayatın gizliliği olmak üzere, temel hak ve özgürlüklerin korunması amacıyla, kişisel verilerle ilgili düzenlenen “Kişisel Verilerin Korunması Kanunu” (KVKK) hususunda sizi bilgilendirmek, kliniğimiz/şirketimiz politikamızdır. Amacımız; kişisel verilerinizin alınma şekilleri, saklanma yöntemleri, imha yöntemleri, işlenme amaçları, hukuki nedenleri ve haklarınız konularında sizi en şeffaf şekilde bilgilendirmektir. Daha ayrıntılı bilgi ve kliniğimizin KVKK Politikası, Saklama ve İmha Politikası gibi politikalarımıza www.dentalimplanttrakya.com adresinden veya kliğimizde asılı panolardan ulaşabilir bilgi alabilirsiniz.</p>
-        <p>KVKK uyarınca kliniğimize yapılacak başvurulara ilişkin “başvuru formuna” tıklayarak ulaşabilirsiniz.</p>
-        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ve Kişisel Sağlık Verilerinin İşlenmesi ve Mahremiyetinin Sağlanması hakkındaki yönetmelik ve ilgili mevzuatlara göre aşağıdaki temel ilkeler çerçevesinde Kişisel verileri korumak kurum politikası olarak benimsenmiştir.</p>
+        <p>Като администратор на данни DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. (наричана по-нататък „Dentalİmplant Clinic“), политика на нашата клиника/компания е да ви информираме относно „Закона за защита на личните данни“ (KVKK), който регламентира личните данни, за да защитим основните права и свободи, особено неприкосновеността на личния живот. Нашата цел е; да ви информираме по най-прозрачния начин за начините на получаване на вашите лични данни, методи за съхранение, методи за унищожаване, цели на обработка, правни основания и вашите права. За по-подробна информация и нашите политики като KVKK политика на нашата клиника, Политика за съхранение и унищожаване, можете да получите информация от www.dentalimplanttrakya.com или от таблата, окачени в нашата клиника.</p>
+        <p>Можете да стигнете до "формуляра за кандидатстване" за заявления, които да бъдат направени до нашата клиника в съответствие с KVKK, като кликнете върху него.</p>
+        <p>Съгласно Закона за защита на личните данни № 6698 и Наредбата относно обработването на лични здравни данни и осигуряването на неприкосновеност на личния живот и съответното законодателство, защитата на личните данни е приета като корпоративна политика в рамките на следните основни принципи.</p>
         
         <ul class="list-disc pl-5 space-y-2">
-            <li>Kişisel verileri hukuka ve dürüstlük kurallarına uygun işleme,</li>
-            <li>Kişisel verileri doğru ve gerektiğinde güncel tutma,</li>
-            <li>Kişisel verileri belirli, açık ve meşru amaçlar için işleme,</li>
-            <li>Kişisel verileri işlendikleri amaçla bağlantılı, sınırlı ve ölçülü işleme,</li>
-            <li>Kişisel verileri ilgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar muhafaza etme,</li>
-            <li>Kişisel veri sahiplerini aydınlatma ve bilgilendirme,</li>
-            <li>Kişisel veri sahiplerinin haklarını kullanması için gerekli sistemi kurma,</li>
-            <li>Kişisel verilerin muhafazasında gerekli tedbirleri alma,</li>
-            <li>Kişisel verilerin işleme amacının gereklilikleri doğrultusunda üçüncü kişilere aktarılmasında, ilgili mevzuata ve KVK Kurulu düzenlemelerine uygun davranma,</li>
-            <li>Özel nitelikli kişisel verilerin işlenmesine ve korunmasına gerekli hassasiyeti gösterme,</li>
-            <li>Kişisel verileri yasaya uygun olarak tanımlı şekil ve sürede silme ve imha etme</li>
+            <li>Обработване на лични данни в съответствие със закона и принципите на добросъвестност,</li>
+            <li>Поддържане на личните данни точни и актуални при необходимост,</li>
+            <li>Обработка на лични данни за конкретни, ясни и легитимни цели,</li>
+            <li>Обработване на личните данни по начин, който е свързан, ограничен и съразмерен с целта, за която се обработват,</li>
+            <li>Съхраняване на лични данни за периода, предвиден в съответното законодателство или изискван за целта, за която се обработват,</li>
+            <li>Информиране и осветляване на собствениците на лични данни,</li>
+            <li>Създаване на необходимата система за собствениците на лични данни да упражняват правата си,</li>
+            <li>Вземане на необходимите мерки за запазване на личните данни,</li>
+            <li>Да действа в съответствие със съответното законодателство и разпоредбите на Съвета за защита на личните данни при прехвърляне на лични данни на трети страни в съответствие с изискванията на целта на обработката,</li>
+            <li>Проявяване на необходимата чувствителност при обработването и защитата на лични данни от специален характер,</li>
+            <li>Изтриване и унищожаване на лични данни в съответствие със закона по определения начин и време.</li>
         </ul>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KVKK UYARINCA YAPILAN TANIMLAMALAR</h3>
-        <p><strong>Veri Sorumlusu :</strong> DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ.’yi<br>
-        <strong>İlgili kişi/gerçek kişi:</strong> Kişisel veri sahibini,<br>
-        <strong>Kayıt ortamı:</strong> Tamamen veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla islenen kişisel verilerin bulunduğu her türlü ortamı,<br>
-        <strong>Site:</strong> https://www.dentalimplanttrakya.com/index.php/tr/ adresinde yer alan web sitesini,<br>
-        <strong>Veri İşleyen:</strong> Veri sorumlusunun verdiği yetkiye dayanarak onun adına kişisel verileri işleyen gerçek veya tüzel kişiyi,<br>
-        <strong>Veri Sorumlusu:</strong> Kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan gerçek veya tüzel kişiyi,<br>
-        <strong>Ziyaretçi:</strong> Kurumumuzun sahip olduğu fiziksel alanlara çeşitli amaçlarla girmiş olan veya internet sitelerimizi ziyaret eden gerçek kişiler.<br>
-        <strong>Hasta:</strong> Kurumumuza tetkik, tedavi için müracaat edip ayaktan ya da yatarak tedavi gören kişi,<br>
-        <strong>Özel Nitelikli Kişisel Veri:</strong> Irk, etnik köken, siyasi düşünce, felsefi inanç, din, mezhep veya diğer inançlar, kılık kıyafet, dernek vakıf ya da sendika üyeliği, sağlık, cinsel hayat, ceza mahkûmiyeti ve güvenlik tedbirleriyle ilgili veriler ile biyometrik ve genetik veriler özel nitelikli veriler,<br>
-        <strong>6698 Sayılı Kanun/KVKK:</strong> Kişisel verilerin korunması kanunu’nu, ifade eder.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ОПРЕДЕЛЕНИЯ СЪГЛАСНО KVKK</h3>
+        <p><strong>Администратор на данни:</strong> DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ.<br>
+        <strong>Съответно лице/физическо лице:</strong> Собственик на лични данни,<br>
+        <strong>Носител на запис:</strong> Всякакъв вид среда, съдържаща лични данни, които се обработват напълно или частично чрез автоматични средства или чрез неавтоматични средства, при условие че са част от система за запис на данни,<br>
+        <strong>Сайт:</strong> Уебсайтът, разположен на https://www.dentalimplanttrakya.com/index.php/tr/,<br>
+        <strong>Обработващ данни:</strong> Физическо или юридическо лице, което обработва лични данни от името на администратора на данни въз основа на даденото му разрешение,<br>
+        <strong>Администратор на данни:</strong> Физическо или юридическо лице, което определя целите и средствата за обработка на лични данни и отговаря за създаването и управлението на системата за запис на данни,<br>
+        <strong>Посетител:</strong> Физически лица, които са влезли във физическите зони на нашата институция за различни цели или посещават нашите уебсайтове.<br>
+        <strong>Пациент:</strong> Лице, което кандидатства в нашата институция за преглед, лечение и получава амбулаторно или болнично лечение,<br>
+        <strong>Лични данни от специален характер:</strong> Данни относно раса, етнически произход, политически възгледи, философски вярвания, религия, секта или други вярвания, външен вид и облекло, членство в сдружения, фондации или синдикати, здраве, сексуален живот, наказателни присъди и мерки за сигурност, както и биометрични и генетични данни са данни от специален характер,<br>
+        <strong>Закон № 6698/KVKK:</strong> Изразява Закона за защита на личните данни.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">İŞLENEN KİŞİSEL VERİLER</h3>
-        <p>Tarafınıza/çocuğunuza/vesayet altında bulunana ait başta sağlık verileriniz olmak üzere, kişisel ve özel nitelikli kişisel verileriniz; kimlik bilgileriniz, iletişim verileriniz, finansal verileriniz, görsel verileriniz, ödeyici kurum bilgisi verileriniz, sağlık bilgileri ile ilgili her türlü kişisel verileriniz, web siteleri ve online hizmetler aracılığı ile gönderilen ve girilen hastalar, çalışanlar ve çalışan adayları kısaca siz müşteri/hastalarımızın/çalışanlarımızın kimliğini belirli veya belirlenebilir hale getirmeye yarayan her türlü bilgi ve belge KVKK madde 3/d hükmüne istinaden kişisel veri kapsamında olup şirketimiz tarafında 2’nci başlıkta yer alan amaçlar ile bağlantılı ve ölçülü şekilde işlenebilmekte açık rızanız veya ilgili mevzuatta öngörülen sebepler dahilinde 3’üncü başlıkta belirtilen kişi, kurum ve kuruluşlara aktarılabilmektedir.</p>
-        <p>KVKK uyarınca işlenen verilere ayrıca ayrıntılı olarak “Aydınlatma Metni”ne tıklayarak ulaşabilirsiniz.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ОБРАБОТВАНИ ЛИЧНИ ДАННИ</h3>
+        <p>Вашите лични и специални лични данни, особено вашите здравни данни, принадлежащи на вас/вашето дете/лице под настойничество; вашата информация за самоличност, вашите данни за контакт, вашите финансови данни, вашите визуални данни, вашите данни за плащащата институция, всякакъв вид лични данни, свързани със здравна информация, пациенти, служители и кандидати за служители, изпратени и въведени чрез уебсайтове и онлайн услуги, накратко, всякакъв вид информация и документи, които служат да направят самоличността на вас, нашите клиенти/пациенти/служители, идентифицирана или идентифицируема, са в обхвата на личните данни съгласно член 3/d на KVKK и могат да бъдат обработвани от нашата компания във връзка и пропорционално на целите, посочени в заглавие 2, и могат да бъдат прехвърляни на лица, институции и организации, посочени в заглавие 3, в рамките на вашето изрично съгласие или причините, предвидени в съответното законодателство.</p>
+        <p>Можете също да получите достъп до подробностите за обработените данни в съответствие с KVKK, като кликнете върху „Информационен текст“.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİLERİN İŞLENME AMAÇLARI VE HUKUKİ SEBEPLERİ</h3>
-        <p>Dentalİmplant Clinic tarafından Kişisel Veri/Kişisel Verileriniz aşağıdaki amaçlar dahilinde işlenebilecektir:</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ЦЕЛИ И ПРАВНИ ОСНОВАНИЯ ЗА ОБРАБОТВАНЕ НА ЛИЧНИ ДАННИ</h3>
+        <p>Вашите лични данни/Лични данни могат да бъдат обработвани от Dentalİmplant Clinic за следните цели:</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>3359 sayılı Sağlık Hizmetleri Temel Kanunu, 663 sayılı Sağlık Bakanlığı ve Bağlı Kuruluşlarının Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname, Ağız ve Diş Sağlığı Hizmeti Sunulan Özel Sağlık Kuruluşları Hakkındaki Yönetmelik, 6698 sayılı Kişisel Verilerin Korunması Kanunu, Kişisel Sağlık Verilerinin İşlenmesi ve Mahremiyetinin Sağlanması Hakkında Yönetmelik ile ilgili diğer sair mevzuatta yer alan hukuki yükümlülüklerimizi ve iş sözleşmesinin gereklerini, yan haklar ve menfaat süreçlerinin yürütülmesini yerine getirmek,</li>
-            <li>Kişisel Veri/Kişisel Verileriniz in başkaları tarafından ele geçirilmesini engelleyebilmek adına kimlik tespiti ve doğrulama, kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi,</li>
-            <li>Diş Kliniğimizin iç işleyişi ile günlük operasyonların planlanması ve yönetilmesi, yönetim aktivitelerinin yerine getirilmesi, iç politika ve prensiplerine uyum sağlama, size özel ilaç ve/veya tıbbi malzeme ve/veya cihaz temini,</li>
-            <li>Randevu alınması halinde randevu hakkında sizi haberdar edebilme, bilgi sağlama ve/veya randevu hatırlatma, tedavi ve hizmet kapsamında tercih edilen iletişim kanalı üzerinden size bilgi paylaşımı yapılması, işlem bilgilerinin tespiti,</li>
-            <li>Yasal ve düzenleyici gereksinimlerin yerine getirilmesi ile mevzuat hükümleri uyarınca Sağlık Bakanlığı ve diğer kamu kurum ve kuruluşları ile edinilen bilgileri paylaşma ve yanıt verme, düzenleyici ve denetleyici kurumlarla resmi mercilerin talep ve denetimleri doğrultusunda gerekli bilgilerin temini, sağlık hizmetlerinin finansmanı kapsamında özel sigorta şirketleri başta olmak üzere anlaşmalı kurum/kuruluşlarca talep edilen bilgileri paylaşma ve kimlik doğrulama, diş Kliniğimiz ile anlaşmalı olan kurum/kuruluşlarla hak sahipliğinizi sorgulama veya bu kurumlarla size sunulan sağlık hizmetlerine ilişkin finansal mutabakat sağlanması,</li>
-            <li>Ödemelerin gerçekleşebilmesi, e-faturalama, e-arşiv faturalama ve gerekmesi durumunda iade ve değişiklik işlemlerinin yapılabilmesi, sunduğumuz hizmetler karşılığında fatura tanzim etme,</li>
-            <li>Sunulan sağlık hizmetlerinin geliştirilmesi ve iyileştirilmesi amacıyla sağlık hizmetleri kullanımınızı analiz etme ve sağlık verilerinizi saklama, hizmetlerimize ilişkin soru veya şikayetlerinize yanıt verme</li>
-            <li>Düzenleyici ve denetleyici kurumlarla resmi mercilerin talep ve denetimleri doğrultusunda gerekli bilgilerin temini, ilgili mevzuat gereği saklanması gereken sağlık verilerinize ilişkin bilgileri muhafaza etme,</li>
-            <li>Tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, geliştirilmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi, hasta memnuniyetinin artırılması, araştırılması ve bağlı nedenler,</li>
-            <li>Yapılan işlem kayıtlarının yedeklenmesi/arşivlenmesi, depolanması ve saklanması, ilgili mevzuat hükümlerince bilgi saklama, raporlama, bilgilendirme yükümlülüklerine uyulması ve yasal yükümlülüklerimizin ifası.</li>
-            <li>Maaş ödemelerinin gerçekleşebilmesi amacıyla EFT/havale işlemlerinin yapılması.</li>
+            <li>За изпълнение на нашите законови задължения по Основния закон за здравните услуги № 3359, Закона с декрет № 663 относно организацията и задълженията на Министерството на здравеопазването и свързаните с него институции, Наредбата за частните здравни заведения, предоставящи услуги за орално и дентално здраве, Закона за защита на личните данни № 6698, Наредбата за обработване на лични здравни данни и защита на личния живот и друго свързано законодателство, както и изискванията на трудовия договор, изпълнението на процесите на допълнителни придобивки и предимства,</li>
+            <li>За идентификация и проверка на самоличността, за да се предотврати прихващането на вашите лични данни/Лични данни от други, опазване на общественото здраве, превантивна медицина, извършване на медицинска диагностика, лечение и услуги по обгрижване, планиране и управление на здравни услуги и финансиране,</li>
+            <li>Планиране и управление на вътрешното функциониране и ежедневните операции на нашата дентална клиника, изпълнение на управленски дейности, спазване на вътрешните политики и принципи, предоставяне на специфични за вас лекарства и/или медицински консумативи и/или устройства,</li>
+            <li>Ако си запишете час, да можем да ви информираме за часа, да предоставяме информация и/или да напомняме за часа, да споделяме информация с вас чрез комуникационния канал, който предпочитате в рамките на лечението и услугата, да определяме информацията за транзакцията,</li>
+            <li>Изпълнение на законови и регулаторни изисквания и споделяне на информация, получена с Министерството на здравеопазването и други публични институции и организации в съответствие с разпоредбите на законодателството, и отговаряне на тях, предоставяне на необходимата информация в съответствие с исканията и одитите на регулаторни и надзорни органи и официални органи, споделяне на информация, изисквана от договорени институции/организации, особено частни застрахователни компании, в рамките на финансирането на здравните услуги и проверка на самоличността, проверка на вашите права в институции/организации, които имат споразумение с нашата дентална клиника, или осигуряване на финансово съгласие с тези институции относно здравните услуги, предлагани ви,</li>
+            <li>За извършване на плащания, електронно фактуриране, фактуриране от електронен архив и за извършване на операции по връщане и промяна, ако е необходимо, за издаване на фактури за предлаганите от нас услуги,</li>
+            <li>Да анализираме използването на здравните услуги от ваша страна и да съхраняваме вашите здравни данни, за да развиваме и подобряваме предлаганите здравни услуги, да отговаряме на вашите въпроси или оплаквания относно нашите услуги</li>
+            <li>За предоставяне на необходимата информация в съответствие с исканията и одитите на регулаторни и надзорни органи и официални власти, за запазване на информация относно вашите здравни данни, която трябва да се съхранява съгласно съответното законодателство,</li>
+            <li>Извършване и развитие на услуги по медицинска диагностика, лечение и грижи, планиране и управление на здравни услуги и финансиране, повишаване на удовлетвореността на пациентите, изследвания и свързани причини,</li>
+            <li>Резервно копиране/архивиране, складиране и запазване на записите за транзакциите, спазване на задълженията за запазване на информация, докладване, информиране съгласно разпоредбите на съответното законодателство и изпълнение на нашите законови задължения.</li>
+            <li>Извършване на транзакции с EFT/паричен превод за целите на плащане на заплати.</li>
         </ul>
-        <p>İlgili mevzuat uyarınca elde edilen ve işlenen Kişisel Veri/Kişisel Verileriniz idari ve teknik tedbirler alınmak vasıtasıyla korunarak, Dental İmplant Clinic’e ait fiziki arşivler ve/veya bilişim sistemlerine nakledilerek hem dijital ortamda hem de fiziki ortamda 4’üncü başlıkta belirtilen süre dahilinde muhafaza altında tutulabilecektir. Kişisel veriler, kanunlarda açıkça öngörülmüş olması, bir sözleşmenin kurulması ve ifası, bir hukuki yükümlülüğün yerine getirilmesi, kişisel verilerinin tarafınızca alenileştirilmiş olması, temel hak ve özgürlüklerinize zarar vermemek kaydıyla veri sorumlusunun meşru menfaatleri nedeniyle, mevzuattan kaynaklanan kanuni yükümlülüklerin yerine getirilmesi amacıyla KVKK md. 5 hükmü uyarınca işlenebilmektedir.</p>
+        <p>Вашите лични данни/Лични данни, получени и обработени съгласно съответното законодателство, могат да бъдат защитени чрез предприемане на административни и технически мерки и прехвърляне във физически архиви и/или информационни системи на Dental İmplant Clinic и съхранявани както в цифрова, така и във физическа среда за периода, посочен в заглавие 4. Личните данни могат да бъдат обработвани съгласно член 5 от KVKK с цел изпълнение на законови задължения, произтичащи от законодателството, поради легитимни интереси на администратора на данни, при условие че това е изрично предвидено в законите, сключването и изпълнението на договор, изпълнението на законово задължение, публично достояние на личните данни от ваша страна и при условие че не се нарушават вашите основни права и свободи.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİLERİN MEVZUATTA ÖNGÖRÜLEN İLKELERE UYGUN OLARAK İŞLENMESİ</h3>
-        <p><strong>Hukuka ve Dürüstlük Kuralına Uygun İşleme</strong><br>
-        Kurumumuz; kişisel verilerin işlenmesinde yasal düzenlemelerle getirilen ilkeler ile genel güven ve dürüstlük kuralına uygun hareket etmektedir. Kurumumuz, kişisel verilerin işlenmesinde orantılılık gerekliliklerini dikkate almaktadır, kişisel verileri amacın dışında kullanmamaktadır.</p>
-        <p><strong>Kişisel Verilerin Doğru ve Gerektiğinde Güncel Olmasını Sağlama</strong><br>
-        Kurumumuz; kişisel veri sahiplerinin temel haklarını ve kendi yasal menfaatlerini dikkate alarak işlediği kişisel verilerin doğru ve güncel olmasını sağlayacak gerekli önlemleri almaktadır.</p>
-        <p><strong>Belirli, Açık ve Meşru Amaçlarla İşleme</strong><br>
-        Kurumumuz, meşru ve hukuka uygun olan kişisel veri işleme amacını açık ve kesin olarak belirlemektedir. Kurumumuz, kişisel verileri sunmakta olduğu hizmetle bağlantılı ve bunlar için gerekli olan kadar işlemektedir. Kurumumuz tarafından kişisel verilerin hangi amaçla işleneceği henüz kişisel veri işleme faaliyeti başlamadan bildirilmektedir.</p>
-        <p><strong>İşlendikleri Amaçla Bağlantılı, Sınırlı ve Ölçülü Olma</strong><br>
-        Kurumumuz, kişisel verileri belirlenen amaçların gerçekleştirilebilmesine elverişli bir biçimde işlemekte ve amacın gerçekleştirilmesiyle ilgili olmayan veya ihtiyaç duyulmayan kişisel verilerin işlenmesinden kaçınmaktadır. Örneğin sonradan ortaya çıkması muhtemel ihtiyaçların karşılanmasına yönelik kişisel veri işleme faaliyeti yürütülmemektedir.</p>
-        <p><strong>İlgili Mevzuatta Öngörülen veya İşlendikleri Amaç için Gerekli Olan Süre Kadar Muhafaza Etme</strong><br>
-        Kurumumuz, kişisel verileri ancak ilgili mevzuatta belirtildiği veya işlendikleri amaç için gerekli olan süre kadar muhafaza etmektedir. Bu kapsamda, Kurumumuz öncelikle ilgili mevzuatta kişisel verilerin saklanması için bir süre öngörülüp öngörülmediğini tespit etmekte, bir süre belirlenmişse bu süreye uygun davranmakta, bir süre belirlenmemişse kişisel verileri işlendikleri amaç için gerekli olan süre kadar saklamaktadır. Sürenin bitimi veya işlenmesini gerektiren sebeplerin ortadan kalkması halinde kişisel veriler Kurumumuz tarafından silinmekte, yok edilmekte veya anonim hale getirilmektedir.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ОБРАБОТВАНЕ НА ЛИЧНИ ДАННИ В СЪОТВЕТСТВИЕ С ПРИНЦИПИТЕ, ПРЕДВИДЕНИ В ЗАКОНОДАТЕЛСТВОТО</h3>
+        <p><strong>Обработка в съответствие със закона и правилата на добросъвестност</strong><br>
+        Нашата институция действа в съответствие с принципите, въведени от законовите разпоредби и общите правила на доверие и добросъвестност при обработването на лични данни. При обработката на лични данни нашата институция взема предвид изискванията за пропорционалност и не използва лични данни извън предназначението им.</p>
+        <p><strong>Гарантиране, че личните данни са точни и актуални при необходимост</strong><br>
+        Нашата институция взема необходимите мерки, за да гарантира, че обработваните лични данни са точни и актуални, като взема предвид основните права и собствените правни интереси на собствениците на лични данни.</p>
+        <p><strong>Обработка за конкретни, ясни и легитимни цели</strong><br>
+        Нашата институция определя ясно и точно целта на обработването на лични данни, което е легитимно и законосъобразно. Нашата институция обработва лични данни толкова, колкото е свързано с и необходимо за предоставяните услуги. За каква цел личните данни ще бъдат обработвани от нашата институция, се уведомява преди началото на дейността по обработване на лични данни.</p>
+        <p><strong>Да бъде свързано, ограничено и съразмерно с целта, за която се обработват</strong><br>
+        Нашата институция обработва лични данни по начин, подходящ за постигане на определените цели, и избягва обработването на лични данни, които не са свързани или не са необходими за осъществяването на целта. Например, не се извършва дейност по обработка на лични данни за посрещане на нужди, които може да възникнат по-късно.</p>
+        <p><strong>Съхранение за периода, предвиден в съответното законодателство или необходим за целта на обработката</strong><br>
+        Нашата институция съхранява лични данни само за периода, посочен в съответното законодателство или необходим за целта, за която се обработват. В този контекст нашата институция първо определя дали съответното законодателство предвижда срок за съхранение на лични данни. Ако е определен период, тя действа в съответствие с този период, а ако не е определен период, тя съхранява личните данни за периода, необходим за целта, за която се обработват. Когато периодът изтече или причините, налагащи обработката им, отпаднат, личните данни се изтриват, унищожават или анонимизират от нашата институция.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">Özel Nitelikli Kişisel Verilerin İşlenmesi</h3>
-        <p>Kurumumuz tarafından, KVK Kanunu ile “özel nitelikli” olarak belirlenen kişisel verilerin işlenmesinde, KVK Kanunu’nda öngörülen düzenlemelere hassasiyetle uygun davranılmaktadır.</p>
-        <p>KVK Kanunu’nun 6ncı maddesinde, hukuka aykırı olarak işlendiğinde kişilerin mağduriyetine veya ayrımcılığa sebep olma riski taşıyan bir takım kişisel veri “özel nitelikli” olarak belirlenmiştir. Bu veriler; ırk, etnik köken, siyasi düşünce, felsefi inanç, din, mezhep veya diğer inançlar, kılık ve kıyafet, dernek, vakıf ya da sendika üyeliği, sağlık, cinsel hayat, ceza mahkûmiyeti ve güvenlik tedbirleriyle ilgili veriler ile biyometrik ve genetik verilerdir.</p>
-        <p>KVK Kanunu’na uygun bir biçimde Kurumumuz tarafından; özel nitelikli kişisel veriler (sadece sağlık verisi ve adli sicil), KVK Kurulu tarafından belirlenecek olan yeterli önlemlerin alınması kaydıyla aşağıdaki durumlarda işlenmektedir:</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">Обработка на лични данни от специален характер</h3>
+        <p>При обработването на лични данни, определени като "специални" от Закона KVK, нашата институция стриктно спазва разпоредбите, предвидени в Закона KVK.</p>
+        <p>В член 6 от Закона KVK някои лични данни, които носят риск да причинят виктимизация или дискриминация, ако се обработват незаконно, са определени като "специални". Тези данни са; данни за раса, етнически произход, политически възгледи, философски вярвания, религия, секта или други вярвания, външен вид и облекло, членство в сдружения, фондации или синдикати, здраве, сексуален живот, наказателни присъди и мерки за сигурност, както и биометрични и генетични данни.</p>
+        <p>В съответствие със Закона KVK, от нашата институция; лични данни от специален характер (само здравни данни и криминално досие) се обработват в следните случаи, при условие че се вземат подходящи мерки, които ще бъдат определени от Съвета KVK:</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Kişisel veri sahibinin sağlığına ve cinsel hayatına ilişkin özel nitelikli kişisel verileri ise ancak kamu sağlığının korunması, koruyucu hekimlik, tıbbi teşhis, tedavi ve bakım hizmetlerinin yürütülmesi, sağlık hizmetleri ile finansmanının planlanması ve yönetimi amacıyla, sır saklama yükümlülüğü altında bulunan kişiler veya yetkili kurum ve kuruluşlar tarafından işlenmektedir.</li>
+            <li>Личните данни от специален характер, свързани със здравето и сексуалния живот на собственика на личните данни, се обработват само от лица, задължени да пазят тайна, или от оторизирани институции и организации с цел опазване на общественото здраве, превантивна медицина, провеждане на медицинска диагностика, лечение и услуги по обгрижване, планиране и управление на здравни услуги и финансиране.</li>
         </ul>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİ AKTARIMI</h3>
-        <p>KVKK ve ilgili mevzuatlar uyarınca uygun güvenlik düzeyini temin etmeye yönelik gerekli her türlü teknik ve idari tedbirlerin alınmasını sağlayarak, Kişisel Veri/Kişisel Verileri 2’nci bölümde yer alan amaçlar doğrultusunda; 4857 Sayılı İş Kanunu, 6331 Sayılı İş Sağlığı Ve Güvenliği Kanunu, 3359 sayılı Sağlık Hizmetleri Temel Kanunu, 663 sayılı Sağlık Bakanlığı ve Bağlı Kuruluşlarının Teşkilat ve Görevleri Hakkında Kanun Hükmünde Kararname, Ağız ve Diş Sağlığı Hizmeti Sunulan Özel Sağlık Kuruluşları Hakkındaki Yönetmelik, Ayaktan Teşhis ve Tedavi Yönetmeliği, 6698 Kişisel Verilerin Korunması Kanunu, Kişisel Sağlık Verileri Hakkında Yönetmelik ve ilgili diğer mevzuat hükümlerinin izin verdiği kişi/kurum ve/veya kuruluşlara; tercih ettiğiniz ödeme şekline bağlı olarak ilgili Bankalara, online ödeme sistemlerine, sigorta/vakıf/sandık kapsamında hizmet almış iseniz ilgili sigorta şirketine, vakfa, sandığa ve aracı kurumlarına, size daha iyi bir hizmet sunabilmemiz için alt yapı sağlayıcısına, e-faturalama/e-arşiv faturalama işlemleri kapsamında ilgili kurum/kuruluş ve alt yapı sağlayıcılarına, yapılan işlem kayıtlarının yedeklenmesi/saklanması/arşivlenmesi/depolanması için birlikte çalıştığımız sunucu barındırma, arşivleme, depolama ve yazılım hizmetleri sağlayıcılarına; şikayetlerinizin ya da hasıl olan bir sorunun giderimi ya da yasal yükümlülüklerimizin ifası için Şirket’imizin çalışanlarına, hukuk, mali ve vergi danışmanlarına, denetçilerine ve de mevzuat hükümlerinin izin verdiği kişi, kurum ve kuruluşlara aktarılabilecektir. Kişisel veriler bu maddede belirtilen üçüncü kişilere aktarılırken sadece gerektiği kadarı ile ve ilgisi kapsamında bir aktarım yapılacaktır.</p>
-        <p>Kayıtlara erişimi olan sınırlı sayıda kişi gizlilik taahhütnamesi ile eriştiği verilerin gizliliğini koruyacağını beyan etmektedir.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ПРЕДАВАНЕ НА ЛИЧНИ ДАННИ</h3>
+        <p>В съответствие с KVKK и свързаните разпоредби, като гарантираме, че са предприети всички необходими технически и административни мерки за осигуряване на подходящо ниво на сигурност, Личните данни/Личните данни в съответствие с целите в раздел 2; на лица/институции и/или организации, разрешени от Закона за труда № 4857, Закона за здраве и безопасност при работа № 6331, Основния закон за здравните услуги № 3359, Закона с декрет № 663 относно организацията и задълженията на Министерството на здравеопазването и свързаните с него институции, Наредбата за частните здравни заведения, предоставящи услуги за орално и дентално здраве, Наредбата за амбулаторна диагностика и лечение, Закона за защита на личните данни № 6698, Наредбата за личните здравни данни и други съответни разпоредби на законодателството; в зависимост от начина на плащане, който предпочитате, на съответните банки, системи за онлайн разплащания, ако сте получили услуга в обхвата на застраховка/фондация/фонд, на съответната застрахователна компания, фондация, фонд и нейните посреднически институции, на доставчика на инфраструктура, за да ви предоставим по-добро обслужване, на съответните институции/организации и доставчици на инфраструктура в обхвата на транзакциите за е-фактуриране/фактуриране от е-архив, на доставчици на услуги за хостинг на сървъри, архивиране, съхранение и софтуер, с които работим, за да архивираме/съхраняваме/пазим записи за извършени транзакции; на служители, правни, финансови и данъчни съветници, одитори на нашата компания и лица, институции и организации, разрешени от разпоредбите на законодателството, за разрешаване на вашите жалби или проблеми, които възникват, или за изпълнение на нашите правни задължения. Когато личните данни се предават на третите страни, посочени в този член, ще се прави предаване само дотолкова, доколкото е необходимо и в рамките на неговата релевантност.</p>
+        <p>Ограничен брой лица с достъп до записите декларират, че ще защитават поверителността на данните, до които имат достъп, чрез споразумение за поверителност.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİLERİN TOPLANMA YÖNTEMİ; SAKLAMA SÜRESİ ve İMHA YÖNTEMİ</h3>
-        <p>Kişisel Veri/Kişisel Veriler; 2’nci başlıkta belirtilen amaçlarla; Dentalİmplant Clinic tarafından; gelişiniz esnasında ve/veya öncesinde ve/veya sonrasında; sözlü, yazılı, görsel ya da elektronik ortamda, telefon, SMS, MMS vb. telekomünikasyon iletişim vasıtalarıyla Sosyal Güvenlik Kurumu sistemi üzerinden online olarak, özel sigorta şirketinden yararlanma halinde paylaşılan kayıtlardan, diğer sağlık kurum ve kuruluşlarının kayıtları üzerinden, gönderdiğiniz e-postalar ve benzer kanallar aracılığıyla, internet sitesi aracılığıyla, güvenlik amaçları ile yapılan ses ve görüntü kayıtları aracılığı ile, otomatik ya da otomatik olmayan yollarla, yazılı, sözlü şekilde ya da elektronik ortamda toplanmakta ve fiziki ve dijital ortamda saklanmaktadır. Şirketimiz, temin ettiği kişisel verileri, tabii olduğu mevzuat hükümleri kapsamında öngörülen bir süre olması durumunda ilgili sürelere riayet ederek; eğer böyle bir süre öngörülmemişse ancak işlendikleri amaç için gerekli olan süre kadar saklayabilecektir.</p>
-        <p>Kişisel Veriler KVKK md. 7/f.1.’e göre işlenmesini gerektiren amaç ortadan kalktığında ve/veya mevzuat uyarınca verileri işlememiz için zorunlu kıldığımız zamanaşımı/saklama süreleri dolduğunda, silinecek, yok edilecek veya anonim hale getirilecektir.</p>
-        <p>Ayrıntılı saklama ve imha yöntemlerimiz ve usulleri için “Saklama ve İmha Prosedür” sayfamızı ziyaret edebilirsiniz.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">МЕТОД ЗА СЪБИРАНЕ НА ЛИЧНИ ДАННИ; ПЕРИОД НА СЪХРАНЕНИЕ И МЕТОД ЗА УНИЩОЖАВАНЕ</h3>
+        <p>Лични данни/Лични данни; за целите, посочени в заглавие 2; от Dentalİmplant Clinic; по време и/или преди и/или след вашето пристигане; устно, писмено, визуално или в електронна среда, телефон, SMS, MMS и др. чрез телекомуникационни средства за комуникация онлайн чрез системата на Институцията за социално осигуряване, от записи, споделени в случай на използване на частна застрахователна компания, чрез записите на други здравни институции и организации, чрез имейли и подобни канали, които изпращате, чрез уебсайта, чрез аудио и видео записи, направени за целите на сигурността, чрез автоматични или неавтоматични средства, събрани писмено, устно или в електронна среда и съхранявани във физическа и цифрова среда. Нашата компания ще може да съхранява личните данни, които получава, чрез спазване на съответните периоди, ако има период, предвиден в рамките на законовите разпоредби, на които е подчинена; ако такъв период не е предвиден, но само за периода, необходим за целта, за която са обработени.</p>
+        <p>Когато целта, изискваща тяхната обработка съгласно чл. 7/ал.1 от KVKK изчезне и/или когато изтекат давностните срокове/периодите на съхранение, които сме задължени да спазваме съгласно законодателството, Личните данни ще бъдат изтрити, унищожени или анонимизирани.</p>
+        <p>Можете да посетите нашата страница "Процедура за съхранение и унищожаване" за подробни методи и процедури за съхранение и унищожаване.</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">TEKNİK VE İDARİ TEDBİRLER</h3>
-        <p>Kişisel verilerinizin güvenli bir şekilde saklanması, hukuka aykırı olarak işlenmesi, erişilmesinin önlenmesi ve verilerin hukuka uygun olarak imha edilmesi amacıyla Klinik tarafından alınmış olan tüm idari ve teknik tedbirler aşağıda sayılmıştır:</p>
-        <p>Klinik’in idari olarak almış olduğu ve almakta olduğu tedbirler aşağıda yazılı olanlarla sınırlı olmamak üzere şu şekildedir:</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ТЕХНИЧЕСКИ И АДМИНИСТРАТИВНИ МЕРКИ</h3>
+        <p>Всички административни и технически мерки, предприети от Клиниката, за да съхраняват вашите лични данни сигурно, да предотвратят тяхната незаконна обработка, да предотвратят достъпа до тях и да унищожат данните законно, са изброени по-долу:</p>
+        <p>Административните мерки, предприети и които се предприемат от Клиниката, са както следва, но не се ограничават до написаното по-долу:</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Kişisel Veri Envanteri hazırlanmış ve süreç içerisinde güncellenmektedir.</li>
-            <li>VERBIS kaydını gerçekleştirir ve herhangi bir değişiklik halinde sicildeki bilgileri günceller.</li>
-            <li>İşlenen kişisel verilerin hukuka aykırı yollarla başkaları tarafından elde edilmesi hâlinde, bu durumu en kısa sürede ilgilisine ve Kurul’a bildirir.</li>
-            <li>Saklanan kişisel verilere Klinik içi erişimi iş tanımı gereği erişmesi gerekli personel ile sınırlandırır.</li>
-            <li>Çalışanların niteliği ve teknik bilgi/becerisinin geliştirilir, kişisel verilerin hukuka aykırı işlenmesi önlenir.</li>
-            <li>Çalışanlarla imzalanan iş sözleşmelerinde sır saklama yükümlülüğü ve gizlilik hükümlerine yer verir.</li>
-            <li>Klinik periyodik kontroller gerçekleştirir, Kontrol ve/veya denetim sonucunda ortaya çıkan gizlilik ve güvenlik zafiyetlerinin giderilmesini sağlar.</li>
-            <li>Kişisel verilerin paylaşılması ile ilgili olarak, kişisel verilerin paylaşıldığı kişiler ile kişisel verilerin korunması ve veri güvenliğine ilişkin çerçeve sözleşme imzalar yahut mevcut sözleşmesine eklenen hükümler ile veri güvenliğini sağlar. Gizlilik taahhütnameleri yapar.</li>
-            <li>Kişisel veri içeren fiziksel ortamlara (kilitli dolaplar vb gibi) erişim ile ilgili gerekli güvenlik önlemleri alır ve fiziksel ortamların dış risklere karşı güvenliğini sağlar.</li>
-            <li>Çalışan Özlük Dosyaları, Hasta Dosyaları, Yönetim Kurulu kararları gibi gizli belgeler kilitlenebilir bir dolapta saklanacaktır, Birer kopyası ortak klasörde elektronik olarak sağlanacaktır.</li>
-            <li>Tüm Çalışanlar hiçbir bilginin hileli kullanımlara maruz kalmamasını sağlamak için gizli belgeleri imha etmek üzere evrak imha etme yöntemi kullanacaklardır.</li>
-            <li>Kişisel Verilere hukuka aykırı erişilmesinin önlenmesi, kişisel verilerin muhafazasının sağlanması, iletişim teknikleri ve ilgili mevzuatlar hakkında eğitimler verilmektedir.</li>
-            <li>Güvenlik politika ve prosedürlerine uymayan çalışanlara yönelik uygulanacak disiplin prosedürü uygulanmaktadır.</li>
-            <li>İlgili kişileri aydınlatma yükümlülüğü yerine getirilmekte, kurum içi periyodik ve rastgele denetimler yapılmaktadır.</li>
+            <li>Изготвя се инвентаризация на личните данни и се актуализира по време на процеса.</li>
+            <li>Извършва регистрация във VERBIS и актуализира информацията в регистъра при всякакви промени.</li>
+            <li>Ако обработените лични данни бъдат получени от други лица по незаконни начини, тя уведомява съответното лице и Съвета за тази ситуация възможно най-скоро.</li>
+            <li>Ограничава вътрешния достъп на Клиниката до съхраняваните лични данни до персонала, който трябва да има достъп поради своето описание на длъжността.</li>
+            <li>Подобрява се квалификацията и техническите знания/умения на служителите, предотвратява се незаконната обработка на лични данни.</li>
+            <li>Включва задължения за поверителност и клаузи за неразкриване в трудовите договори, подписани със служители.</li>
+            <li>Клиниката извършва периодични проверки, осигурява отстраняването на слабости в поверителността и сигурността, които възникват в резултат на контрол и/или одит.</li>
+            <li>По отношение на споделянето на лични данни подписва рамков договор за защита на личните данни и сигурност на данните с лицата, с които се споделят личните данни, или гарантира сигурността на данните с разпоредби, добавени към съществуващия договор. Прави ангажименти за поверителност.</li>
+            <li>Предприема необходимите мерки за сигурност относно достъпа до физически среди, съдържащи лични данни (заключени шкафове и др.), и осигурява сигурността на физическите среди срещу външни рискове.</li>
+            <li>Поверителни документи като Лични досиета на служители, Досиета на пациенти, решения на Съвета на директорите ще се съхраняват в заключващ се шкаф, като копие от всеки ще бъде предоставено електронно в споделена папка.</li>
+            <li>Всички служители ще използват метода за унищожаване на документи, за да унищожат поверителни документи, за да гарантират, че никоя информация не е изложена на измамна употреба.</li>
+            <li>Осигурява се обучение относно предотвратяване на незаконен достъп до лични данни, осигуряване на запазване на лични данни, комуникационни техники и съответното законодателство.</li>
+            <li>Прилагат се дисциплинарни процедури за служители, които не спазват политиките и процедурите за сигурност.</li>
+            <li>Изпълнява се задължението за информиране на съответните лица, правят се периодични и случайни вътрешни одити.</li>
         </ul>
 
-        <p>Klinik’in teknik olarak almış olduğu ve almakta olduğu tedbirler aşağıda yazılı olanlarla sınırlı olmamak üzere şu şekildedir:</p>
+        <p>Техническите мерки, предприети и които се предприемат от Клиниката, са както следва, но не се ограничават до написаното по-долу:</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Kurulan sistemler kapsamında bilgi teknolojileri risk değerlendirmesi ve iş etki analizinin gerçekleştirilmesi süreçlerini yürütür.</li>
-            <li>Verilerin kurum dışına sızmasını engelleyecek veyahut gözlemleyecek teknik altyapının temin edilmesini ve ilgili matrislerin oluşturulmasını sağlar.</li>
-            <li>Kişisel verilerin saklandığı her türlü dijital ortam, bilgi güvenliği gereksinimlerini sağlayacak şekilde şifreli yöntemler ile korur.</li>
-            <li>Ağ güvenliği ve uygulama güvenliği sağlar.</li>
-            <li>Serverda depolanan kişisel verilerin güvenliği sağlar.</li>
-            <li>Çalışanlar için yetki matrisi oluşturulmasını sağlar.</li>
-            <li>Erişim logları düzenli olarak tutar.</li>
-            <li>Görev değişikliği olan ya da işten ayrılan çalışanların bu alandaki yetkileri kaldırır.</li>
-            <li>Güncel anti-virüs sistemleri kullanır.</li>
-            <li>Kişisel Verilerin taşınabilir bellek, CD, DVD aracılığıyla herhangi bir şekilde aktarılmaması konusunda gerekli önlemleri alır.</li>
+            <li>Провежда оценка на риска на информационните технологии и процеси на анализ на въздействието върху бизнеса в рамките на инсталираните системи.</li>
+            <li>Осигурява предоставянето на техническа инфраструктура, която ще предотврати или наблюдава изтичането на данни извън институцията, и създаването на съответните матрици.</li>
+            <li>Защитава всички видове цифрови носители, където се съхраняват лични данни, с криптирани методи по начин, който отговаря на изискванията за информационна сигурност.</li>
+            <li>Осигурява мрежова сигурност и сигурност на приложенията.</li>
+            <li>Осигурява сигурността на личните данни, съхранявани на сървъра.</li>
+            <li>Осигурява създаването на матрица за оторизация за служителите.</li>
+            <li>Редовно съхранява дневници за достъп.</li>
+            <li>Премахва правомощията в тази област на служители, чиито задължения са се променили или които са напуснали работа.</li>
+            <li>Използва актуални антивирусни системи.</li>
+            <li>Предприема необходимите предпазни мерки, за да гарантира, че личните данни не се прехвърлят по никакъв начин чрез преносима памет, CD, DVD.</li>
         </ul>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">KİŞİSEL VERİ SAHİBİNİN HAKLARI</h3>
-        <p>Veri sahibi ilgili kişilerin Şirketimize yazılı olarak veya Kurulun belirleyeceği diğer yöntemlerle başvurarak; kişisel verilerin a) işlenip işlenmediğini öğrenme, b) kişisel veriler işlenmişse buna ilişkin bilgi talep etme, c) kişisel verilerin işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, ç) kişisel verilerin yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, d) kişisel verilerin eksik veya yanlış işlenmiş ise düzeltilmesini isteme, e) Kanun’un 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme, f) kişisel verilerin aktarıldığı üçüncü kişilere yukarıda sayılan (d) ve (e) bentleri uyarınca yapılan işlemlerin bildirilmesini isteme, g) kişisel verilerin münhasıran otomatik sistemler ile analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme ve ğ) kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme hakkına sahiptir.</p>
-        <p>Kişisel verilerle ilgili taleplerinizi; kimliğinizi tespit edici gerekli bilgiler ve kullanmak istediğiniz hakkınıza yönelik açıklamalarınızla birlikte: a) Şirketimizin bilgi@dentalimplanttrakya.com e-posta adresine göndereceğiniz bir e-posta, b) Kaleiçi Mah. Semt Karadeniz Cad. No.14 B Çatalca/İstanbul adresine iadeli taahhütlü posta, noter vasıtasıyla veya elden teslim yöntemi ile göndereceğiniz bir dilekçe/müracaat yazısı ile iletebilirsiniz.</p>
-        <p>Ayrıntılı bilgi için “Aydınlatma Metni” sayfamızı ziyaret edebilirsiniz.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">ПРАВА НА СОБСТВЕНИКА НА ЛИЧНИ ДАННИ</h3>
+        <p>Чрез кандидатстване до нашата компания в писмен вид или чрез други методи, които ще бъдат определени от Съвета, съответните лица собственици на данни имат право; а) да научат дали се обработват лични данни, б) да поискат информация, ако личните данни са били обработени, в) да научат целта на обработката на личните данни и дали те се използват в съответствие с тяхната цел, г) да знаят третите страни, на които се предават лични данни в страната или чужбина, д) да поискат коригиране на личните данни, ако са непълни или неправилно обработени, е) да поискат изтриване или унищожаване на лични данни в рамките на условията, предвидени в член 7 от Закона, ж) да поискат уведомяване на третите страни, на които са предадени лични данни, за транзакциите, извършени съгласно букви (д) и (е) по-горе, з) да възразят срещу появата на резултат срещу вас поради анализирането на личните данни изключително чрез автоматизирани системи и и) да поискат обезщетение за вредите, в случай че претърпите вреди поради неправомерно обработване на личните данни.</p>
+        <p>Можете да изпратите вашите заявки относно лични данни; заедно с необходимата информация за установяване на вашата самоличност и вашите обяснения относно правото, което искате да използвате: а) с имейл, който ще изпратите на имейл адреса на нашата компания bilgi@dentalimplanttrakya.com, б) с петиция/писмо за кандидатстване, което ще изпратите до Kaleiçi Mah. Semt Karadeniz Cad. No.14 B Çatalca/İstanbul чрез препоръчана поща с обратна разписка, чрез нотариус или чрез ръчна доставка.</p>
+        <p>За подробна информация можете да посетите нашата страница "Информационен текст".</p>
 
-        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">Politikanın Yürürlüğe Girmesi</h3>
-        <p>DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ.  Kişisel Verilerin Korunması ve İşlenmesi Politikası 01.03.2021 tarihinde yürürlüğe girer. Politikanın tamamının veya belirli maddelerinin yenilenmesi durumunda Politikanın yürürlük tarihi yenilenen madde için o maddenin revize edildiği tarihtir.</p>
-        <p>Politika, Kurumumuzun internet sitesinde (www.dentalimplanttrakya.com) yayımlanır.</p>
+        <h3 class="text-lg md:text-xl font-bold mt-8 mb-4">Влизане в сила на Политиката</h3>
+        <p>Политиката за защита и обработка на лични данни на DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. влиза в сила на 01.03.2021 г. В случай на обновяване на цялата Политика или на определени нейни членове, датата на влизане в сила на Политиката за обновения член е датата, на която този член е ревизиран.</p>
+        <p>Политиката е публикувана на уебсайта на нашата институция (www.dentalimplanttrakya.com).</p>
       </div>
 
       <div id="tab-imha" class="tab-content hidden prose prose-sm md:prose-base prose-slate max-w-none">
-        <h2 class="text-2xl font-bold text-klinik-koyu mb-6">DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. KİŞİSEL VERİLERİ SAKLAMA VE İMHA PROSEDÜRÜ</h2>
-        <p><strong>Yürürlük Tarihi: 01.03.2021</strong></p>
+        <h2 class="text-2xl font-bold text-klinik-koyu mb-6">DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. ПРОЦЕДУРА ЗА СЪХРАНЕНИЕ И УНИЩОЖАВАНЕ НА ЛИЧНИ ДАННИ</h2>
+        <p><strong>Дата на влизане в сила: 01.03.2021</strong></p>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">1. AMAÇ</h3>
-        <p>İşbu prosedürün amacı 6698 sayılı Kişisel Verilerin Korunması Kanunu ve Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hale Getirilmesi Hakkında Yönetmelik’e uygun olarak DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. ’nin (‘Klinik’) Kişisel Verilerin saklanması, silinmesi, yok edilmesi veya anonim Hale Getirilmesi’ne ilişkin yükümlülüklerinde Klinik içerisinde ve/veya Klinik tarafından uyulması gereken yöntem ve esasları belirlemektedir.</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">1. ЦЕЛ</h3>
+        <p>Целта на тази процедура е да определи методите и принципите, които трябва да се спазват в рамките на Клиниката и/или от Клиниката по отношение на задълженията на DENTALIMPLANT CLINIC TRAKYA SAĞLIK HİZM. LTD. ŞTİ. („Клиника“) по отношение на съхраняването, изтриването, унищожаването или анонимизирането на лични данни в съответствие със Закона за защита на личните данни № 6698 и Наредбата за изтриване, унищожаване или анонимизиране на лични данни.</p>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">2. KAPSAM</h3>
-        <p>İşbu Politika, Kliniğin işlemekte olduğu Kişisel Verilere yönelik tüm faaliyetleri kapsar ve söz konusu faaliyetlere uygulanır. Bu Kişisel Verilerin saklanmasıyla ilgili olarak bu politika tarafından düzenlenen kurallar müşteri/hasta, tedarikçi, çalışan veya diğer gerçek şahıslarla ilgili basılı, elektronik veya diğer ortamlardaki tüm kişisel verileri kapsar.</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">2. ОБХВАТ</h3>
+        <p>Тази Политика обхваща всички дейности, насочени към Личните данни, обработвани от Клиниката, и се прилага за тези дейности. Правилата, регулирани от тази политика по отношение на съхранението на тези Лични данни, обхващат всички лични данни в печатна, електронна или друга среда, свързани с клиенти/пациенти, доставчици, служители или други реални лица.</p>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">3. TANIMLAR</h3>
-        <p>İşbu Politikada geçen tanımlar aşağıdaki anlamları ihtiva eder;</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">3. ДЕФИНИЦИИ</h3>
+        <p>Дефинициите в тази Политика имат следните значения;</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li><strong>“Kişisel Veri”:</strong> Kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgiyi ifade eder</li>
-            <li><strong>“KVKK”:</strong> 6698 sayılı Kişisel Verilerin Korunması Kanunu’nu ifade eder.</li>
-            <li><strong>“Kişisel Veri İşleme”:</strong> Kişisel Verilerin tamamen veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla elde edilmesi, kaydedilmesi, depolanması, muhafaza edilmesi, değiştirilmesi, yeniden düzenlenmesi, açıklanması, aktarılması, devralınması, elde edilebilir hâle getirilmesi, sınıflandırılması ya da kullanılmasının engellenmesi gibi veri üzerinde yapılan her türlü işlemi ifade eder.</li>
-            <li><strong>“Açık Rıza”:</strong> Belirli bir konuya ilişkin bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rızayı ifade eder.</li>
-            <li><strong>“Elektronik Ortam”:</strong> Kişisel Verilerin elektronik cihazlar ile oluşturulabildiği, okunabildiği, değiştirilebildiği ve yazılabildiği ortamları ifade eder.</li>
-            <li><strong>“Kurul”:</strong> Kişisel Verileri Koruma Kurulunu ifade eder.</li>
-            <li><strong>“Anonim Hale Getirme”:</strong> Kişisel Verilerin, başka verilerle eşleştirilerek dahi hiçbir surette kimliği belirli veya belirlenebilir bir gerçek kişiyle ilişkilendirilemeyecek hâle getirilmesini ifade eder.</li>
-            <li><strong>“İmha Etme”:</strong> Kişisel Verilerin geri döndürülemez biçimde yok edilmesini ifade eder.</li>
-            <li><strong>“Silme”:</strong> Kişisel Verilerin geri döndürülemez biçimde temizlenmesi yahut ilgili kullanıcılar için erişilemez hale getirmeyi ifade eder.</li>
-            <li><strong>“Veri Envanteri”:</strong> Kliniğin Kişisel Veri İşleme faaliyetlerine yönelik olarak Kişisel Veri İşleme süreç ve yöntemleri, Kişisel Veri İşleme amaçları, veri kategorisi, Kişisel Verilerin aktarıldığı üçüncü kişiler vb. bilgileri ihtiva eden envanteri ifade eder.</li>
-            <li><strong>“Veri Sorumlusu İrtibat Kişisi”:</strong> Kliniğin Kurum ile olan ilişkilerini yürüten ve Klinik tarafından atanan kişiyi ifade eder.</li>
-            <li><strong>“Veri Sahipleri”:</strong> Kişisel Verileri Klinik tarafından veya Klinik adına işlenen Çalışan/Tedarikçi/Müşteri/Hasta tüm gerçek kişileri ifade eder.</li>
+            <li><strong>„Лични данни“:</strong> Означава всякакъв вид информация, свързана с идентифицирано или идентифицируемо физическо лице.</li>
+            <li><strong>„KVKK“:</strong> Изразява Закона за защита на личните данни № 6698.</li>
+            <li><strong>„Обработване на лични данни“:</strong> Означава всяка операция, извършена върху данни като получаване, записване, съхранение, запазване, промяна, реорганизация, разкриване, прехвърляне, поемане, правене на достъпни, класифициране или предотвратяване на използването на лични данни по напълно или частично автоматизирани начини или по неавтоматизирани начини, при условие че са част от система за запис на данни.</li>
+            <li><strong>„Изрично съгласие“:</strong> Означава съгласие, което се основава на информация по конкретна тема и се обяснява със свободна воля.</li>
+            <li><strong>„Електронна среда“:</strong> Означава среди, където личните данни могат да бъдат създавани, четени, променяни и записвани с електронни устройства.</li>
+            <li><strong>„Съвет“:</strong> Изразява Съвета за защита на личните данни.</li>
+            <li><strong>„Анонимизиране“:</strong> Означава превръщане на личните данни в неспособни да бъдат свързани с идентифицирано или идентифицируемо физическо лице по никакъв начин, дори чрез съпоставяне с други данни.</li>
+            <li><strong>„Унищожаване“:</strong> Означава необратимо унищожаване на лични данни.</li>
+            <li><strong>„Изтриване“:</strong> Означава необратимо почистване на лични данни или правенето им недостъпни за съответните потребители.</li>
+            <li><strong>„Инвентаризация на данни“:</strong> Изразява инвентаризацията, съдържаща информация като процеси и методи за обработка на лични данни, цели за обработка на лични данни, категория данни, трети страни, на които се предават лични данни и др., за дейностите по обработка на лични данни на Клиниката.</li>
+            <li><strong>„Лице за контакт на администратора на данни“:</strong> Изразява лицето, което управлява отношенията на Клиниката с Институцията и е назначено от Клиниката.</li>
+            <li><strong>„Собственици на данни“:</strong> Изразява всички реални лица Служители/Доставчици/Клиенти/Пациенти, чиито лични данни се обработват от Клиниката или от нейно име.</li>
         </ul>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">4. SORUMLULUKLAR</h3>
-        <p>4.1. Kişisel verilerin silinmesi, yok edilmesi ve anonim hale getirilmesi Klinik tarafından bu prosedürde belirtilen teknik ve idari tedbirlere, ilgili mevzuat hükümlerine, Kişisel Verileri Koruma Kurulu (‘Kurul’) kararlarına uygun olarak gerçekleştirilir.</p>
-        <p>4.2. Kurul tarafından aksine bir karar alınmadıkça, kişisel verileri re’sen silme, yok etme veya anonim hale getirme yöntemlerinden uygun olanı tarafımızca seçilmektedir. Ancak, İlgili Kişinin talebi halinde uygun yöntem gerekçesi açıklanarak seçilecektir.</p>
-        <p>4.3. Kişisel verilerin silinmesi, yok edilmesi, anonim hale getirilmesiyle ilgili yapılan tüm işlemler Klinik tarafından kayıt altına alınmakta ve söz konusu kayıtlar, diğer hukuki yükümlülükler hariç olmak üzere madde 6’da açıklanan sürelerle saklanmaktadır.</p>
-        <p>4.4. Kliniğin faaliyetleri için Kişisel Verileri elinde tutmamasını ve Kişisel Verilerin silinmesi ve/veya arşivlenmesini sağlamak tüm çalışanların ve Veri İrtibat kişisinin sorumluluğudur.</p>
-        <p>4.5. Kanun’un 5. ve 6. maddelerinde yer alan kişisel verilerin işlenme şartlarının tamamının ortadan kalkması halinde, kişisel veriler Klinik tarafından periyodik imha zamanlarında re’sen veya ilgili kişinin talebi üzerine silinmekte, yok edilmekte veya anonim hale getirilmektedir.</p>
-        <p>Bu hususta İlgili Kişi tarafından Kliniğe başvurulması halinde; İletilen talepler en geç 30 (otuz) gün içerisinde sonuçlandırılmakta ve ilgili kişiye bilgi verilmektedir, Talebe konu verilerin üçüncü kişilere aktarılmış olması durumunda, bu durum verilerin aktarıldığı üçüncü kişiye bildirilmekte ve üçüncü kişiler nezdinde gerekli işlemlerin yapılması temin edilmektedir.</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">4. ОТГОВОРНОСТИ</h3>
+        <p>4.1. Изтриването, унищожаването и анонимизирането на лични данни се извършва от Клиниката в съответствие с техническите и административни мерки, посочени в тази процедура, разпоредбите на съответното законодателство и решенията на Съвета за защита на личните данни („Съвет“).</p>
+        <p>4.2. Освен ако Съветът не реши друго, ние избираме подходящия от методите за служебно изтриване, унищожаване или анонимизиране на лични данни. Въпреки това, при поискване от Съответното лице, подходящият метод ще бъде избран чрез обяснение на причината.</p>
+        <p>4.3. Всички транзакции, извършени във връзка с изтриването, унищожаването и анонимизирането на лични данни, се записват от Клиниката и тези записи се съхраняват за периодите, обяснени в член 6, с изключение на други правни задължения.</p>
+        <p>4.4. Отговорност на всички служители и на Лицето за контакт с данни е да гарантират, че Клиниката не съхранява Лични данни за своите дейности и да осигурят изтриването и/или архивирането на Лични данни.</p>
+        <p>4.5. В случай че изчезнат всички условия за обработка на лични данни, посочени в членове 5 и 6 от Закона, личните данни се изтриват, унищожават или анонимизират от Клиниката служебно или по искане на съответното лице по време на периодични времена на унищожаване.</p>
+        <p>Ако Съответното лице се обърне към Клиниката по този въпрос; Предадените искания се финализират в рамките на най-много 30 (тридесет) дни и съответното лице се информира. В случай че данните, предмет на искането, са прехвърлени на трети страни, тази ситуация се съобщава на третата страна, на която са прехвърлени данните, и се гарантира, че се извършват необходимите действия от третите страни.</p>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">5. KİŞİSEL VERİLERİN SAKLANMASI</h3>
-        <p>5.1. Veri Sahiplerine ait kişisel veriler, Klinik tarafından özellikle (i) sağlık hizmetlerinin sürdürülebilmesi, (ii) hukuki yükümlülüklerin yerine getirilebilmesi, (iii) çalışan haklarının ve yan haklarının planlanması ve ifası ile (iv) müşteri/hasta ilişkilerinin yönetilebilmesi amacıyla yukarıda sayılan fiziki veyahut elektronik ortamlarda güvenli bir biçimde KVKK ve diğer ilgili mevzuatta belirtilen sınırlar çerçevesinde saklanmaktadır.</p>
-        <p>5.2. Saklamayı gerektiren sebepler aşağıdaki gibidir: · Kişisel verilerin sağlık hizmetlerinin verilmesi / sözleşmelerin kurulması ve ifası ile doğrudan doğruya ilgili olması nedeniyle saklanması, · Kişisel verilerin bir hakkın tesisi, kullanılması veya korunması amacıyla saklanması, · Kişisel verilerin kişilerin temel hak ve özgürlüklerine zarar vermemek kaydıyla Kliniğin meşru menfaatleri için saklanmasının zorunlu olması, · Kişisel verilerin Kliniğin herhangi bir hukuki yükümlülüğünü yerine getirmesi amacıyla saklanması, · Mevzuatta kişisel verilerin saklanmasının açıkça öngörülmesi, · Veri sahiplerinin açık rızasının alınmasını gerektiren saklama faaliyetleri açısından veri sahiplerinin açık rızasının bulunması.</p>
-        <p>5.3. Kişisel Veriler, Klinik bünyesinde ilgili yasal saklama/zamanaşımı süreleri müddetince bulundurulmakta olup, bu verilerle ilişkili faaliyetlerin ve işbu Prosedür’de de belirtilen amaçların gerçekleştirilmesi için gerekli süre boyunca saklanmaktadır. Kullanım amacı sonlanan ve yasal saklama süresi/zamanaşımı sona eren Kişisel Veriler ise, KVKK’nın 7’nci maddesi uyarınca Klinik tarafından silinmekte, yok edilmekte veya anonim hale getirilmektedir.</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">5. СЪХРАНЕНИЕ НА ЛИЧНИ ДАННИ</h3>
+        <p>5.1. Личните данни на собствениците на данни се съхраняват сигурно от Клиниката във физически или електронни среди, изброени по-горе, в рамките на границите, посочени в KVKK и друго съответно законодателство, по-специално за целите на (i) поддържане на здравни услуги, (ii) изпълнение на законови задължения, (iii) планиране и изпълнение на правата на служителите и допълнителните придобивки и (iv) управление на отношенията с клиентите/пациентите.</p>
+        <p>5.2. Причините за съхранение са следните: · Съхраняване на лични данни поради пряката им връзка с предоставянето на здравни услуги / сключването и изпълнението на договори, · Съхраняване на лични данни за целите на установяване, упражняване или защита на право, · Задължително съхраняване на лични данни за легитимните интереси на Клиниката, при условие че не вреди на основните права и свободи на лицата, · Съхраняване на лични данни за изпълнение на всяко законово задължение на Клиниката, · Изрично предвиждане на съхранението на лични данни в законодателството, · Наличие на изрично съгласие на собствениците на данни по отношение на дейности за съхранение, които изискват получаване на изричното съгласие на собствениците на данни.</p>
+        <p>5.3. Личните данни се съхраняват в рамките на Клиниката за съответните законови периоди на съхранение/давност и тези данни се съхраняват за периода, необходим за извършване на свързаните с тях дейности и за реализиране на целите, посочени в тази Процедура. Личните данни, чиято цел на употреба е приключила и чийто законов период на съхранение/давност е изтекъл, се изтриват, унищожават или анонимизират от Клиниката в съответствие с член 7 от KVKK.</p>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">6. SAKLAMA VE İMHA SÜRELERİ</h3>
-        <p>6.1. Söz konusu verilerin imhasında uygulanacak yöntem, verinin niteliği Kliniğimiz nezdindeki önem derecesine göre belirlenir.</p>
-        <p>6.2. Verinin saklanmasının KVKK’nın 4. maddesinde belirtilen ilkelere uygunluğu sorgulanır. Saklanmasının KVKK’nın 4. maddesinde yer alan ilkelere aykırılık teşkil edebileceği tespit edilen veriler silinir, yok edilir ya da anonim hale getirilir.</p>
-        <p>6.3. Verinin saklanmasının KVKK’nın 5. ve 6. maddelerinde öngörülmüş olan istisnalardan hangisi/hangileri kapsamında değerlendirilebileceği tespit edilir. Tespit edilen istisnalar çerçevesinde verilerin saklanması gereken makul süreler tespit edilir. Söz konusu sürelerin sona ermesi halinde veriler silinir, yok edilir ya da anonim hale getirilir.</p>
-        <p>6.4. Kliniğimiz tarafından KVKK ve diğer ilgili mevzuat hükümlerine uygun olarak elde edilen kişisel verilerinizin saklama ve imha işlemlerinde Mevzuatta söz konusu kişisel verinin saklanmasına ilişkin olarak bir süre öngörülmüş ise bu süreye riayet edilir.</p>
-        <p>6.5. Saklama süresi dolan kişisel veriler, Klinik tarafından belirlenen imha süreleri çerçevesinde, 6 aylık periyodlarla her yılın Ocak ve Temmuz ayı’nda işbu Prosedür’de yer verilen usullere uygun olarak imha edilir.</p>
-        <p>6.6. Kişisel verilerin silinmesi, yok edilmesi ve anonim hale getirilmesiyle ilgili yapılan bütün işlemler kayıt altına alınır ve söz konusu kayıtlar, diğer hukuki yükümlülükler hariç olmak üzere en az üç yıl süreyle saklanır.</p>
-        <p>6.7. Kişisel Veri saklama ve imha süreleri aşağıdaki gibidir.</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">6. СРОКОВЕ ЗА СЪХРАНЕНИЕ И УНИЩОЖАВАНЕ</h3>
+        <p>6.1. Методът, който ще се приложи при унищожаването на въпросните данни, се определя според естеството на данните и степента на тяхната важност пред нашата Клиника.</p>
+        <p>6.2. Поставя се под въпрос съответствието на съхранението на данните с принципите, посочени в член 4 от KVKK. Данните, за които се установи, че съхраняването им може да наруши принципите в член 4 от KVKK, се изтриват, унищожават или анонимизират.</p>
+        <p>6.3. Определя се в обхвата на кое/кои от изключенията, предвидени в членове 5 и 6 от KVKK, може да бъде оценено съхранението на данни. Определят се разумни периоди, през които данните трябва да се съхраняват в рамките на идентифицираните изключения. В случай на изтичане на въпросните срокове, данните се изтриват, унищожават или анонимизират.</p>
+        <p>6.4. При процедурите по съхранение и унищожаване на вашите лични данни, получени от нашата Клиника в съответствие с разпоредбите на KVKK и друго съответно законодателство, ако в законодателството е предвиден период по отношение на съхранението на въпросните лични данни, този срок се спазва.</p>
+        <p>6.5. Личните данни, чийто период на съхранение е изтекъл, се унищожават в рамките на периодите на унищожаване, определени от Клиниката, на периоди от 6 месеца през януари и юли всяка година, в съответствие с процедурите, включени в тази Процедура.</p>
+        <p>6.6. Всички транзакции, направени във връзка с изтриването, унищожаването и анонимизирането на лични данни, се записват и тези записи се съхраняват за период от най-малко три години, с изключение на други правни задължения.</p>
+        <p>6.7. Сроковете за съхранение и унищожаване на лични данни са както следва.</p>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">7. SAKLAMA VE İMHA USULLERİ</h3>
-        <h4 class="text-lg font-semibold mt-4 mb-2">7.1. KAYIT ORTAMLARI</h4>
+        <h3 class="text-xl font-bold mt-8 mb-4">7. ПРОЦЕДУРИ ЗА СЪХРАНЕНИЕ И УНИЩОЖАВАНЕ</h3>
+        <h4 class="text-lg font-semibold mt-4 mb-2">7.1. НОСИТЕЛИ НА ЗАПИС</h4>
         
         <div class="overflow-x-auto my-6">
             <table class="min-w-full bg-white border border-gray-200 text-left">
                 <thead class="bg-gray-100">
                     <tr>
-                        <th class="py-3 px-4 font-bold text-gray-700 border-b">VERİ TÜRÜ</th>
-                        <th class="py-3 px-4 font-bold text-gray-700 border-b">MUHAFAZA SÜRESİ</th>
-                        <th class="py-3 px-4 font-bold text-gray-700 border-b">İMHA SÜRESİ</th>
+                        <th class="py-3 px-4 font-bold text-gray-700 border-b">ВИД ДАННИ</th>
+                        <th class="py-3 px-4 font-bold text-gray-700 border-b">ПЕРИОД НА СЪХРАНЕНИЕ</th>
+                        <th class="py-3 px-4 font-bold text-gray-700 border-b">ВРЕМЕ НА УНИЩОЖАВАНЕ</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">E-postalar ve Klinik içi yazışmalar</td>
-                        <td class="py-3 px-4">10 yıl</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Имейли и вътрешноклинична кореспонденция</td>
+                        <td class="py-3 px-4">10 години</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Sözleşmeler</td>
-                        <td class="py-3 px-4">Sözleşmenin sona ermesini takip eden 10 yıl boyunca</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Договори</td>
+                        <td class="py-3 px-4">За 10 години след прекратяване на договора</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Hasta dosyaları</td>
-                        <td class="py-3 px-4">Hasta ile girilen son etkileşimi(tedavinin bitimini) takip eden 20 yıl boyunca</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Досиета на пациенти</td>
+                        <td class="py-3 px-4">За 20 години след последното взаимодействие с пациента (края на лечението)</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Çalışan Kayıtları</td>
-                        <td class="py-3 px-4">Çalıştıkları süre boyunca</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Записи на служители</td>
+                        <td class="py-3 px-4">По време на работата им</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Eski Çalışan Kayıtları</td>
-                        <td class="py-3 px-4">İşten ayrılmalarını takip eden 10 yıl boyunca</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Записи на бивши служители</td>
+                        <td class="py-3 px-4">За 10 години след напускане на работа</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Muhasebe ve Finans Kayıtları</td>
-                        <td class="py-3 px-4">10 yıl</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Счетоводни и финансови записи</td>
+                        <td class="py-3 px-4">10 години</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Klinik İçi Şikayetler ve İlgili Belgeler</td>
-                        <td class="py-3 px-4">10 yıl</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Вътрешноклинични жалби и свързани документи</td>
+                        <td class="py-3 px-4">10 години</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Hukuk Kayıtları</td>
-                        <td class="py-3 px-4">10 yıl</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Правни регистри</td>
+                        <td class="py-3 px-4">10 години</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr class="border-b">
-                        <td class="py-3 px-4 font-semibold">Resmi Yazışmalar</td>
-                        <td class="py-3 px-4">Süresiz</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Официална кореспонденция</td>
+                        <td class="py-3 px-4">За неопределено време</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                     <tr>
-                        <td class="py-3 px-4 font-semibold">Vergi Kayıtları</td>
-                        <td class="py-3 px-4">10 yıl</td>
-                        <td class="py-3 px-4">Saklama süresinin bitimini takip eden ilk periyodik imha süresinde</td>
+                        <td class="py-3 px-4 font-semibold">Данъчни записи</td>
+                        <td class="py-3 px-4">10 години</td>
+                        <td class="py-3 px-4">В първия период на периодично унищожаване след изтичане на периода на съхранение</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <p>Veri sahiplerine ait kişisel veriler, Klinik tarafından aşağıdaki tabloda listelenen ortamlarda başta KVKK hükümleri olmak üzere ilgili mevzuata uygun olarak ve uluslararası veri güvenliği prensipleri çerçevesinde güvenli bir şekilde saklanmaktadır:</p>
+        <p>Личните данни на собствениците на данни се съхраняват безопасно от Клиниката в изброените по-долу среди, в съответствие със съответното законодателство, по-специално с разпоредбите на KVKK, и в рамките на международните принципи за сигурност на данните:</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Web Browser Destekli Antivirus Programı</li>
-            <li>FILE SERVER</li>
-            <li>Kilitli Birim Dolapları</li>
-            <li>Birimlere Kısıtlı Erişim</li>
+            <li>Поддържана от уеб браузър антивирусна програма</li>
+            <li>ФАЙЛОВ СЪРВЪР</li>
+            <li>Заключени шкафове на отделите</li>
+            <li>Ограничен достъп до отделите</li>
         </ul>
 
-        <h4 class="text-lg font-semibold mt-8 mb-4">7.2. TEKNİK VE İDARİ TEDBİRLER</h4>
-        <p>Kişisel verilerinizin güvenli bir şekilde saklanması, hukuka aykırı olarak işlenmesi, erişilmesinin önlenmesi ve verilerin hukuka uygun olarak imha edilmesi amacıyla Klinik tarafından alınmış olan tüm idari ve teknik tedbirler aşağıda sayılmıştır:</p>
+        <h4 class="text-lg font-semibold mt-8 mb-4">7.2. ТЕХНИЧЕСКИ И АДМИНИСТРАТИВНИ МЕРКИ</h4>
+        <p>Всички административни и технически мерки, предприети от Клиниката, за да съхраняват вашите лични данни сигурно, да предотвратят тяхната незаконна обработка, да предотвратят достъпа до тях и да унищожат данните законно, са изброени по-долу:</p>
         
-        <p><strong>7.2.1. Klinik’in teknik olarak almış olduğu ve almakta olduğu tedbirler aşağıda yazılı olanlarla sınırlı olmamak üzere şu şekildedir:</strong></p>
+        <p><strong>7.2.1. Административните мерки, предприети и които се предприемат от Клиниката, са както следва, но не се ограничават до написаното по-долу:</strong></p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Kişisel Veri Envanteri hazırlar ve süreç içerisinde günceller.</li>
-            <li>VERBIS kaydını gerçekleştirir ve herhangi bir değişiklik halinde sicildeki bilgileri günceller.</li>
-            <li>İşlenen kişisel verilerin hukuka aykırı yollarla başkaları tarafından elde edilmesi hâlinde, bu durumu en kısa sürede ilgilisine ve Kurul’a bildirir.</li>
-            <li>Saklanan kişisel verilere Klinik içi erişimi iş tanımı gereği erişmesi gerekli personel ile sınırlandırır.</li>
-            <li>Çalışanların niteliği ve teknik bilgi/becerisinin geliştirilir, kişisel verilerin hukuka aykırı işlenmesi önlenir.</li>
-            <li>Çalışanlarla imzalanan iş sözleşmelerinde sır saklama yükümlülüğü ve gizlilik hükümlerine yer verir.</li>
-            <li>Klinik periyodik kontroller gerçekleştirir, Kontrol ve/veya denetim sonucunda ortaya çıkan gizlilik ve güvenlik zafiyetlerinin giderilmesini sağlar.</li>
-            <li>Kişisel verilerin paylaşılması ile ilgili olarak, kişisel verilerin paylaşıldığı kişiler ile kişisel verilerin korunması ve veri güvenliğine ilişkin çerçeve sözleşme imzalar yahut mevcut sözleşmesine eklenen hükümler ile veri güvenliğini sağlar. Gizlilik taahhütnameleri yapar.</li>
-            <li>Kişisel veri içeren fiziksel ortamlara (kilitli dolaplar vb gibi) erişim ile ilgili gerekli güvenlik önlemleri alır ve fiziksel ortamların dış risklere karşı güvenliğini sağlar.</li>
-            <li>Çalışan Özlük Dosyaları, Hasta Dosyaları, Yönetim Kurulu kararları gibi gizli belgeler kilitlenebilir bir dolapta saklanacaktır, Birer kopyası ortak klasörde elektronik olarak sağlanacaktır.</li>
-            <li>Tüm Çalışanlar hiçbir bilginin hileli kullanımlara maruz kalmamasını sağlamak için gizli belgeleri imha etmek üzere evrak imha etme yöntemi kullanacaklardır.</li>
-            <li>Kişisel Verilere hukuka aykırı erişilmesinin önlenmesi, kişisel verilerin muhafazasının sağlanması, iletişim teknikleri ve ilgili mevzuatlar hakkında eğitimler verilmektedir.</li>
-            <li>Güvenlik politika ve prosedürlerine uymayan çalışanlara yönelik uygulanacak disiplin prosedürü uygulanmaktadır.</li>
-            <li>İlgili kişileri aydınlatma yükümlülüğü yerine getirilmekte, kurum içi periyodik ve rastgele denetimler yapılmaktadır.</li>
+            <li>Изготвя се Инвентаризация на личните данни и се актуализира в процеса.</li>
+            <li>Извършва регистрация във VERBIS и актуализира информацията в регистъра при евентуални промени.</li>
+            <li>В случай, че обработените лични данни бъдат получени от трети лица по незаконни пътища, тя уведомява заинтересованото лице и Съвета за тази ситуация възможно най-скоро.</li>
+            <li>Ограничава достъпа в клиниката до съхраняваните лични данни до персонала, който трябва да има достъп до тях поради длъжностната си характеристика.</li>
+            <li>Повишава квалификацията и техническите знания/умения на служителите, предотвратява се незаконното обработване на лични данни.</li>
+            <li>Включва задължение за пазене на тайна и клаузи за поверителност в трудовите договори, подписани със служителите.</li>
+            <li>Клиниката извършва периодични проверки и осигурява отстраняването на уязвимости в поверителността и сигурността, които възникват в резултат на контрол и/или одит.</li>
+            <li>По отношение на споделянето на лични данни, тя подписва рамков договор относно защитата на личните данни и сигурността на данните с лицата, с които се споделят личните данни, или осигурява сигурността на данните с клаузи, добавени към съществуващия й договор. Сключва споразумения за поверителност.</li>
+            <li>Взема необходимите мерки за сигурност относно достъпа до физически среди, съдържащи лични данни (заключени шкафове и др.), и осигурява сигурността на физическите среди срещу външни рискове.</li>
+            <li>Поверителни документи като досиета на служителите, досиета на пациенти, решения на борда на директорите ще се съхраняват в заключващ се шкаф, като по едно копие ще бъде предоставено по електронен път в обща папка.</li>
+            <li>Всички служители ще използват метода за унищожаване на документи, за да унищожат поверителни документи, за да гарантират, че никоя информация не е изложена на измамна употреба.</li>
+            <li>Осигурява се обучение относно предотвратяване на незаконен достъп до лични данни, осигуряване на запазването на лични данни, комуникационни техники и съответното законодателство.</li>
+            <li>Прилага се дисциплинарна процедура за служители, които не спазват политиките и процедурите за сигурност.</li>
+            <li>Изпълнява се задължението за осведомяване на съответните лица, извършват се периодични и случайни вътрешни одити.</li>
         </ul>
 
-        <p><strong>7.2.2. Klinik’in teknik olarak almış olduğu ve almakta olduğu tedbirler aşağıda yazılı olanlarla sınırlı olmamak üzere şu şekildedir:</strong></p>
+        <p><strong>7.2.2. Техническите мерки, предприети и които се предприемат от Клиниката, са както следва, но не се ограничават до написаното по-долу:</strong></p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Kurulan sistemler kapsamında bilgi teknolojileri risk değerlendirmesi ve iş etki analizinin gerçekleştirilmesi süreçlerini yürütür.</li>
-            <li>Verilerin kurum dışına sızmasını engelleyecek veyahut gözlemleyecek teknik altyapının temin edilmesini ve ilgili matrislerin oluşturulmasını sağlar.</li>
-            <li>Kişisel verilerin saklandığı her türlü dijital ortam, bilgi güvenliği gereksinimlerini sağlayacak şekilde şifreli yöntemler ile korur.</li>
-            <li>Ağ güvenliği ve uygulama güvenliği sağlar.</li>
-            <li>Serverda depolanan kişisel verilerin güvenliği sağlar.</li>
-            <li>Çalışanlar için yetki matrisi oluşturulmasını sağlar.</li>
-            <li>Erişim logları düzenli olarak tutar.</li>
-            <li>Görev değişikliği olan ya da işten ayrılan çalışanların bu alandaki yetkileri kaldırır.</li>
-            <li>Güncel anti-virüs sistemleri kullanır.</li>
-            <li>Kişisel Verilerin taşınabilir bellek, CD, DVD aracılığıyla herhangi bir şekilde aktarılmaması konusunda gerekli önlemleri alır.</li>
+            <li>Извършва процесите на оценка на риска на информационните технологии и анализ на въздействието върху бизнеса в рамките на инсталираните системи.</li>
+            <li>Осигурява доставката на техническа инфраструктура, която ще предотврати или наблюдава изтичането на данни извън институцията, и създаването на свързани матрици.</li>
+            <li>Защитава всички видове цифрови медии, в които се съхраняват лични данни, с криптирани методи по начин, който отговаря на изискванията за информационна сигурност.</li>
+            <li>Осигурява мрежова сигурност и сигурност на приложенията.</li>
+            <li>Осигурява сигурността на личните данни, съхранявани на сървъра.</li>
+            <li>Осигурява създаването на матрица за оторизация за служителите.</li>
+            <li>Редовно съхранява дневници за достъп.</li>
+            <li>Премахва правомощията в тази област на служители, чиито задължения са се променили или които са напуснали работа.</li>
+            <li>Използва актуални антивирусни системи.</li>
+            <li>Взема необходимите предпазни мерки, за да гарантира, че личните данни не се прехвърлят по никакъв начин чрез преносима памет, CD, DVD.</li>
         </ul>
 
-        <h3 class="text-xl font-bold mt-8 mb-4">KİŞİSEL VERİLERİ SİLME, İMHA ETME VE ANONİMLEŞTİRME USULLERİ</h3>
-        <p>Klinik tarafından KVKK ve diğer ilgili mevzuata uygun olarak elde edilen kişisel veriler Kanun ve Yönetmelik’te sayılan kişisel veri işleme amaçlarının ortadan kalkması halinde Klinik tarafından re’sen yahut İlgili Kişinin başvurusu üzerine yine Kanun ve ilgili mevzuat hükümlerine uygun olarak aşağıda belirtilen teknikler ile imha edilecektir.</p>
+        <h3 class="text-xl font-bold mt-8 mb-4">ПРОЦЕДУРИ ЗА ИЗТРИВАНЕ, УНИЩОЖАВАНЕ И АНОНИМИЗИРАНЕ НА ЛИЧНИ ДАННИ</h3>
+        <p>Ако целите за обработване на лични данни, посочени в Закона и Наредбата, отпаднат, личните данни, получени от Клиниката в съответствие с KVKK и друго съответно законодателство, ще бъдат унищожени от Клиниката служебно или по искане на Съответното лице, отново в съответствие с разпоредбите на Закона и съответното законодателство, с техниките, посочени по-долу.</p>
 
-        <h4 class="text-lg font-semibold mt-4 mb-2">8.1. KİŞİSEL VERİLERİN SİLİNMESİ</h4>
-        <p><strong>8.1.1. Bilgisayardan Güvenli Olarak Silme:</strong> Tamamen veya kısmen işlenen ve dijital ortamlarda muhafaza edilen veriler silinirken; İlgili Kullanıcılar için hiçbir şekilde erişilemez ve tekrar kullanılamaz hale getirilecek biçimde verinin ilgili bilgisayarlardan tamamen silinmesine ilişkin yöntemler kullanılır.</p>
-        <p>Ancak, kişisel verilerin silinmesi işlemi, diğer verilere de sistem içerisinde erişilememe ve bu verileri kullanamama sonucunu doğuracak ise, aşağıdaki koşulların sağlanması kaydıyla, kişisel verilerin ilgili kişiyle ilişkilendirilemeyecek duruma getirilerek arşivlenmesi halinde de kişisel veriler silinmiş sayılacaktır.</p>
+        <h4 class="text-lg font-semibold mt-4 mb-2">8.1. ИЗТРИВАНЕ НА ЛИЧНИ ДАННИ</h4>
+        <p><strong>8.1.1. Сигурно изтриване от компютъра:</strong> Докато данните, които се обработват напълно или частично и се съхраняват в цифрови среди, се изтриват; Използват се методи за пълно изтриване на данните от съответните компютри по такъв начин, че да бъдат напълно недостъпни и неизползваеми за Съответните потребители по никакъв начин.</p>
+        <p>Въпреки това, ако процесът на изтриване на лични данни ще доведе до невъзможност за достъп и използване на други данни в системата, личните данни също ще се считат за изтрити, ако личните данни са архивирани по начин, който не може да бъде свързан със съответното лице, при условие че са изпълнени следните условия.</p>
         <ul class="list-disc pl-5 space-y-2">
-            <li>Başka herhangi bir kurum, kuruluş veyahut kişinin erişimine kapalı olması,</li>
-            <li>Kişisel verilere yalnızca yetkili kişiler tarafından erişilmesini sağlayacak şekilde gerekli her türlü teknik ve idari tedbirlerin alınması.</li>
+            <li>Да бъде затворен за достъп на всяка друга институция, организация или лице,</li>
+            <li>Предприемане на всички необходими технически и административни мерки, за да се гарантира, че достъп до лични данни могат да имат само упълномощени лица.</li>
         </ul>
-        <p><strong>8.1.2. Kağıt Ortamında Bulunan Kişisel Verilerin Karartılması:</strong> Kişisel verilerin amaca yönelik olmayan kullanımını önlemek veya silinmesi talep edilen verileri silmek için ilgili kişisel verilerin fiziksel olarak kesilerek belgeden çıkartılması veya geri döndürülemeyecek ve okunamayacak şekilde sabit mürekkep kullanılarak görünemeyecek hale getirilmesi, kapatılması yöntemidir.</p>
+        <p><strong>8.1.2. Затъмняване на лични данни на хартиен носител:</strong> Това е методът за физическо изрязване на съответните лични данни от документа или използване на постоянно мастило, за да станат невидими, нечетливи и необратими, или покриването им, за да се предотврати нецелево използване на лични данни или да се изтрият данни, за които е поискано изтриване.</p>
 
-        <h4 class="text-lg font-semibold mt-4 mb-2">8.2. KİŞİSEL VERİLERİN İMHA EDİLMESİ</h4>
-        <p><strong>8.2.1. Dijital Ortamda Yok Etme:</strong> Bilgisayar ortamında tutulan kayıtların ve internet sitesi aracılığıyla elde edilen verilerin kişisel verilerin sonradan kullanılamayacak biçimde yok edilmesi sistemi uygulanmaktadır.</p>
-        <p><strong>8.2.2. Fiziksel Yok Etme:</strong> Kişisel veriler herhangi bir veri kayıt sisteminin parçası olmak kaydıyla otomatik olmayan yollarla da işlenebilmektedir. Bu tür veriler yok edilirken kişisel verinin sonradan kullanılamayacak biçimde fiziksel olarak yok edilmesi sistemi uygulanmaktadır.</p>
+        <h4 class="text-lg font-semibold mt-4 mb-2">8.2. УНИЩОЖАВАНЕ НА ЛИЧНИ ДАННИ</h4>
+        <p><strong>8.2.1. Унищожаване в дигитална среда:</strong> Прилага се система за унищожаване на записи, съхранявани в компютърна среда, и данни, получени чрез уебсайта, по начин, по който личните данни не могат да бъдат използвани по-късно.</p>
+        <p><strong>8.2.2. Физическо унищожаване:</strong> Личните данни могат да бъдат обработвани и чрез неавтоматични средства, при условие че са част от система за запис на данни. Докато тези видове данни се унищожават, се прилага системата за физическо унищожаване на лични данни, така че да не могат да бъдат използвани по-късно.</p>
 
-        <h4 class="text-lg font-semibold mt-4 mb-2">8.3. KİŞİSEL VERİLERİN ANONİM HALE GETİRİLMESİ</h4>
-        <p>Klinik kayıtları çıkartma, değişken değiştirme, genelleştirme gibi yöntemlerle kişisel verilerin anonim hale getirilmesini sağlar.</p>
+        <h4 class="text-lg font-semibold mt-4 mb-2">8.3. АНОНИМИЗИРАНЕ НА ЛИЧНИ ДАННИ</h4>
+        <p>Клиниката гарантира, че личните данни са анонимизирани чрез методи като премахване на записи, промяна на променливи и обобщаване.</p>
       </div>
 
     </div>
@@ -383,17 +386,17 @@ const pageDescription = "Dental Implant Clinic A Plus kişisel verilerin korunma
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Правна информация</h3>
         <p class="text-sm text-gray-300 leading-relaxed">
-          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+          Този уебсайт е създаден изключително с цел информиране на пациентите, в пълно съответствие с правилата на Министерството на здравеопазването на Република Турция.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
-        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1">Общ кол център: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Последна актуализация: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Редактор: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>

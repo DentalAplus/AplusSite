@@ -1,10 +1,13 @@
 ---
+// BG (Bulgarca) versiyonu için:
+// src/pages/bg/tedaviler/porselen-lamina.astro
+
 import MainLayout from '../../../layouts/MainLayout.astro';
 import TedaviDoktorlari from '../../../components/TedaviDoktorlari.astro';
 
 // SEO için sayfa başlığı ve açıklaması
-const pageTitle = "Porselen Lamina (Yaprak Diş) Tedavisi | Yüceler A+ Klinik";
-const pageDescription = "Silivri ve Çatalca'da porselen lamina (yaprak diş) tedavisi ile dişlerinize zarar vermeden estetik, doğal ve bembeyaz bir gülüşe kavuşun.";
+const pageTitle = "Лечение с порцеланови фасети (Ламина) | Клиника Yüceler A+";
+const pageDescription = "Сдобийте се с естетична, естествена и снежнобяла усмивка, без да увреждате зъбите си, с лечение с порцеланови фасети (ламина) в Силиври и Чаталджа.";
 ---
 
 <MainLayout title={pageTitle}>
@@ -15,12 +18,12 @@ const pageDescription = "Silivri ve Çatalca'da porselen lamina (yaprak diş) te
     
     <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-start text-left">
       <div class="max-w-3xl">
-        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Minimum Müdahale, Maksimum Estetik</span>
+        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Минимална намеса, максимална естетика</span>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-2xl">
-          Kusursuz Gülüşler İçin <br/><span class="text-klinik-yesil">Porselen Lamina</span>
+          Порцеланови фасети <br/><span class="text-klinik-yesil">за безупречни усмивки</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
-          Dişlerinizin sadece ön yüzeyine uygulanan ince yaprak porselenlerle, doğal diş dokunuzu koruyarak hayalinizdeki gülüşü tasarlıyoruz.
+          Ние проектираме усмивката на вашите мечти, като запазваме естествената ви зъбна тъкан с помощта на фини порцеланови листове, приложени само върху предната повърхност на зъбите ви.
         </p>
       </div>
     </div>
@@ -31,63 +34,63 @@ const pageDescription = "Silivri ve Çatalca'da porselen lamina (yaprak diş) te
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         
         <div class="w-full lg:w-2/3 prose prose-lg prose-slate max-w-none">
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Porselen Lamina (Yaprak Diş) Nedir?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Какво е Порцеланова фасета (Ламина)?</h2>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            Porselen lamina veya halk arasındaki adıyla <strong>yaprak diş</strong>; dişlerin sadece ön yüzeylerinden milimetrik (0.3 - 0.7 mm) düzeyde aşındırma yapılarak veya uygun vakalarda hiç aşındırma yapılmadan uygulanan, tırnak kalınlığındaki son derece ince seramik yapraklardır. 
+            Порцеланова фасета или известна още като <strong>листов зъб (ламина)</strong>; това са изключително тънки керамични листа с дебелина на нокът, приложени само върху предните повърхности на зъбите чрез милиметрична (0,3 - 0,7 mm) абразия или без абразия изобщо в подходящи случаи. 
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Kırık, aralıklı (diastema), renklenmiş, şekli bozuk veya hafif çapraşık dişlerin restorasyonunda estetik diş hekimliğinin sunduğu <strong>en koruyucu ve en zarif</strong> çözümdür. Dişin tamamının kesilmesine gerek kalmadan sadece görünen yüzeyi restore edilir.
+            Това е <strong>най-щадящото и най-елегантното</strong> решение, предлагано от естетичната дентална медицина за възстановяване на счупени, отдалечени (диастема), обезцветени, деформирани или леко струпани зъби. Възстановява се само видимата повърхност, без да се налага изпиляване на целия зъб.
           </p>
 
           <div class="bg-gray-50 rounded-2xl p-8 border-l-4 border-klinik-yesil mb-10">
-            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Porselen Laminanın Avantajları Nelerdir?</h3>
+            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Какви са предимствата на порцелановите фасети?</h3>
             <ul class="space-y-3 text-gray-700 font-medium">
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Diş Dokusu Korunur:</strong> Dişlerde minimum madde kaybı ile maksimum estetik sağlanır.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Renk Değiştirmez:</strong> Çay, kahve ve sigara gibi dış etkenlerden etkilenerek sararmaz.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Mükemmel Doğallık:</strong> İnce yapısı sayesinde ışık geçirgenliği doğal diş minesi ile birebir aynıdır.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Tartar Oluşumunu Azaltır:</strong> Pürüzsüz yüzeyi sayesinde plak birikimini zorlaştırır.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Запазване на зъбната тъкан:</strong> Осигурява се максимална естетика с минимална загуба на материал в зъбите.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Не променя цвета си:</strong> Не пожълтява от въздействието на външни фактори като чай, кафе и цигари.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Перфектна естественост:</strong> Благодарение на фината си структура, пропускливостта на светлина е абсолютно същата като на естествения зъбен емайл.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Намалява образуването на зъбен камък:</strong> Благодарение на гладката си повърхност затруднява натрупването на плака.</li>
             </ul>
           </div>
 
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Lamina Tedavisi Nasıl Uygulanır?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Как се прилага лечението с ламина?</h2>
           <div class="space-y-6 mb-10">
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Dijital Gülüş Tasarımı ve Ölçü</h4>
-                <p class="text-gray-600">Öncelikle yüz hatlarınıza uygun gülüş tasarımı dijital olarak planlanır. Ardından dişlerin 3D ağız içi tarayıcılarla hassas ölçüleri alınır.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Дигитален дизайн на усмивката и отпечатък</h4>
+                <p class="text-gray-600">Първо, дигитално се планира дизайн на усмивката, подходящ за вашите черти на лицето. След това се вземат прецизни отпечатъци на зъбите с 3D интраорални скенери.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Mock-up (Ön Prova)</h4>
-                <p class="text-gray-600">Dişlerinize hiçbir müdahale yapılmadan, planlanan yeni diş şekliniz geçici materyallerle ağzınıza uygulanır. Böylece sonucu önceden görürsünüz.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Mock-up (Предварителна проба)</h4>
+                <p class="text-gray-600">Без никаква интервенция по вашите зъби, планираната нова форма на зъбите се прилага в устата ви с временни материали. По този начин виждате резултата предварително.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Hazırlık ve Kalıcı Yapıştırma</h4>
-                <p class="text-gray-600">Dişlerin ön yüzeyinde milimetrik pürüzlendirmeler yapılır. Hazırlanan yaprak porselenler, özel rezin simanlar ile dişlerinize kalıcı olarak entegre edilir.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Подготовка и постоянно залепване</h4>
+                <p class="text-gray-600">По предната повърхност на зъбите се прави милиметрова абразия. Подготвените порцеланови фасети се интегрират трайно във вашите зъби със специални композитни цименти.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="w-full lg:w-1/3 sticky top-32">
-          <img src="/images/lamina-kutu.webp" alt="Porselen Lamina Tedavisi" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
+          <img src="/images/lamina-kutu.webp" alt="Лечение с порцеланови фасети" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
           <div class="bg-gray-50 border border-gray-100 p-8 rounded-b-2xl shadow-xl">
-            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Gülüşünüzü Hollywood Standardına Taşıyın</h3>
-            <p class="text-gray-500 mb-6 text-sm">Ücretsiz dijital analiz ile yaprak porselen tedavisinin size uygunluğunu hemen öğrenin.</p>
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Издигнете усмивката си до холивудски стандарт</h3>
+            <p class="text-gray-500 mb-6 text-sm">Разберете веднага дали лечението с порцеланови фасети е подходящо за вас с безплатен дигитален анализ.</p>
             
             <a href="https://wa.me/902124000013" target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-6 rounded-xl hover:bg-green-600 transition-colors mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829z" /></svg>
-              WhatsApp'tan Fiyat Sor
+              Попитайте за цена по WhatsApp
             </a>
             <a href="tel:+902124000013" class="w-full flex items-center justify-center gap-2 bg-klinik-koyu text-white font-bold py-4 px-6 rounded-xl hover:bg-black transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              Kliniği Ara: 0212 400 00 13
+              Обадете се в клиниката: +90 212 400 00 13
             </a>
           </div>
         </div>
@@ -101,39 +104,39 @@ const pageDescription = "Silivri ve Çatalca'da porselen lamina (yaprak diş) te
   <section class="py-20 bg-gray-50 border-t border-gray-100 pb-32">
     <div class="container mx-auto px-4 max-w-4xl">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Sıkça Sorulan <span class="text-klinik-yesil">Sorular</span></h2>
-        <p class="text-gray-600">Porselen Lamina (Yaprak Diş) hakkında merak edilenler.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Често задавани <span class="text-klinik-yesil">въпроси</span></h2>
+        <p class="text-gray-600">Нещата, които се чудят относно порцелановите фасети (Ламина).</p>
       </div>
 
       <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Lamina dişler düşer mi veya kırılır mı?
+            Падат ли фасетите или се чупят?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Özel rezin yapıştırıcılarla mine dokusuna kimyasal olarak bağlandığı için düşme riski yok denecek kadar azdır. Doğal dişin kırılmasına sebep olacak kadar sert darbeler dışında, rahatça kullanabilirsiniz.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Тъй като са химически свързани с емайловата тъкан със специални композитни лепила, рискът от падане е почти несъществуващ. Освен при силни удари, които биха причинили счупване на естествения зъб, можете да ги използвате удобно.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Yaprak porselen kimlere uygulanamaz?
+            При кого не могат да се прилагат порцеланови фасети?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">İleri derecede diş sıkma problemi olanlara, tırnak yeme alışkanlığı olanlara veya dişlerinde yeterli mine dokusu kalmamış kişilere önerilmez. Bu durumda Zirkonyum daha iyi bir alternatiftir.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Не се препоръчва за тези с напреднал проблем със скърцане със зъби, тези, които имат навика да гризат нокти, или тези, които нямат достатъчно емайлова тъкан на зъбите си. В този случай цирконият е по-добра алтернатива.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Lamina tedavisi ne kadar sürer?
+            Колко време отнема лечението с ламина?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Dijital iş akışımız sayesinde genellikle 2 veya 3 seansta, yani ortalama 5-7 gün içinde tedavi tamamlanır.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Благодарение на нашия дигитален работен процес, лечението обикновено завършва за 2 или 3 сесии, т.е. средно за 5-7 дни.</p>
         </details>
       </div>
     </div>
@@ -142,17 +145,17 @@ const pageDescription = "Silivri ve Çatalca'da porselen lamina (yaprak diş) te
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Правна информация</h3>
         <p class="text-sm text-gray-300 leading-relaxed">
-          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak hazırlanmıştır.
+          Този уебсайт е създаден изключително с цел информиране на пациентите, в пълно съответствие с правилата на Министерството на здравеопазването на Република Турция.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
-        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1">Общ кол център: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Последна актуализация: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Редактор: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>

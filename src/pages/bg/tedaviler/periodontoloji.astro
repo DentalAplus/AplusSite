@@ -1,10 +1,13 @@
 ---
+// BG (Bulgarca) versiyonu için:
+// src/pages/bg/tedaviler/periodontoloji.astro
+
 import MainLayout from '../../../layouts/MainLayout.astro';
 import TedaviDoktorlari from '../../../components/TedaviDoktorlari.astro';
 
 // SEO için sayfa başlığı ve açıklaması
-const pageTitle = "Periodontoloji (Diş Eti Hastalıkları) Tedavisi | Yüceler A+ Klinik";
-const pageDescription = "Silivri ve Çatalca'da diş eti hastalıkları (periodontoloji) tedavisi. Diş kanaması, diş eti çekilmesi, küretaj ve diş taşı temizliği uzman kadromuzla güvenle yapılır.";
+const pageTitle = "Лечение по Пародонтология (Заболявания на венците) | Клиника Yüceler A+";
+const pageDescription = "Лечение на заболявания на венците (пародонтология) в Силиври и Чаталджа. Кървене на венците, отдръпване на венците, кюретаж и почистване на зъбен камък се извършват безопасно от нашия експертен екип.";
 ---
 
 <MainLayout title={pageTitle}>
@@ -15,12 +18,12 @@ const pageDescription = "Silivri ve Çatalca'da diş eti hastalıkları (periodo
     
     <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-start text-left">
       <div class="max-w-3xl">
-        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Sağlıklı Temeller</span>
+        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Здрави основи</span>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-2xl">
-          Diş Eti Hastalıkları & <br/><span class="text-klinik-yesil">Periodontoloji</span>
+          Заболявания на венците & <br/><span class="text-klinik-yesil">Пародонтология</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
-          Mükemmel bir gülüşün ve sağlıklı dişlerin temeli güçlü diş etleridir. Diş eti kanaması, çekilmesi ve ağız kokusu problemlerinizi kökünden çözüyoruz.
+          Основата на перфектната усмивка и здравите зъби са здравите венци. Разрешаваме из основи проблемите ви с кървене на венците, отдръпване на венците и лош дъх.
         </p>
       </div>
     </div>
@@ -31,63 +34,63 @@ const pageDescription = "Silivri ve Çatalca'da diş eti hastalıkları (periodo
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         
         <div class="w-full lg:w-2/3 prose prose-lg prose-slate max-w-none">
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Periodontoloji Nedir?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Какво е Пародонтология?</h2>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            <strong>Periodontoloji</strong>; dişleri çevreleyen dokuların (diş eti, diş kökü zarı, çene kemiği) sağlığını korumayı ve bu dokularda meydana gelen hastalıkları tedavi etmeyi amaçlayan diş hekimliği uzmanlık dalıdır. Dişleriniz ne kadar sağlıklı ve çürüksüz olursa olsun, onları tutan diş eti ve kemik yapısı hastaysa diş kaybı kaçınılmazdır.
+            <strong>Пародонтологията</strong> е клон на стоматологията, чиято цел е да запази здравето на тъканите около зъбите (венец, коренова мембрана, челюстна кост) и да лекува заболявания, които възникват в тези тъкани. Колкото и да са здрави и без кариеси вашите зъби, ако венецът и костната структура, които ги държат, са болни, загубата на зъби е неизбежна.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Halk arasında "diş eti iltihabı" (Gingivitis) olarak bilinen durum tedavi edilmezse, hastalık ilerleyerek çene kemiğini eriten ve dişlerin sallanarak dökülmesine yol açan "Periodontitis"e dönüşür. <strong>Diş eti kanaması, ağız kokusu, dişlerde sallanma ve diş eti çekilmesi</strong> bu hastalıkların en net belirtileridir.
+            Ако състоянието, известно в обществото като „възпаление на венците“ (Гингивит), не се лекува, заболяването прогресира и се превръща в „Пародонтит“, който стопява челюстната кост и кара зъбите да се разклащат и да падат. <strong>Кървене от венците, лош дъх, клатещи се зъби и отдръпване на венците</strong> са най-ясните симптоми на тези заболявания.
           </p>
 
           <div class="bg-gray-50 rounded-2xl p-8 border-l-4 border-klinik-yesil mb-10">
-            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Diş Eti Tedavisi Neden Çok Önemlidir?</h3>
+            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Защо лечението на венците е много важно?</h3>
             <ul class="space-y-3 text-gray-700 font-medium">
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Diş Kaybını Önler:</strong> Yetişkinlerde diş kayıplarının en büyük nedeni çürükler değil, diş eti hastalıklarıdır.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Ağız Kokusunu Bitirir:</strong> İltihap ve bakteri kaynaklı inatçı ağız kokusu tamamen ortadan kalkar.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Kanamayı Durdurur:</strong> Fırçalarken veya kendiliğinden oluşan kanamalar ve sızlamalar iyileşir.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Genel Sağlığı Korur:</strong> Diş eti iltihabının kalp hastalıkları ve diyabetle doğrudan ilişkisi vardır.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Предотвратява загубата на зъби:</strong> Най-голямата причина за загуба на зъби при възрастните не са кариесите, а заболяванията на венците.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Премахва лошия дъх:</strong> Упоритият лош дъх, причинен от възпаление и бактерии, изчезва напълно.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Спира кървенето:</strong> Кървенето и болката, които се появяват при миене на зъбите или спонтанно, заздравяват.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Предпазва общото здраве:</strong> Възпалението на венците е пряко свързано със сърдечни заболявания и диабет.</li>
             </ul>
           </div>
 
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Uyguladığımız Periodontal Tedaviler</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Пародонтални лечения, които прилагаме</h2>
           <div class="space-y-6 mb-10">
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Detertraj (Diş Taşı / Tartar Temizliği)</h4>
-                <p class="text-gray-600">Diş eti hastalıklarının ilk aşamasıdır. Özel ultrasonik cihazlarla diş yüzeyinde ve diş eti sınırında biriken sertleşmiş tartar ve lekeler, diş minesine hiçbir zarar vermeden tamamen temizlenir ve polisaj (cila) yapılır.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Почистване на зъбен камък (Детартраж)</h4>
+                <p class="text-gray-600">Това е първият стадий на заболяване на венците. Втвърденият зъбен камък и петна, натрупани по зъбната повърхност и ръба на венеца, се почистват напълно със специални ултразвукови устройства, без да се уврежда зъбния емайл, след което се полират.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Küretaj (Derin Kök Temizliği)</h4>
-                <p class="text-gray-600">Eğer diş taşları diş etinin altına, kök yüzeylerine kadar inmişse (cep oluşumu) lokal anestezi altında uygulanır. Kök yüzeyindeki iltihaplı dokular ve taşlar temizlenerek diş etinin tekrar dişe sıkıca yapışması sağlanır.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Кюретаж (Дълбоко почистване на корените)</h4>
+                <p class="text-gray-600">Ако зъбният камък е слязъл под венеца към кореновите повърхности (образуване на джоб), се прилага под местна упойка. Възпалените тъкани и камъни по кореновата повърхност се почистват, което позволява на венеца отново да прилепне плътно към зъба.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Cerrahi ve Rejeneratif İşlemler</h4>
-                <p class="text-gray-600">Çok ileri vakalarda uygulanan flap operasyonları, eriyen kemiğin yerine kemik tozu (greft) eklenmesi veya diş eti çekilmelerinde bölgenin yumuşak doku greftleriyle örtülmesi işlemleridir.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Хирургични и регенеративни процедури</h4>
+                <p class="text-gray-600">В много напреднали случаи това са ламбо операции, добавяне на костен прах (графт) на мястото на стопената кост или покриване на зоната с присадки от меки тъкани при отдръпване на венците.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="w-full lg:w-1/3 sticky top-32">
-          <img src="/images/periodontoloji-kutu.webp" alt="Diş Eti Tedavisi" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
+          <img src="/images/periodontoloji-kutu.webp" alt="Лечение на венци" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
           <div class="bg-gray-50 border border-gray-100 p-8 rounded-b-2xl shadow-xl">
-            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Dişlerinizi Kaybetmeyin</h3>
-            <p class="text-gray-500 mb-6 text-sm">Ağız kokusu, kanama veya diş eti çekilmesi yaşıyorsanız ertelemeden uzman muayenesi için randevu alın.</p>
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Не губете зъбите си</h3>
+            <p class="text-gray-500 mb-6 text-sm">Ако имате лош дъх, кървене или отдръпване на венците, запишете си час за преглед при специалист, без да отлагате.</p>
             
             <a href="https://wa.me/902124000013" target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-6 rounded-xl hover:bg-green-600 transition-colors mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829z" /></svg>
-              WhatsApp'tan Bilgi Al
+              Получете информация по WhatsApp
             </a>
             <a href="tel:+902124000013" class="w-full flex items-center justify-center gap-2 bg-klinik-koyu text-white font-bold py-4 px-6 rounded-xl hover:bg-black transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              Kliniği Ara: 0212 400 00 13
+              Обадете се в клиниката: +90 212 400 00 13
             </a>
           </div>
         </div>
@@ -101,39 +104,39 @@ const pageDescription = "Silivri ve Çatalca'da diş eti hastalıkları (periodo
   <section class="py-20 bg-gray-50 border-t border-gray-100 pb-32">
     <div class="container mx-auto px-4 max-w-4xl">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Sıkça Sorulan <span class="text-klinik-yesil">Sorular</span></h2>
-        <p class="text-gray-600">Diş eti hastalıkları ve temizliği hakkında merak edilenler.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Често задавани <span class="text-klinik-yesil">въпроси</span></h2>
+        <p class="text-gray-600">Нещата, които се чудят относно заболяванията на венците и почистването.</p>
       </div>
 
       <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Diş taşı (tartar) temizliği diş minesine zarar verir mi?
+            Почистването на зъбен камък (тартар) уврежда ли зъбния емайл?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Halk arasında en yaygın olan yanlış inanışlardan biridir. Klinik ortamında özel ultrasonik aletlerle yapılan temizlik işlemi diş minesini kesinlikle çizmez veya inceltmez. Aksine, diş taşları temizlenmezse diş kaybına neden olur.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Това е едно от най-разпространените погрешни схващания в обществото. Процесът на почистване, извършен със специални ултразвукови инструменти в клинична среда, в никакъв случай не надрасква или изтънява зъбния ви емайл. Напротив, ако зъбният камък не се почиства, той води до загуба на зъби.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Diş fırçalarken kanama olması normal mi?
+            Нормално ли е да има кървене при миене на зъбите?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Kesinlikle normal değildir. Tıpkı ellerimizi yıkadığımızda kanamadığı gibi, sağlıklı bir diş eti de fırçalarken kanamaz. Kanama, diş eti iltihabının ilk belirtisidir.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Абсолютно не е нормално. Точно както ръцете ни не кървят, когато ги мием, здравият венец не кърви, когато го миете. Кървенето е първият симптом на възпаление на венците.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Küretaj (derin temizlik) tedavisi ağrılı mıdır?
+            Болезнено ли е лечението с кюретаж (дълбоко почистване)?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Derin temizlik (küretaj) işlemi mutlaka lokal anestezi altında yapılır. Bu nedenle işlem sırasında hiçbir şekilde ağrı hissetmezsiniz.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Процедурата по дълбоко почистване (кюретаж) винаги се извършва под местна упойка. Следователно няма да почувствате никаква болка по време на процедурата.</p>
         </details>
       </div>
     </div>
@@ -142,17 +145,17 @@ const pageDescription = "Silivri ve Çatalca'da diş eti hastalıkları (periodo
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Правна информация</h3>
         <p class="text-sm text-gray-300 leading-relaxed">
-          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+          Този уебсайт е създаден изключително с цел информиране на пациентите, в пълно съответствие с правилата на Министерството на здравеопазването на Република Турция.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
-        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1">Общ кол център: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Последна актуализация: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Редактор: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>

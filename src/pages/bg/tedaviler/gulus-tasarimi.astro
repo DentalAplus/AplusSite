@@ -1,10 +1,13 @@
 ---
+// BG (Bulgarca) versiyonu için:
+// src/pages/bg/tedaviler/gulus-tasarimi.astro
+
 import MainLayout from '../../../layouts/MainLayout.astro';
 import TedaviDoktorlari from '../../../components/TedaviDoktorlari.astro';
 
 // SEO için sayfa başlığı ve açıklaması
-const pageTitle = "Dijital Gülüş Tasarımı | Kişiye Özel Estetik | Yüceler A+ Klinik";
-const pageDescription = "Silivri ve Çatalca'da 3D dijital gülüş tasarımı. Yüz hatlarınıza en uygun gülüşü bilgisayar ortamında tasarlıyor, tedaviye başlamadan sonucu görmenizi sağlıyoruz.";
+const pageTitle = "Дигитален дизайн на усмивката | Персонализирана естетика | Клиника Yüceler A+";
+const pageDescription = "3D дигитален дизайн на усмивката в Силиври и Чаталджа. Ние проектираме усмивката, която най-добре подхожда на чертите на лицето ви на компютър и ви позволяваме да видите резултата преди започване на лечението.";
 ---
 
 <MainLayout title={pageTitle}>
@@ -15,12 +18,12 @@ const pageDescription = "Silivri ve Çatalca'da 3D dijital gülüş tasarımı. 
     
     <div class="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col items-start text-left">
       <div class="max-w-3xl">
-        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Dijital Estetik</span>
+        <span class="inline-block bg-klinik-yesil text-white px-4 py-1 rounded-full text-sm font-bold mb-4 tracking-widest uppercase">Дигитална естетика</span>
         <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white drop-shadow-2xl">
-          Size Özel <br/><span class="text-klinik-yesil">Gülüş Tasarımı</span>
+          Вашият персонализиран <br/><span class="text-klinik-yesil">Дизайн на усмивката</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl leading-relaxed drop-shadow-lg">
-          Yüz hatlarınıza, karakterinize ve beklentilerinize en uygun gülüşü dijital ortamda tasarlıyor, dişlerinize hiç dokunmadan önce sonucu size gösteriyoruz.
+          Ние проектираме дигитално усмивката, която най-добре подхожда на чертите на лицето ви, вашия характер и очакванията ви, и ви показваме резултата, преди изобщо да докоснем зъбите ви.
         </p>
       </div>
     </div>
@@ -31,63 +34,63 @@ const pageDescription = "Silivri ve Çatalca'da 3D dijital gülüş tasarımı. 
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         
         <div class="w-full lg:w-2/3 prose prose-lg prose-slate max-w-none">
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Dijital Gülüş Tasarımı Nedir?</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Какво е дигитален дизайн на усмивката?</h2>
           <p class="text-gray-600 mb-6 leading-relaxed">
-            <strong>Dijital Gülüş Tasarımı (Digital Smile Design - DSD)</strong>, diş hekimliğinin sanat ve yüksek teknoloji ile buluştuğu noktadır. Kişinin yüz hatları, dudak simetrisi, diş eti seviyeleri, yaşı ve cinsiyeti gibi birçok faktörün dijital ortamda analiz edilerek, ona en çok yakışacak estetik gülüşün tasarlanması işlemidir.
+            <strong>Дигиталният дизайн на усмивката (Digital Smile Design - DSD)</strong> е точката, в която стоматологията се среща с изкуството и високите технологии. Това е процесът на проектиране на естетичната усмивка, която най-добре подхожда на човека, чрез анализиране на много фактори като чертите на лицето, симетрията на устните, нивата на венците, възрастта и пола в дигитална среда.
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed">
-            Bu uygulamanın en büyük avantajı, <strong>kötü sürprizlere yer bırakmamasıdır</strong>. Tedaviye başlanmadan önce özel programlarda tasarlanan yeni dişleriniz, geçici materyallerle ağzınıza uygulanır ve yeni gülüşünüzü aynada canlı olarak görebilirsiniz.
+            Най-голямото предимство на това приложение е, че <strong>не оставя място за лоши изненади</strong>. Вашите нови зъби, проектирани в специални програми преди започване на лечението, се прилагат в устата ви с временни материали и можете да видите новата си усмивка на живо в огледалото.
           </p>
 
           <div class="bg-gray-50 rounded-2xl p-8 border-l-4 border-klinik-yesil mb-10">
-            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Gülüş Tasarımı Neden Çok Önemlidir?</h3>
+            <h3 class="text-xl font-bold text-klinik-koyu mb-4">Защо дизайнът на усмивката е много важен?</h3>
             <ul class="space-y-3 text-gray-700 font-medium">
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Yüzle Uyum:</strong> Standart dişler yerine, yüzünüzün altın oranına uygun dişler tasarlanır.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Tedavi Öncesi Prova:</strong> Sonucu en baştan görür, dişleriniz kesilmeden karar verirsiniz.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Multidisipliner Yaklaşım:</strong> Gerekiyorsa ortodonti, diş eti estetiği ve kaplamalar aynı planda birleşir.</li>
-              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Ortak Karar:</strong> Tasarım tamamen sizin istekleriniz ve hekimimizin estetik görüşüyle şekillenir.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Хармония с лицето:</strong> Вместо стандартни зъби, се проектират зъби, които са подходящи за златното сечение на вашето лице.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Проба преди лечение:</strong> Виждате резултата от самото начало и решавате, преди да ви изпилят зъбите.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Мултидисциплинарен подход:</strong> При необходимост ортодонтията, естетиката на венците и фасетите се комбинират в един и същи план.</li>
+              <li class="flex items-center gap-3"><svg class="w-5 h-5 text-klinik-yesil" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Общо решение:</strong> Дизайнът е оформен изцяло според вашите желания и естетическата визия на нашия лекар.</li>
             </ul>
           </div>
 
-          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Dijital Gülüş Tasarımı Süreci</h2>
+          <h2 class="text-3xl font-bold text-klinik-koyu mb-6">Процесът на дигитален дизайн на усмивката</h2>
           <div class="space-y-6 mb-10">
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Kayıt ve Analiz</h4>
-                <p class="text-gray-600">İlk seansta stüdyo ortamında farklı açılardan fotoğraf ve videolarınız çekilir. Ardından 3D ağız içi tarayıcılarımızla mevcut dişlerinizin dijital kopyası oluşturulur.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Запис и анализ</h4>
+                <p class="text-gray-600">В първата сесия се правят ваши снимки и видеоклипове от различни ъгли в студийна среда. След това се създава цифрово копие на настоящите ви зъби с нашите 3D интраорални скенери.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Mock-up (Canlı Prova)</h4>
-                <p class="text-gray-600">Dijital ortamda hazırlanan özel tasarım, 3D yazıcılarla fiziksel bir modele dönüştürülür. İkinci seansınızda bu yeni tasarım, dişlerinize hiçbir işlem yapılmadan özel bir materyalle ağzınıza uygulanır ve sonucu aynada görürsünüz.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Mock-up (Проба на живо)</h4>
+                <p class="text-gray-600">Специалният дизайн, подготвен в дигитална среда, се превръща във физически модел с 3D принтери. Във втората ви сесия този нов дизайн се прилага в устата ви със специален материал, без да се прави нищо по зъбите ви, и вие виждате резултата в огледалото.</p>
               </div>
             </div>
             <div class="flex gap-4 items-start">
               <div class="w-10 h-10 rounded-full bg-klinik-koyu text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
               <div>
-                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Tedavi Aşaması</h4>
-                <p class="text-gray-600">Siz tasarımı onayladıktan sonra, hedeflenen sonuca ulaşmak için gerekli işlemler (zirkonyum, lamina, diş eti seviyelemesi vb.) sırasıyla uygulanır ve hayalinizdeki gülüş teslim edilir.</p>
+                <h4 class="text-xl font-bold text-klinik-koyu mb-2">Фаза на лечение</h4>
+                <p class="text-gray-600">След като одобрите дизайна, необходимите процедури (цирконий, ламина, нивелиране на венците и др.), за да се постигне целеният резултат, се прилагат последователно и ви се доставя усмивката на вашите мечти.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="w-full lg:w-1/3 sticky top-32">
-          <img src="/images/gulus-tasarimi-kutu.webp" alt="Gülüş Tasarımı Provası" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
+          <img src="/images/gulus-tasarimi-kutu.webp" alt="Проба на дизайн на усмивката" class="w-full h-64 object-cover rounded-t-2xl shadow-sm" />
           <div class="bg-gray-50 border border-gray-100 p-8 rounded-b-2xl shadow-xl">
-            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Gülüşünüzü Şansa Bırakmayın</h3>
-            <p class="text-gray-500 mb-6 text-sm">Ücretsiz dijital analiz ile dişlerinize hiç dokunmadan yeni gülüşünüzü önceden görün.</p>
+            <h3 class="text-2xl font-bold text-klinik-koyu mb-4">Не оставяйте усмивката си на случайността</h3>
+            <p class="text-gray-500 mb-6 text-sm">Вижте предварително новата си усмивка, без да докосвате зъбите си, с безплатен дигитален анализ.</p>
             
             <a href="https://wa.me/902124000013" target="_blank" class="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-4 px-6 rounded-xl hover:bg-green-600 transition-colors mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.033c-1.56 0-3.084-.42-4.42-1.216l-.317-.189-3.284.861.876-3.203-.207-.331a9.022 9.022 0 0 1-1.378-4.755C3.301 7.155 7.215 3.24 12.031 3.24c2.33 0 4.519.907 6.166 2.555 1.648 1.648 2.556 3.837 2.556 6.167 0 4.914-3.915 8.829-8.73 8.829z" /></svg>
-              WhatsApp'tan Randevu Al
+              Запазете час по WhatsApp
             </a>
             <a href="tel:+902124000013" class="w-full flex items-center justify-center gap-2 bg-klinik-koyu text-white font-bold py-4 px-6 rounded-xl hover:bg-black transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              Kliniği Ara: 0212 400 00 13
+              Обадете се в клиниката: +90 212 400 00 13
             </a>
           </div>
         </div>
@@ -101,39 +104,39 @@ const pageDescription = "Silivri ve Çatalca'da 3D dijital gülüş tasarımı. 
   <section class="py-20 bg-gray-50 border-t border-gray-100 pb-32">
     <div class="container mx-auto px-4 max-w-4xl">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Sıkça Sorulan <span class="text-klinik-yesil">Sorular</span></h2>
-        <p class="text-gray-600">Dijital Gülüş Tasarımı hakkında merak edilenler.</p>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-klinik-koyu mb-4">Често задавани <span class="text-klinik-yesil">въпроси</span></h2>
+        <p class="text-gray-600">Нещата, които се чудят относно дигиталния дизайн на усмивката.</p>
       </div>
 
       <div class="space-y-4">
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Gülüş tasarımında sadece dişlere mi müdahale edilir?
+            Само по зъбите ли се прави намеса при дизайна на усмивката?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Hayır, estetik bir gülüş sadece beyaz dişlerden ibaret değildir. Gerekli durumlarda diş etlerinin seviyesi düzenlenir (pembe estetik), dudak desteği sağlanır ve tüm bu dokuların birbirleriyle olan uyumu tasarlanır.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Не, една естетична усмивка не се състои само от бели зъби. Когато е необходимо, се коригира нивото на венците (розова естетика), осигурява се опора за устните и се проектира хармонията на всички тези тъкани помежду им.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Mock-up (Prova) işlemi dişlere zarar verir mi?
+            Процедурата Mock-up (Проба) уврежда ли зъбите?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Kesinlikle vermez. Mock-up işleminde dişlerinizden herhangi bir aşındırma yapılmaz. Sadece özel geçici bir malzeme ile dişlerinizin üzerine hazırlanan tasarım yerleştirilir. Prova bitince bu malzeme dişten kolayca çıkarılır ve dişiniz eski haline döner.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Абсолютно не. При процедурата Mock-up не се извършва изпиляване на вашите зъби. Подготвеният дизайн се поставя върху вашите зъби само със специален временен материал. Когато пробата приключи, този материал се отстранява лесно от зъба и вашият зъб се връща в първоначалното си състояние.</p>
         </details>
 
         <details class="group bg-white rounded-xl shadow-sm border border-gray-100 p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
           <summary class="flex items-center justify-between font-bold text-lg text-klinik-koyu">
-            Tasarımı beğenmezsem değişiklik yapılabilir mi?
+            Могат ли да се правят промени, ако не харесам дизайна?
             <span class="transition group-open:rotate-180">
               <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-gray-600 mt-4 leading-relaxed">Elbette. Zaten tasarım provasının (Mock-up) amacı budur. Prova sırasında aynaya bakarak veya fotoğraflarınızı inceleyerek diş formlarında, uzunluklarında veya renginde istediğiniz tüm değişiklikleri belirtebilirsiniz. Asıl tedavi ancak siz %100 onay verdikten sonra başlar.</p>
+          <p class="text-gray-600 mt-4 leading-relaxed">Разбира се. Това все пак е целта на пробата на дизайна (Mock-up). По време на пробата, като погледнете в огледалото или разгледате снимките си, можете да посочите всички промени, които искате във формата на зъбите, дължината или цвета им. Истинското лечение започва едва след като дадете 100% одобрение.</p>
         </details>
       </div>
     </div>
@@ -142,17 +145,17 @@ const pageDescription = "Silivri ve Çatalca'da 3D dijital gülüş tasarımı. 
   <footer class="bg-klinik-koyu text-white py-12 border-t-4 border-klinik-turuncu mt-auto">
     <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start gap-8">
       <div class="max-w-2xl">
-        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Yasal Bilgilendirme</h3>
+        <h3 class="text-klinik-turuncu font-bold text-lg mb-3">Правна информация</h3>
         <p class="text-sm text-gray-300 leading-relaxed">
-          Bu web sitesi, T.C. Sağlık Bakanlığı "Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik" kurallarına tam uyumlu olarak, yalnızca hastaları bilgilendirme amacıyla hazırlanmıştır.
+          Този уебсайт е създаден изключително с цел информиране на пациентите, в пълно съответствие с правилата на Министерството на здравеопазването на Република Турция.
         </p>
       </div>
       <div class="text-sm text-gray-400 text-left md:text-right">
         <p class="mb-2 text-white font-semibold">Dental Implant Clinic A Plus</p>
-        <p class="mb-1">Ortak Çağrı Merkezi: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
+        <p class="mb-1">Общ кол център: <span class="text-klinik-turuncu">+90 212 400 00 13</span></p>
         <div class="mt-4 p-3 bg-gray-800 rounded-lg inline-block text-left border border-gray-700">
-          <p class="mb-1 text-xs">Son Güncelleme: <span class="text-white font-bold">21.02.2026</span></p>
-          <p class="text-xs">Editör: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
+          <p class="mb-1 text-xs">Последна актуализация: <span class="text-white font-bold">21.02.2026</span></p>
+          <p class="text-xs">Редактор: <a href="mailto:bilgi@dentalimplanttrakya.com" class="text-klinik-turuncu hover:underline">bilgi@dentalimplanttrakya.com</a></p>
         </div>
       </div>
     </div>
