@@ -6,122 +6,142 @@ const pathname = Astro.url.pathname;
 const pathLang = pathname.split('/')[1]; 
 const currentLang = ['tr', 'en', 'de', 'bg'].includes(pathLang) ? pathLang : 'tr'; 
 
-// ÇOKLU DİL SÖZLÜĞÜ
+// ÇOKLU DİL SÖZLÜĞÜ (SEO ODAKLI GÜNCELLENDİ)
 const ui = {
-  tr: { title: "Tüm Tedavilerimiz", desc: "Ağız ve diş sağlığınız için en ileri teknoloji ve uzman kadromuzla sunduğumuz premium tedavi hizmetleri.", detail: "Detaylı Bilgi" },
-  en: { title: "All Treatments", desc: "Premium treatment services we offer for your oral and dental health with advanced technology.", detail: "View Details" },
-  de: { title: "Alle Behandlungen", desc: "Premium-Behandlungsdienste, die wir für Ihre Mund- und Zahngesundheit anbieten.", detail: "Details ansehen" },
-  bg: { title: "Всички лечения", desc: "Премиум услуги за лечение, които предлагаме за вашето орално и дентално здраве.", detail: "Вижте детайли" }
+  tr: { 
+    title: "Silivri ve Çatalca Diş Tedavileri", 
+    desc: "Silivri merkez ve Çatalca şubelerimizde uzman kadromuzla sunduğumuz implant, zirkonyum ve estetik diş hekimliği hizmetleri.", 
+    detail: "Detaylı Bilgi",
+    seoTitle: "Silivri ve Çatalca En İyi Diş Tedavileri | Dental Implant Clinic A Plus"
+  },
+  en: { 
+    title: "Dental Treatments in Silivri & Catalca", 
+    desc: "Premium implant, zirconium, and aesthetic dentistry services at our Silivri and Catalca branches.", 
+    detail: "View Details",
+    seoTitle: "Best Dental Treatments in Silivri & Catalca | A Plus Clinic"
+  },
+  de: { 
+    title: "Zahnbehandlungen in Silivri & Catalca", 
+    desc: "Implantat-, Zirkonium- und ästhetische Zahnheilkunde in unseren Kliniken in Silivri und Catalca.", 
+    detail: "Details ansehen",
+    seoTitle: "Zahnbehandlungen in Silivri & Catalca | A Plus Klinik"
+  },
+  bg: { 
+    title: "Зъболечение в Силиври и Чаталджа", 
+    desc: "Импланти, цирконий и естетична дентална медицина в нашите клонове в Силиври и Чаталджа.", 
+    detail: "Вижте детайли",
+    seoTitle: "Зъболечение в Силиври и Чаталджа | Клиника A Plus"
+  }
 };
 const t = ui[currentLang];
 
-// 16 TEDAVİNİN TAMAMI (İkonlar yerine Resimlerle Güncellendi)
+// 16 TEDAVİNİN TAMAMI
 const tedaviler = [
   {
     id: "implantlar",
-    image: "implant_tedavisi.webp", // Yeni eklediğin resim
+    image: "implant_tedavisi.webp",
     title: { tr: "İmplant Tedavisi", en: "Implant Treatment", de: "Implantatbehandlung", bg: "Имплантологично лечение" },
     desc: { tr: "Eksik dişlerinizi 3D planlama ile titanyum veya zirkonyum köklerle tamamlıyoruz.", en: "Replacing missing teeth with titanium roots via 3D planning.", de: "Ersetzen fehlender Zähne durch Titanwurzeln mit 3D-Planung.", bg: "Заместване на липсващи зъби с титаниеви корени чрез 3D планиране." }
   },
   {
     id: "zirkonyum-disler",
-    image: "ZirkonyumDisler.webp", // Yeni eklediğin resim
+    image: "ZirkonyumDisler.webp",
     title: { tr: "Zirkonyum Dişler", en: "Zirconium Crowns", de: "Zirconium Kronen", bg: "Циркониеви коронки" },
     desc: { tr: "Doğal diş görünümü sunan, metal desteksiz, ışık geçirgenliği yüksek kaplamalar.", en: "Metal-free, durable crowns providing a natural tooth appearance.", de: "Metallfreie, langlebige Kronen für ein natürliches Aussehen.", bg: "Безметални, издръжливи коронки, осигуряващи естествен вид." }
   },
   {
     id: "gulus-tasarimi",
-    image: "gulustasarimi.webp", // Yeni eklediğin resim
+    image: "gulustasarimi.webp",
     title: { tr: "Gülüş Tasarımı", en: "Smile Design", de: "Lächeln-Design", bg: "Дизайн на усмивката" },
     desc: { tr: "Yüz hatlarınıza ve yaşınıza en uygun estetik gülüşü dijital ortamda tasarlıyoruz.", en: "Designing the most suitable aesthetic smile for your facial features digitally.", de: "Wir entwerfen digital das passendste ästhetische Lächeln für Ihre Gesichtszüge.", bg: "Дигитално проектиране на най-подходящата естетична усмивка за вашите черти." }
   },
   {
     id: "hollywood-smile",
-    image: "HollywoodSmile.webp", // Yeni eklediğin resim
+    image: "HollywoodSmile.webp",
     title: { tr: "Hollywood Smile", en: "Hollywood Smile", de: "Hollywood Smile", bg: "Холивудска усмивка" },
     desc: { tr: "Kusursuz beyazlık, simetri ve estetikle yıldızların gülüşüne sahip olun.", en: "Get the smile of the stars with perfect whiteness and symmetry.", de: "Holen Sie sich das Lächeln der Stars mit perfekter Weiße und Symmetrie.", bg: "Сдобийте се с усмивката на звездите с перфектна белота и симетрия." }
   },
   {
     id: "all-on-four",
-    image: "AllOn4implant.webp", // Yeni eklediğin resim
+    image: "AllOn4implant.webp",
     title: { tr: "All On 4 İmplantlar", en: "All On 4 Implants", de: "All On 4 Implantate", bg: "Импланти All On 4" },
     desc: { tr: "Tam dişsizlik durumlarında aynı gün içinde 4 implant ile sabit dişlere kavuşma imkanı.", en: "Fixed teeth on the same day with 4 implants in cases of total edentulism.", de: "Feste Zähne am selben Tag mit 4 Implantaten bei völliger Zahnlosigkeit.", bg: "Фиксирани зъби в същия ден с 4 импланта при пълна липса на зъби." }
   },
   {
     id: "all-on-six",
-    image: "AllOn6implant.webp", // Yeni eklediğin resim
+    image: "AllOn6implant.webp",
     title: { tr: "All On 6 İmplantlar", en: "All On 6 Implants", de: "All On 6 Implantate", bg: "Импланти All On 6" },
     desc: { tr: "Tam dişsizlikte 6 implant ile üstün tutuculuk ve maksimum çiğneme direnci sağlayan sistem.", en: "Superior retention and maximum chewing resistance with 6 implants.", de: "Hervorragender Halt und maximale Kauresistenz mit 6 Implantaten.", bg: "Превъзходно задържане и максимална устойчивост на дъвчене с 6 импланта." }
   },
   {
     id: "porselen-lamina",
-    image: "PorselenLamina.webp", // Yeni eklediğin resim
+    image: "PorselenLamina.webp",
     title: { tr: "Porselen Lamina", en: "Porcelain Veneers", de: "Porzellan-Veneers", bg: "Порцеланови фасети" },
     desc: { tr: "Diş dokusunu maksimum seviyede koruyarak uygulanan zarif yaprak porselenler.", en: "Elegant leaf porcelain restorations applied while preserving tooth tissue.", de: "Elegante Blattporzellan-Restaurationen unter Erhaltung der Zahnsubstanz.", bg: "Елегантни възстановявания с лист порцелан със запазване на зъбната тъкан." }
   },
   {
     id: "empress-porselen",
-    image: "E-MaxEmpressPorselen.webp", // Yeni eklediğin resim
+    image: "E-MaxEmpressPorselen.webp",
     title: { tr: "E-Max & Empress", en: "E-Max & Empress", de: "E-Max & Empress", bg: "E-Max и Empress" },
     desc: { tr: "Maksimum ışık geçirgenliği ile doğal diş görünümü sunan metal desteksiz tam seramikler.", en: "Metal-free full ceramics offering a natural tooth look with maximum light transmittance.", de: "Metallfreie Vollkeramik mit natürlicher Zahnoptik und maximaler Lichtdurchlässigkeit.", bg: "Безметална пълна керамика, предлагаща естествен вид на зъбите." }
   },
   {
     id: "dis-beyazlatma",
-    image: "Disbeyazlatma.webp", // Yeni eklediğin resim
+    image: "Disbeyazlatma.webp",
     title: { tr: "Diş Beyazlatma", en: "Teeth Whitening", de: "Zahnaufhellung", bg: "Избелване на зъби" },
     desc: { tr: "Tek seansta, diş minenize zarar vermeden elde edilen bembeyaz ve parlak bir gülüş.", en: "A bright white smile in a single session without damaging tooth enamel.", de: "Ein strahlend weißes Lächeln in einer Sitzung, ohne den Zahnschmelz zu beschädigen.", bg: "Блестящо бяла усмивка в една сесия без увреждане на зъбния емайл." }
   },
   {
     id: "cene-cerrahisi",
-    image: "CeneCerrahisi.webp", // Yeni eklediğin resim
+    image: "CeneCerrahisi.webp",
     title: { tr: "Çene Cerrahisi", en: "Oral Surgery", de: "Kieferchirurgie", bg: "Орална хирургия" },
     desc: { tr: "Gömülü 20'lik yaş dişleri, kist operasyonları ve ileri düzey cerrahi müdahaleler.", en: "Impacted wisdom teeth, cyst operations, and advanced surgical procedures.", de: "Retinierte Weisheitszähne, Zystenoperationen und fortgeschrittene chirurgische Eingriffe.", bg: "Ретенция на мъдреци, операции на кисти и сложни хирургични процедури." }
   },
   {
     id: "ortodonti",
-    image: "ortodonti.webp", // Yeni eklediğin resim
+    image: "ortodonti.webp",
     title: { tr: "Ortodonti", en: "Orthodontics", de: "Kieferorthopädie", bg: "Ортодонтия" },
     desc: { tr: "Klasik tel veya şeffaf plaklarla (Invisalign) estetik ve konforlu diş hizalama tedavileri.", en: "Aesthetic and comfortable tooth alignment with clear aligners or braces.", de: "Ästhetische und komfortable Zahnausrichtung mit transparenten Alignern oder Spangen.", bg: "Естетично и удобно подреждане на зъбите с прозрачни алайнери или брекети." }
   },
   {
     id: "pedodonti",
-    image: "CocukDisHekimligi.webp", // Yeni eklediğin resim
+    image: "CocukDisHekimligi.webp",
     title: { tr: "Çocuk Diş Hekimliği", en: "Pediatric Dentistry", de: "Kinderzahnheilkunde", bg: "Детска дентална медицина" },
     desc: { tr: "Çocuklarımızın ağız ve diş sağlığı için uygulanan özel koruyucu ve tedavi edici yaklaşımlar.", en: "Preventive and therapeutic approaches for the oral and dental health of children.", de: "Präventive Ansätze für die Mund- und Zahngesundheit von Kindern.", bg: "Превантивни подходи за оралното и дентално здраве на децата." }
   },
   {
     id: "periodontoloji",
-    image: "DisEtiHastaliklari.webp", // Yeni eklediğin resim
+    image: "DisEtiHastaliklari.webp",
     title: { tr: "Diş Eti Hastalıkları", en: "Periodontology", de: "Parodontologie", bg: "Пародонтология" },
     desc: { tr: "Sağlıklı diş etleri için tartar temizliği, küretaj ve diş eti estetiği (pembe estetik) uygulamaları.", en: "Tartar cleaning, curettage, and gum aesthetics for healthy gums.", de: "Zahnsteinentfernung, Kürettage und Zahnfleischästhetik für gesundes Zahnfleisch.", bg: "Почистване на зъбен камък, кюретаж и естетика на венците." }
   },
   {
     id: "estetik-dis-hekimligi",
-    image: "EstetikDisHekimligi.webp", // Yeni eklediğin resim
+    image: "EstetikDisHekimligi.webp",
     title: { tr: "Estetik Diş Hekimliği", en: "Aesthetic Dentistry", de: "Ästhetische Zahnmedizin", bg: "Естетична дентална медицина" },
     desc: { tr: "Diş ve diş eti uyumunu sağlayarak yüz hatlarınıza uygun doğal estetik dokunuşlar.", en: "Natural aesthetic touches suitable for your facial features by ensuring tooth and gum harmony.", de: "Natürliche ästhetische Akzente passend zu Ihren Gesichtszügen.", bg: "Естествени естетични докосвания, подходящи за вашите черти на лицето." }
   },
   {
     id: "estetik-dolgular",
-    image: "EstetikDolgular.webp", // Yeni eklediğin resim
+    image: "EstetikDolgular.webp",
     title: { tr: "Estetik Dolgular", en: "Aesthetic Fillings", de: "Ästhetische Füllungen", bg: "Естетични пломби" },
     desc: { tr: "Diş renginde, dışarıdan fark edilmeyen doğal, sağlam ve uzun ömürlü kompozit dolgular (Bonding).", en: "Tooth-colored, unnoticeable, durable, and long-lasting composite fillings (Bonding).", de: "Zahnfarbene, unauffällige, langlebige Kompositfüllungen (Bonding).", bg: "Композитни пломби с цвета на зъбите, незабележими и издръжливи (Бондинг)." }
   },
   {
     id: "inley-onley",
-    image: "inleyonley.webp", // Yeni eklediğin resim
+    image: "inleyonley.webp",
     title: { tr: "İnley ve Onley Dolgular", en: "Inlay & Onlay", de: "Inlay & Onlay", bg: "Инлей и онлей" },
     desc: { tr: "Büyük madde kaybı olan dişlerde laboratuvarda özel olarak hazırlanan porselen dolgu restorasyonları.", en: "Custom porcelain filling restorations prepared in the laboratory for teeth with significant material loss.", de: "Im Labor individuell gefertigte Porzellanfüllungen für Zähne mit großem Substanzverlust.", bg: "Специално изработени порцеланови пломби в лаборатория за зъби с голяма загуба на материал." }
   }
 ];
 ---
 
-<MainLayout title={`${t.title} | Dental Implant Clinic A Plus`}>
+<MainLayout title={t.seoTitle}>
   
   <section class="relative py-24 md:py-32 bg-white overflow-hidden border-b border-gray-100">
     <div class="absolute inset-0 bg-klinik-koyu/5 z-0"></div>
     <div class="container mx-auto px-4 max-w-6xl relative z-10 text-center">
-      <span class="inline-block bg-klinik-turuncu text-white px-4 py-1 rounded-full text-sm font-bold mb-6 tracking-widest uppercase">Premium A+</span>
+      <span class="inline-block bg-klinik-turuncu text-white px-4 py-1 rounded-full text-sm font-bold mb-6 tracking-widest uppercase">Silivri & Çatalca Premium Diş Hekimliği</span>
       <h1 class="text-4xl md:text-6xl font-extrabold text-klinik-koyu mb-6">
         {t.title}
       </h1>
@@ -138,17 +158,15 @@ const tedaviler = [
         {tedaviler.map((tedavi) => (
           <a href={`/${currentLang}/tedaviler/${tedavi.id}`} class="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col h-full relative overflow-hidden text-left">
             
-            {/* RESİM ALANI (Eski ikon kutusu yerine burası geldi) */}
             <div class="w-full h-48 overflow-hidden">
               <img 
                 src={`/images/tedaviler/${tedavi.image}`} 
-                alt={tedavi.title[currentLang]} 
+                alt={`${tedavi.title[currentLang]} - Silivri Çatalca Diş Kliniği`} 
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                onerror="this.src='/images/doktor-placeholder.webp'; this.onerror=null;" // Resim yüklenmezse placeholder göster
+                onerror="this.src='/images/doktor-placeholder.webp'; this.onerror=null;"
               />
             </div>
 
-            {/* İÇERİK ALANI (Paddingler ayarlandı) */}
             <div class="p-8 flex-grow flex flex-col">
               <h3 class="text-xl font-bold text-klinik-koyu mb-3">{tedavi.title[currentLang]}</h3>
               <p class="text-gray-500 mb-8 flex-grow leading-relaxed text-sm">{tedavi.desc[currentLang]}</p>
@@ -159,11 +177,19 @@ const tedaviler = [
               </div>
             </div>
 
-            {/* Hoverda çıkan alt çizgi efekti */}
             <div class="absolute bottom-0 left-0 w-full h-1 bg-klinik-yesil transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </a>
         ))}
 
+      </div>
+
+      <div class="mt-20 p-10 bg-white rounded-3xl border border-gray-100 shadow-sm text-center">
+          <h2 class="text-2xl font-bold text-klinik-koyu mb-4">Silivri ve Çatalca'da Uzman Diş Hekimi Kadrosu</h2>
+          <p class="text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            Dental Implant Clinic A Plus olarak, <strong>Silivri diş kliniği</strong> ve <strong>Çatalca diş kliniği</strong> arayışınızda en modern çözümleri sunuyoruz. 
+            İmplant tedavisinden zirkonyum kaplamaya, şeffaf plak (ortodonti) tedavisinden çocuk diş hekimliğine kadar tüm süreçlerde uzman hekimlerimizle hizmetinizdeyiz. 
+            Silivri merkez şubemiz ve Çatalca lokasyonumuzda en ileri dijital teknoloji ile ağrısız ve estetik sonuçlar hedefliyoruz.
+          </p>
       </div>
     </div>
   </section>
