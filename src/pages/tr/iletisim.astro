@@ -78,11 +78,9 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
           <div class="p-8 flex flex-col grow">
             <h3 class="text-2xl font-extrabold text-klinik-koyu mb-4 border-b border-gray-100 pb-4">Silivri Kliniği</h3>
             
-            <a href="https://www.google.com/maps/dir/?api=1&destination=41.073784,28.247681" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 mb-6 bg-klinik-yesil text-white rounded-xl font-bold hover:bg-klinik-koyu transition-all duration-300 shadow-md">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              </svg>
-              Navigasyonu Başlat (Yol Tarifi Al)
+            <a href="https://www.google.com/maps/dir/?api=1&destination=41.073784,28.247681" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-klinik-yesil text-white rounded-xl font-bold hover:bg-klinik-koyu transition-all mb-6 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
+              Silivri Yol Tarifi Al
             </a>
 
             <div class="space-y-4 mb-8">
@@ -106,14 +104,12 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
           </div>
           <div class="p-8 flex flex-col grow">
             <h3 class="text-2xl font-extrabold text-klinik-koyu mb-4 border-b border-gray-100 pb-4">Çatalca Kliniği</h3>
-            
-            <a href="https://www.google.com/maps/dir/?api=1&destination=41.145467,28.459408" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 mb-6 bg-klinik-yesil text-white rounded-xl font-bold hover:bg-klinik-koyu transition-all duration-300 shadow-md">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              </svg>
-              Navigasyonu Başlat (Yol Tarifi Al)
-            </a>
 
+            <a href="https://www.google.com/maps/dir/?api=1&destination=41.145467,28.459408" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-klinik-yesil text-white rounded-xl font-bold hover:bg-klinik-koyu transition-all mb-6 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /></svg>
+              Çatalca Yol Tarifi Al
+            </a>
+            
             <div class="space-y-4 mb-8">
               <div class="flex items-start gap-3">
                 <svg class="w-6 h-6 text-klinik-turuncu shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
@@ -159,12 +155,13 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
                 <span id='wf_splash_info'></span>
               </div>
 
-              <form id='webform821351000022557341' name='WebToLeads821351000022557341' accept-charset='UTF-8' class="space-y-6">
-                <input type='hidden' name='xnQsjsdp' value='344f1df5349f1968dd14079e08bf0804cd4b7186664ddcb0406e98c4f7d2ac85' />
-                <input type='hidden' name='zc_gad' id='zc_gad' value='' />
-                <input type='hidden' name='xmIwtLD' value='60790a0171ecc431961ac7e77683f012aaf62bbd90921a6ceefdda91ef8b9fd63e0c48bdbb735578fc8e3aff734e9269' />
-                <input type='hidden' name='actionType' value='TGVhZHM=' />
-                <input type='hidden' name='returnURL' value='null' />
+              <form action='https://crm.zoho.eu/crm/WebToLeadForm' method='POST' id='webform821351000022557341' name='WebToLeads821351000022557341' accept-charset='UTF-8' class="space-y-6">
+                
+                <input type='text' style='display:none;' name='xnQsjsdp' value='344f1df5349f1968dd14079e08bf0804cd4b7186664ddcb0406e98c4f7d2ac85'>
+                <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+                <input type='text' style='display:none;' name='xmIwtLD' value='60790a0171ecc431961ac7e77683f012aaf62bbd90921a6ceefdda91ef8b9fd63e0c48bdbb735578fc8e3aff734e9269'>
+                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
+                <input type='text' style='display:none;' name='returnURL' value='https://www.dentalimplanttrakya.com/tesekkurler'>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -180,7 +177,7 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label for='LEADCF5' class="block text-sm font-semibold text-gray-700 mb-2">Uygun Klinik</label>
-                    <select id='LEADCF5' name='LEADCF5' class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white text-gray-700 appearance-none">
+                    <select id='LEADCF5' name='LEADCF5' onChange='addAriaSelected821351000022557341()' class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white text-gray-700 appearance-none">
                       <option value='-None-'>- Seçiniz -</option>
                       <option value='Büyükçekmece'>Büyükçekmece</option>
                       <option value='Çatalca'>Çatalca</option>
@@ -189,7 +186,7 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
                   </div>
                   <div>
                     <label for='LEADCF2' class="block text-sm font-semibold text-gray-700 mb-2">İlgilendiği Hizmetler</label>
-                    <select id='LEADCF2' name='LEADCF2' multiple class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white text-gray-700">
+                    <select id='LEADCF2' name='LEADCF2' multiple onChange='addAriaSelected821351000022557341()' class="w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-klinik-yesil focus:border-klinik-yesil outline-none transition-all bg-gray-50 focus:bg-white text-gray-700">
                       <option value='İmplant'>İmplant</option>
                       <option value='Hollywood Smile'>Hollywood Smile</option>
                       <option value='All on Four'>All on Four</option>
@@ -221,7 +218,8 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
                     <option selected value='AplusWebForm'>AplusWebForm</option>
                   </select>
                 </div>
-                <input type='hidden' name='aG9uZXlwb3Q' value=''/>
+                
+                <input type='text' type='hidden' style='display: none;' name='aG9uZXlwb3Q' value=''/>
 
                 <div class="flex items-start gap-3 mt-2">
                     <input type="checkbox" id="kvkk" required class="mt-1 w-4 h-4 text-klinik-yesil bg-gray-100 border-gray-300 rounded focus:ring-klinik-yesil focus:ring-2 cursor-pointer">
@@ -230,70 +228,111 @@ const pageDescription = "Silivri ve Çatalca şubelerimizden randevu almak, diş
                     </label>
                 </div>
 
-                <button type="submit" id='formsubmit' class="w-full bg-klinik-koyu text-white font-extrabold py-5 rounded-xl hover:bg-klinik-yesil hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-2 text-lg mt-4">
+                <button type="submit" id='formsubmit' class="formsubmit w-full bg-klinik-koyu text-white font-extrabold py-5 rounded-xl hover:bg-klinik-yesil hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-2 text-lg mt-4">
                     Talebi Gönder
                     <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
                 </button>
               </form>
 
               <script is:inline>
-                function checkMandatory821351000022557341(){
-                  var mndFileds = new Array('Last Name', 'Mobile');
-                  var fldLangVal = new Array('Adı Soyadı', 'Cep Telefonu');
-                  for (var i = 0; i < mndFileds.length; i++ ) {
-                    var fieldObj = document.forms['WebToLeads821351000022557341'] [mndFileds[i]];
-                    if (fieldObj) {
-                      if(((fieldObj.value) .replace (/^\s+|\s+$/g,'') ) .length == 0) {
-                        alert(fldLangVal[i] + ' boş olamaz.');
-                        fieldObj.focus();
-                        return false;
-                      }
+                function addAriaSelected821351000022557341(){
+                    var optionElem = event.target;
+                    var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+                    if (previousSelectedOption) {
+                        previousSelectedOption.removeAttribute('aria-selected');
                     }
-                  }
-                  document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-                  return true;
+                    optionElem.querySelectorAll('option') [optionElem.selectedIndex] .ariaSelected = 'true';
                 }
-
-                $(document).ready(function(){
-                  $('#webform821351000022557341').submit(function(e){
-                    var ismandatory = checkMandatory821351000022557341();
-                    e.preventDefault();
-                    if (ismandatory) {
-                      var formData = new FormData(this);
-                      $.ajax({
-                        url: 'https://crm.zoho.eu/crm/WebToLeadForm',
-                        type: 'POST',
-                        data: formData,
-                        cache: false,
-                        contentType: false,
-                        processData: false,
-                        success: function(data){
-                          var splashinfodom = document.getElementById('wf_splash_info');
-                          splashinfodom.innerText = "Talebiniz başarıyla alındı!"; 
-                          try {
-                            if(data && data.actionvalue) splashinfodom.innerText = data.actionvalue;
-                          } catch(e) {}
-                          
-                          var splashdom = document.getElementById('wf_splash');
-                          document.getElementById('webform821351000022557341').reset();
-                          
-                          splashdom.classList.remove('hidden');
-                          splashdom.classList.add('flex');
-                          
-                          setTimeout(function(){
-                            splashdom.classList.add('hidden');
-                            splashdom.classList.remove('flex');
-                          }, 5000);
-                          
-                          document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled');
-                        },
-                        error: function(data){
-                          alert('Form gönderilirken bir hata oluştu.');
-                          document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled');
+                function checkMandatory821351000022557341(){
+                    var mndFileds = new Array('Last Name', 'Mobile');
+                    var fldLangVal = new Array('Ad\u0131\x20Soyad\u0131', 'Cep\x20Telefonu');
+                    for (i = 0; i < mndFileds.length; i++ ) {
+                        var fieldObj = document.forms['WebToLeads821351000022557341'] [mndFileds[i]];
+                        if (fieldObj) {
+                            if(((fieldObj.value) .replace (/^\s+|\s+$/g,'') ) .length == 0) {
+                                if (fieldObj.type == 'file') {
+                                    alert('Lütfen karşıya yüklemek için bir dosya seçin.');
+                                    fieldObj.focus();
+                                    return false;
+                                }
+                                alert(fldLangVal[i] + ' boş olamaz.');
+                                fieldObj.focus();
+                                return false;
+                            } else if (fieldObj.nodeName == 'SELECT') {
+                                if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                    alert(fldLangVal[i] + ' hiçbiri olamaz.');
+                                    fieldObj.focus();
+                                    return false;
+                                }
+                            } else if (fieldObj.type == 'checkbox') {
+                                if (fieldObj.checked == false) {
+                                    alert('Please accept  ' + fldLangVal[i]);
+                                    fieldObj.focus();
+                                    return false;
+                                }
+                            }
+                            try{
+                                if (fieldObj.name == 'Last Name') {
+                                    name = fieldObj.value;
+                                }
+                            } catch (e){}
                         }
-                      });
                     }
-                  });
+                    var urlparams = new URLSearchParams(window.location.search);
+                    if (urlparams.has ('service') && (urlparams.get ('service') === 'smarturl') ) {
+                        var webform = document.getElementById('webform821351000022557341');
+                        var service = urlparams.get('service');
+                        var smarturlfield = document.createElement('input');
+                        smarturlfield.setAttribute('type', 'hidden');
+                        smarturlfield.setAttribute('value', service);
+                        smarturlfield.setAttribute('name', 'service');
+                        webform.appendChild(smarturlfield);
+                    }
+                    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                    return true;
+                }
+                $(document).ready(function(){
+                    $('#webform821351000022557341').submit(function(e){
+                        var ismandatory = checkMandatory821351000022557341();
+                        e.preventDefault();
+                        if (ismandatory) {
+                            if (typeof _wfa_track != 'undefined' && _wfa_track.wfa_submit) {
+                                _wfa_track.wfa_submit(e);
+                            }
+                            var formData = new FormData(this );
+                            $.ajax({
+                                url: 'https://crm.zoho.eu/crm/WebToLeadForm',
+                                type: 'POST',
+                                data: formData,
+                                cache: false,
+                                contentType: false,
+                                processData: false,
+                                success: function(data){
+                                    var splashinfodom = document.getElementById('wf_splash_info');
+                                    if(data && data.actionvalue){
+                                        splashinfodom.innerText = data.actionvalue;
+                                    }else{
+                                        splashinfodom.innerText = "Talebiniz Başarıyla Alındı.";
+                                    }
+                                    var splashdom = document.getElementById('wf_splash');
+                                    document.getElementById('webform821351000022557341').reset();
+                                    
+                                    splashdom.classList.remove('hidden');
+                                    splashdom.classList.add('flex');
+                                    
+                                    setTimeout(function(){
+                                        splashdom.classList.add('hidden');
+                                        splashdom.classList.remove('flex');
+                                    }, 5000);
+                                    document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled');
+                                },
+                                error: function(data){
+                                    alert('an error occurred');
+                                    document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled');
+                                }
+                            });
+                        }
+                    });
                 });
               </script>
               <script id='wf_anal' src='https://crm.zohopublic.eu/crm/WebFormAnalyticsServeServlet?rid=4fe328d0911aaf27da447295bdf998cc4d29ce7772492737ce14bd65e0927474373755519292ae40434004c1560635c4gid39408805646f8f2c3288ac02e42b3296b3f018b275c379c1b6dd3f96bc6d2662gide25f9268d0f5a6866c60dac92c042d376a8d7a04884e59e6853a37d0e1a3b69egide6ba1adb739c6f7a8d31f6c023842a37cfa733e955f21aeb23ba713374c6f69e&tw=4539abd60676a9454e09816e312515227fa97ddb780f79765ba0681a65521e43' is:inline></script>
