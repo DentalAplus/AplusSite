@@ -1,8 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import "../styles/global.css";
-import Analytics from '@vercel/analytics/astro';
-import SpeedInsights from "@vercel/speed-insights/astro"; 
+
 const { title, description } = Astro.props;
 
 // Dil algılama mantığı (HTML lang etiketi için SEO uyumluluğu)
@@ -277,7 +276,5 @@ const metaDescription = description || "Dental Implant Clinic A Plus - Silivri v
       </a>
     </div>
 
-    <Analytics />
-    <SpeedInsights /> 
   </body>
 </html>
