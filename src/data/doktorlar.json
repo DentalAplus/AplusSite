@@ -175,57 +175,7 @@
       ]
     }
   },
-  {
-    "id": "umit-selcuk",
-    "isim": "Uzm. Dt. Ümit Selçuk",
-    "resim": "/images/umit-selcuk.webp",
-    "klinikler": ["silivri"],
-    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "zigomatik-implant", "maksillofasiyal-cerrahi"],
-    "unvan": {
-      "tr": "Ağız, Diş ve Çene Cerrahisi Uzmanı",
-      "en": "Oral and Maxillofacial Surgery Specialist",
-      "de": "Facharzt für Mund-, Kiefer- und Gesichtschirurgie",
-      "bg": "Специалист по орална и лицево-челюстна хирургия"
-    },
-    "alt_unvan": {
-      "tr": "Çene Cerrahisi Uzmanı",
-      "en": "Maxillofacial Surgery Specialist",
-      "de": "Kieferchirurg",
-      "bg": "Специалист по лицево-челюстна хирургия"
-    },
-    "ozgecmis": {
-      "tr": "1984 yılında Aydın'da doğmuştur. 2002 yılında Aydın Adnan Menderes Anadolu Lisesi'nden, 2007 yılında ise İstanbul Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. Uzmanlık eğitimini 2007-2012 yılları arasında Samsun Ondokuz Mayıs Üniversitesi Sağlık Bilimleri Enstitüsü'nde tamamlamıştır. Mesleki ilgi alanları arasında dental implantlar, ileri derece atrofik çenelerde zigomatik implantlar ve maksillofasiyal deformite tedavileri yer almaktadır.",
-      "en": "Born in Aydın in 1984. He graduated from Aydın Adnan Menderes Anatolian High School in 2002 and from Istanbul University Faculty of Dentistry in 2007. He completed his specialization at Samsun Ondokuz Mayıs University Health Sciences Institute between 2007 and 2012. His professional interests include dental implants, zygomatic implants in severely atrophic jaws, and maxillofacial deformity treatments.",
-      "de": "Geboren 1984 in Aydın. Er absolvierte 2002 das Aydın Adnan Menderes Anadolu Gymnasium und 2007 die zahnmedizinische Fakultät der Universität Istanbul. Seine Spezialisierung schloss er zwischen 2007 und 2012 am Institut für Gesundheitswissenschaften der Samsun Ondokuz Mayıs Universität ab. Zu seinen beruflichen Interessensgebieten gehören Zahnimplantate, Zygoma-Implantate bei stark atrophen Kiefern und Behandlungen von maxillofazialen Deformitäten.",
-      "bg": "Роден в Айдън през 1984 г. Завършва Анадолската гимназия Айдън Аднан Мендерес през 2002 г. и Факултета по дентална медицина на Истанбулския университет през 2007 г. Завършва специализацията си в Института по здравни науки към университета Самсун Ондокуз Майъс между 2007 и 2012 г. Професионалните му интереси включват дентални импланти, зигоматични импланти при тежко атрофични челюсти и лечение на лицево-челюстни деформации."
-    },
-    "dernekler": {
-      "tr": [
-        "AÇBİD (Ağız ve Çene-Yüz Cerrahisi Birliği Derneği)",
-        "TOİD (Türk Oral İmplantoloji Derneği)",
-        "TAOMS (Türk Ağız Diş ve Çene Cerrahisi Derneği)",
-        "Türk Diş Hekimleri Birliği"
-      ],
-      "en": [
-        "ACBID (Oral and Maxillofacial Surgery Society)",
-        "TOID (Turkish Oral Implantology Association)",
-        "TAOMS (Turkish Association of Oral and Maxillofacial Surgery)",
-        "Turkish Dental Association"
-      ],
-      "de": [
-        "AÇBİD (Gesellschaft für Mund-, Kiefer- und Gesichtschirurgie)",
-        "TOİD (Türkische Gesellschaft für Orale Implantologie)",
-        "TAOMS (Türkische Gesellschaft für Mund-, Kiefer- und Gesichtschirurgie)",
-        "Türkischer Zahnärzteverband"
-      ],
-      "bg": [
-        "AÇBİD (Асоциация по орална и лицево-челюстна хирургия)",
-        "TOİD (Турска асоциация по орална имплантология)",
-        "TAOMS (Турска асоциация по орална и лицево-челюстна хирургия)",
-        "Турска дентална асоциация"
-      ]
-    }
-  },
+  
   {
     "id": "adnan-ege-koseler",
     "isim": "Uzm. Dt. Adnan Ege Köseler",
