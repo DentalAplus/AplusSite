@@ -516,48 +516,5 @@
       "de": ["Türkischer Zahnärzteverband"],
       "bg": ["Турска дентална асоциация"]
     }
-  },
-  {
-    "id": "ugur-tuna-sazlikoglu",
-    "isim": "Uzm. Dt. Uğur Tuna Sazlıkoğlu",
-    "resim": "/images/ugur-tuna-sazlikoglu.webp",
-    "klinikler": ["silivri"],
-    "uzmanlik_alanlari": ["protez", "lamine", "zirkonyum", "implant-ustu-protez", "tme-rahatsizliklari"],
-    "unvan": {
-      "tr": "Protetik Diş Tedavisi Uzmanı",
-      "en": "Prosthodontics Specialist",
-      "de": "Facharzt für Prothetik",
-      "bg": "Специалист по протетична дентална медицина"
-    },
-    "alt_unvan": {
-      "tr": "Diş Protez Uzmanı",
-      "en": "Dental Prosthesis Specialist",
-      "de": "Spezialist für Zahnprothesen",
-      "bg": "Специалист по зъбни протези"
-    },
-    "ozgecmis": {
-      "tr": "1993 Malatya doğumludur. 2018 yılında Gazi Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. 2022 yılında Selçuk Üniversitesi Diş Hekimliği Fakültesi Protetik Diş Tedavisi Anabilim Dalı'nda uzmanlık eğitimini tamamlamıştır. Kron-köprü tedavisi, implant üstü kronlar, TME rahatsızlıkları ve laminate veneerler başlıca ilgi alanlarıdır. Ulusal ve uluslararası kongrelerde sunulmuş çeşitli bilimsel makaleleri ve bildirileri bulunmaktadır.",
-      "en": "Born in Malatya in 1993. Graduated from Gazi University Faculty of Dentistry in 2018. Completed his specialization at Selcuk University Faculty of Dentistry, Department of Prosthodontics in 2022. His main areas of interest include crown-bridge treatments, implant-supported crowns, TMJ disorders, and laminate veneers. He has various scientific articles and papers presented at national and international congresses.",
-      "de": "Geboren 1993 in Malatya. Abschluss an der Fakultät für Zahnmedizin der Gazi-Universität im Jahr 2018. Spezialisierung 2022 an der Fakultät für Zahnmedizin der Selcuk-Universität in der Abteilung für Prothetik abgeschlossen. Zu seinen Hauptinteressensgebieten gehören Kronen-Brücken-Behandlungen, implantatgetragene Kronen, Kiefergelenkserkrankungen (CMD) und Laminate-Veneers. Er hat verschiedene wissenschaftliche Artikel und Vorträge auf nationalen und internationalen Kongressen präsentiert.",
-      "bg": "Роден в Малатия през 1993 г. Завършва Факултета по дентална медицина на университета Гази през 2018 г. Завършва специализацията си във Факултета по дентална медицина на университета Селчук, Катедра по протетична дентална медицина през 2022 г. Основните му интереси включват лечения с коронки и мостове, коронки върху импланти, заболявания на ТМС и ламинатни фасети. Има редица научни статии и доклади, представени на национални и международни конгреси."
-    },
-    "dernekler": {
-      "tr": [
-        "Türk Diş Hekimleri Birliği",
-        "Türk Prostodonti ve İmplantoloji Derneği"
-      ],
-      "en": [
-        "Turkish Dental Association",
-        "Turkish Prosthodontics and Implantology Association"
-      ],
-      "de": [
-        "Türkischer Zahnärzteverband",
-        "Türkische Gesellschaft für Prothetik und Implantologie"
-      ],
-      "bg": [
-        "Турска дентална асоциация",
-        "Турска асоциация по протетична дентална медицина и имплантология"
-      ]
-    }
   }
 ]
