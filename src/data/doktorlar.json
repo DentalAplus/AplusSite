@@ -487,34 +487,6 @@
     }
   },
   {
-    "id": "oytun-kutsal",
-    "isim": "Uzm. Dt. Oytun Kutsal",
-    "resim": "/images/oytun-kutsal.webp",
-    "klinikler": ["catalca"],
-    "uzmanlik_alanlari": ["protez", "zirkonyum", "lamine", "e-max", "implant-ustu-protez", "all-on-four", "total-protez"],
-    "unvan": {
-      "tr": "Protetik Diş Tedavisi Uzmanı",
-      "en": "Prosthodontics Specialist",
-      "de": "Facharzt für Prothetik",
-      "bg": "Специалист по протетична дентална медицина"
-    },
-    "alt_unvan": {
-      "tr": "Diş Protez Uzmanı",
-      "en": "Dental Prosthesis Specialist",
-      "de": "Spezialist für Zahnprothesen",
-      "bg": "Специалист по зъбни протези"
-    },
-    "ozgecmis": {
-      "tr": "1991 yılında Aydın'da doğmuştur. 2009 yılında Bornova Anadolu Lisesi'nden, 2015 yılında ise Ege Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. 2016 yılında İzmir Katip Çelebi Üniversitesi Protetik Diş Tedavisi Anabilim Dalı'nda başladığı doktora eğitimini 2022 yılında başarıyla tamamlayarak 'Dr. Dt.' unvanını almıştır. 2022-2024 yılları arasında aynı üniversitede öğretim görevlisi olarak akademik eğitim vermiştir. İlgi alanları arasında implant üstü restorasyonlar, zirkonyum, lamina, e-max, All-On-4, total protezler, hassas tutuculu ve bölümlü protezler ile vidalı ve simante protezler yer almaktadır. İyi derecede İngilizce bilen hekimimizin, uluslararası ve ulusal endeksler tarafından taranan saygın akademik makaleleri bulunmaktadır.",
-      "en": "Born in Aydın in 1991. He graduated from Bornova Anatolian High School in 2009 and Ege University Faculty of Dentistry in 2015. He completed his PhD program at Izmir Katip Celebi University, Department of Prosthodontics, between 2016 and 2022, earning the title of Dr. Dt. He worked as a lecturer at the same university from 2022 to 2024. His areas of expertise include implant-supported restorations, zirconium, laminate veneers, e-max, All-On-4, total prostheses, precision attachment and partial prostheses, as well as screw-retained and cemented prostheses. Fluent in English, he also has respected academic articles indexed by national and international databases.",
-      "de": "Geboren 1991 in Aydın. Er absolvierte 2009 das Bornova Anadolu Gymnasium und 2015 die Fakultät für Zahnmedizin der Ege Universität. Von 2016 bis 2022 absolvierte er sein Promotionsstudium in der Abteilung für Prothetik an der İzmir Katip Çelebi Universität und erwarb den Titel Dr. Dt. Zwischen 2022 und 2024 war er als Dozent an derselben Universität tätig. Zu seinen Fachgebieten gehören implantatgetragene Restaurationen, Zirkonium, Laminate Veneers, E-Max, All-On-4, Totalprothesen, Geschiebeprothesen und Teilprothesen sowie verschraubte und zementierte Prothesen. Der fließend Englisch sprechende Zahnarzt hat auch angesehene wissenschaftliche Artikel veröffentlicht, die in nationalen und internationalen Datenbanken gelistet sind.",
-      "bg": "Роден е в Айдън през 1991 г. Завършва Анадолската гимназия Борнова през 2009 г. и Факултета по дентална медицина на Егейския университет през 2015 г. Между 2016 и 2022 г. завършва докторантурата си в Катедрата по протетична дентална медицина на университета Измир Катип Челеби, придобивайки титлата Dr. Dt. От 2022 до 2024 г. работи като преподавател в същия университет. Областите му на експертиза включват възстановявания върху импланти, цирконий, ламинатни фасети, E-Max, All-On-4, тотални протези, протези със специални задържащи елементи и частични протези, както и винтови и циментирани протези. Владеещ английски език, той също така има редица уважавани академични статии, индексирани в национални и международни бази данни."
-    },
-    "dernekler": {
-      "tr": ["Türk Diş Hekimleri Birliği"],
-      "en": ["Turkish Dental Association"],
-      "de": ["Türkischer Zahnärzteverband"],
-      "bg": ["Турска дентална асоциация"]
-    }
+
   }
 ]
