@@ -332,37 +332,6 @@
     }
   },
   {
-    "id": "derya-mina-akirmak",
-    "isim": "Dt. Derya Mina Akırmak",
-    "resim": "/images/derya-mina-akirmak.webp",
-    "klinikler": ["catalca"],
-    "uzmanlik_alanlari": ["endodonti", "kanal-tedavisi", "cocuk-dis-hekimligi", "estetik-dolgu", "diastema-kapama", "beyazlatma"],
-    "unvan": {
-      "tr": "Diş Hekimi",
-      "en": "Dentist",
-      "de": "Zahnärztin",
-      "bg": "Зъболекар"
-    },
-    "alt_unvan": {
-      "tr": "Endodonti & Çocuk Diş Hekimliği",
-      "en": "Endodontics & Pediatric Dentistry",
-      "de": "Endodontie & Kinderzahnheilkunde",
-      "bg": "Ендодонтия и Детска дентална медицина"
-    },
-    "ozgecmis": {
-      "tr": "1999 İstanbul doğumludur. 2022 yılında İstanbul Aydın Üniversitesi Diş Hekimliği Fakültesi'nden mezun olmuştur. Endodontik tedaviler ve pediatrik (çocuk) diş hekimliği alanlarında uzmanlaşmış bir hizmet sunmaktadır.",
-      "en": "Born in Istanbul in 1999. Graduated from Istanbul Aydın University Faculty of Dentistry in 2022. Provides specialized services in endodontic treatments and pediatric (children's) dentistry.",
-      "de": "Geboren 1999 in Istanbul. Abschluss an der Fakultät für Zahnmedizin der Istanbul Aydın Universität im Jahr 2022. Bietet spezialisierte Dienstleistungen in der Endodontie und pädiatrischen (Kinder-)Zahnheilkunde an.",
-      "bg": "Родена в Истанбул през 1999 г. Завършва Факултета по дентална медицина на Истанбулския университет Айдън през 2022 г. Предоставя специализирани услуги в областта на ендодонтските лечения и педиатричната (детска) дентална медицина."
-    },
-    "dernekler": {
-      "tr": [],
-      "en": [],
-      "de": [],
-      "bg": []
-    }
-  },
-  {
     "id": "yasar-ozyurt",
     "isim": "Dt. Yaşar Özyurt",
     "resim": "/images/yasar-ozyurt.webp",
