@@ -423,36 +423,5 @@
       "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
       "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
     }
-  },
-  {
-    "id": "cavlan-kutlu",
-    "isim": "Dt. Çavlan Kutlu",
-    "resim": "/images/cavlan-kutlu.webp",
-    "klinikler": ["silivri"],
-    "uzmanlik_alanlari": ["cene-cerrahisi", "implant", "all-on-four", "all-on-six", "kemik-ogmentasyonu"],
-    "unvan": {
-      "tr": "Ağız, Diş ve Çene Cerrahisi",
-      "en": "Oral & Maxillofacial Surgery",
-      "de": "Mund-, Kiefer- und Gesichtschirurgie",
-      "bg": "Орална и лицево-челюстна хирургия"
-    },
-    "alt_unvan": {
-      "tr": "Ağız, Çene ve Yüz Cerrahisi",
-      "en": "Oral and Maxillofacial Surgery",
-      "de": "Mund-, Kiefer- und Gesichtschirurgie",
-      "bg": "Орална и лицево-челюстна хирургия"
-    },
-    "ozgecmis": {
-      "tr": "1993 yılında İstanbul Bayrampaşa’da doğmuştur. Bezmialem Vakıf Üniversitesi Diş Hekimliği Fakültesi’nden 2018 yılında mezun olmuştur. 2023 yılında İstanbul Kent Üniversitesi Ağız, Çene ve Yüz Cerrahisi Anabilim Dalı’nda Doktora eğitimine başlamıştır. Cerrahi pratiğinde implant cerrahisi, kemik ogmentasyonu, All-On-4, All-On-6 ve travma yönetimi alanlarında hizmet vermektedir.",
-      "en": "Born in Bayrampasa, Istanbul in 1993. Graduated from Bezmialem Vakif University Faculty of Dentistry in 2018. Started his PhD education at Istanbul Kent University, Department of Oral and Maxillofacial Surgery in 2023. In his surgical practice, he provides services in implant surgery, bone augmentation, All-On-4, All-On-6, and trauma management.",
-      "de": "Geboren 1993 in Bayrampasa, Istanbul. Abschluss an der Fakultät für Zahnmedizin der Bezmialem Vakif Universität im Jahr 2018. Begann 2023 seine Promotion an der Abteilung für Mund-, Kiefer- und Gesichtschirurgie der Universität Istanbul Kent. In seiner chirurgischen Praxis bietet er Dienstleistungen in den Bereichen Implantatchirurgie, Knochenaugmentation, All-On-4, All-On-6 und Traumamanagement an.",
-      "bg": "Роден в Байрампаша, Истанбул през 1993 г. Завършва Факултета по дентална медицина на университета Безмиалем Вакъф през 2018 г. През 2023 г. започва докторантурата си в Катедрата по орална и лицево-челюстна хирургия към Истанбулския университет Кент. В хирургичната си практика предоставя услуги в областта на имплантологичната хирургия, костната аугментация, All-On-4, All-On-6 и лечението на травми."
-    },
-    "dernekler": {
-      "tr": [],
-      "en": [],
-      "de": [],
-      "bg": []
-    }
   }
 ]
