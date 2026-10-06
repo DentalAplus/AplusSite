@@ -423,5 +423,36 @@
       "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
       "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
     }
+  },
+  {
+  "id": "ahmet-firat-cokyasa",
+  "isim": "Dt. Ahmet Fırat Çokyaşa",
+  "resim": "/images/ahmet-firat-cokyasa.webp",
+  "klinikler": ["silivri"],
+  "uzmanlik_alanlari": ["genel-dis-hekimligi", "estetik-dis-hekimligi"],
+  "unvan": {
+    "tr": "Diş Hekimi ve Mesul Müdür",
+    "en": "Dentist & Responsible Manager",
+    "de": "Zahnarzt & Verantwortlicher Leiter",
+    "bg": "Зъболекар и Отговорен управител"
+  },
+  "alt_unvan": {
+    "tr": "Genel Diş Hekimliği",
+    "en": "General Dentistry",
+    "de": "Allgemeine Zahnheilkunde",
+    "bg": "Обща дентална медицина"
+  },
+  "ozgecmis": {
+    "tr": "2001 yılında İstanbul’da doğmuştur. Diş hekimliği eğitimini İstanbul Beykent Üniversitesi Diş Hekimliği Fakültesi’nde tamamlayarak 2024 yılında mezun olmuştur. Mesleki yaklaşımında hasta memnuniyeti, etik değerler ve bilimsel güncelliği ön planda tutmaktadır. Hastalarına kişiye özel ve kapsamlı bir tedavi anlayışıyla hizmet vermeyi hedeflemekte; diş hekimliğindeki güncel gelişmeleri yakından takip ederek mesleki bilgi ve deneyimini sürekli geliştirmektedir.",
+    "en": "Born in Istanbul in 2001. Completed dental education at Istanbul Beykent University Faculty of Dentistry and graduated in 2024. Prioritizes patient satisfaction, ethical values, and scientific updates in professional practice. Aims to serve patients with a personalized and comprehensive treatment approach, continuously improving professional knowledge and experience by closely following current developments in dentistry.",
+    "de": "Geboren 2001 in Istanbul. Schloss das Studium der Zahnmedizin an der Fakultät für Zahnmedizin der Universität Istanbul Beykent im Jahr 2024 erfolgreich ab. Stellt Kundenzufriedenheit, ethische Werte und wissenschaftliche Aktualität in den Mittelpunkt seiner beruflichen Praxis. Zielt darauf ab, Patientinnen und Patienten mit einem individuellen und umfassenden Behandlungskonzept zu betreuen, und entwickelt sein fachliches Wissen durch das Verfolgen aktueller Entwicklungen kontinuierlich weiter.",
+    "bg": "Роден в Истанбул през 2001 г. Завършва Факултета по дентална медицина на Университета Бейкент в Истанбул през 2024 г. В професионалния си подход поставя на първо място удовлетвореността на пациентите, етичните ценности и съвременните научни постижения. Стреми се да предоставя индивидуално и цялостно лечение, като следи отблизо актуалните развития в денталната медицина."
+  },
+  "dernekler": {
+    "tr": ["Türk Diş Hekimleri Birliği", "İstanbul Diş Hekimleri Odası"],
+    "en": ["Turkish Dental Association", "Istanbul Chamber of Dentists"],
+    "de": ["Türkischer Zahnärzteverband", "Zahnärztekammer Istanbul"],
+    "bg": ["Турска дентална асоциация", "Истанбулска камара на зъболекарите"]
   }
+}
 ]
